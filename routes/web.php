@@ -85,3 +85,25 @@ Route::get('/employee-register', function () {
 Route::get('/newsroom-register', function () {
     return view('auth.newsroom-register');
 });
+
+Route::get('/station-rating', function () {
+    return view('station-rating');
+});
+Route::get('/account-settings-station-profile', function () {
+    return view('account-settings-station-profile');
+});
+Route::get('/account-settings-contact-info', function () {
+    return view('account-settings-contact-info');
+});
+Route::get('/account-settings-subscription', function () {
+    return view('account-settings-subscription');
+});
+Route::get('/account-settings-verification', function () {
+    return view('account-settings-verification');
+});
+Route::get('/change-password', function () {
+    return view('change-password');
+});
+Route::get('/station-profile', function () {
+    return view('station-profile');
+});
