@@ -74,61 +74,73 @@
                     </div>
                 </div>
                 <div class="bg-white mt-4" style="padding: 20px;border-radius: 10px;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);">
-                    <div class="d-flex justify-content-between p-4 mb-4">
-                        <div class="d-flex align-items-center">
-                            <div style="width: 73px;height: 73px;">
-                                <img src="{{ asset('user/assets/img/director-search-1.png') }}" class="w-100 h-100" alt="">
-                            </div>
-                            <div style="padding-inline-start: 14px;">
-                                <p style="font-size: 16px;">
-                                    <span class="fw-semiBold" style="color: #777777;"> News Director </span>
-                                    <span class="fw-semiBold" style="padding-block: 2px;background-color: #89C400;border-radius: 6px;color: #ffff;padding-inline: 10px;padding-top: 0px;font-size: 10px;">current</span>
-                                </p>
-                                <strong style="font-size: 26px;">Brooklyn Simmons</strong>
+                    <div class="row p-4">
+                        <div class="col-2">
+                            <div style="width: 125px;height: 125px;">
+                                <img src="{{ asset('user/assets/img/silver-logo.png') }}" class="w-100 h-100" alt="">
                             </div>
                         </div>
-                        <div class="d-flex align-items-center">
-                            <a href="#">
-                                <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" alt="">
-                            </a>
+                        <div class="col-8">
+                            <div class="ps-4">
+                                <strong class="fw-semiBold" style="color: #194D79;font-size: 18px;">Award 2022</strong>
+                                <p class="fw-light" style="font-size: 16px;">
+                                    Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-2 d-flex justify-content-end align-items-center">
+                            <div class="d-flex align-items-center">
+                                <a href="#">
+                                    <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" alt="">
+                                </a>
+                            </div>
+
                         </div>
                     </div>
-                    <div class="d-flex justify-content-between p-4 mb-4">
-                        <div class="d-flex align-items-center">
-                            <div style="width: 73px;height: 73px;">
-                                <img src="{{ asset('user/assets/img/station-rating-1.png') }}" class="w-100 h-100" alt="">
-                            </div>
-                            <div style="padding-inline-start: 14px;">
-                                <p style="font-size: 16px;">
-                                    <span class="fw-semiBold" style="color: #777777;"> News Director </span>
-                                    <span class="fw-semiBold" style="padding-block: 2px;background-color: #F2F2F2;border-radius: 6px;color: #828282;padding-inline: 10px;padding-top: 0px;font-size: 10px;">Past</span>
-                                </p>
-                                <strong style="font-size: 26px;">Ronald Richards</strong>
+                    <div class="row p-4">
+                        <div class="col-2">
+                            <div style="width: 125px;height: 125px;">
+                                <img src="{{ asset('user/assets/img/silver-logo.png') }}" class="w-100 h-100" alt="">
                             </div>
                         </div>
-                        <div class="d-flex align-items-center">
-                            <a href="#">
-                                <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" alt="">
-                            </a>
+                        <div class="col-8">
+                            <div class="ps-4">
+                                <strong class="fw-semiBold" style="color: #194D79;font-size: 18px;">Award 2022</strong>
+                                <p class="fw-light" style="font-size: 16px;">
+                                    Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-2 d-flex justify-content-end align-items-center">
+                            <div class="d-flex align-items-center">
+                                <a href="#">
+                                    <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" alt="">
+                                </a>
+                            </div>
+
                         </div>
                     </div>
-                    <div class="d-flex justify-content-between p-4 mb-4">
-                        <div class="d-flex align-items-center">
-                            <div style="width: 73px;height: 73px;">
-                                <img src="{{ asset('user/assets/img/review-1-img.png') }}" class="w-100 h-100" alt="">
-                            </div>
-                            <div style="padding-inline-start: 14px;">
-                                <p style="font-size: 16px;">
-                                    <span class="fw-semiBold" style="color: #777777;"> News Director </span>
-                                    <span class="fw-semiBold" style="padding-block: 2px;background-color: #F2F2F2;border-radius: 6px;color: #828282;padding-inline: 10px;padding-top: 0px;font-size: 10px;">Past</span>
-                                </p>
-                                <strong style="font-size: 26px;">Sally Ramirez</strong>
+                    <div class="row p-4">
+                        <div class="col-2">
+                            <div style="width: 125px;height: 125px;">
+                                <img src="{{ asset('user/assets/img/silver-logo.png') }}" class="w-100 h-100" alt="">
                             </div>
                         </div>
-                        <div class="d-flex align-items-center">
-                            <a href="#">
-                                <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" alt="">
-                            </a>
+                        <div class="col-8">
+                            <div class="ps-4">
+                                <strong class="fw-semiBold" style="color: #194D79;font-size: 18px;">Award 2022</strong>
+                                <p class="fw-light" style="font-size: 16px;">
+                                    Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-2 d-flex justify-content-end align-items-center">
+                            <div class="d-flex align-items-center">
+                                <a href="#">
+                                    <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" alt="">
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>

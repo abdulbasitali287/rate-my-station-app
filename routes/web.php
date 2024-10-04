@@ -107,3 +107,9 @@ Route::get('/change-password', function () {
 Route::get('/station-profile', function () {
     return view('station-profile');
 });
+Route::get('/station-profile-2', function () {
+    return view('station-profile-2');
+});
+Route::get('/private-messages', function () {
+    return view('private-messages');
+});
