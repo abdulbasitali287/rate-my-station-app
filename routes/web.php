@@ -110,6 +110,28 @@ Route::get('/station-profile', function () {
 Route::get('/station-profile-2', function () {
     return view('station-profile-2');
 });
+
 Route::get('/private-messages', function () {
     return view('private-messages');
+});
+Route::get('/subscription', function () {
+    return view('subscription');
+});
+Route::get('/station-profile-3', function () {
+    return view('station-profile-3');
+});
+Route::get('/station-visitor-profile', function () {
+    return view('station-visitor-profile');
+});
+Route::get('/station-rating-user', function () {
+    return view('station-rating-user');
+});
+Route::get('/station-posted-job', function () {
+    return view('station-posted-job');
+});
+Route::get('/station-posted-job-all-candidates', function () {
+    return view('station-posted-job-all-candidates');
+});
+Route::get('/contact-info-user', function () {
+    return view('contact-info-user');
 });

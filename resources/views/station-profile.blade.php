@@ -55,9 +55,6 @@
                 </ul>
             </div>
         </div>
-        {{-- <div class="row" style="padding: 40px;background-color: #FFFFFF;">
-             --}}
-        </div>
     </div>
 </section>
 
