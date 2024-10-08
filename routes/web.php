@@ -135,3 +135,37 @@ Route::get('/station-posted-job-all-candidates', function () {
 Route::get('/contact-info-user', function () {
     return view('contact-info-user');
 });
+// 8 oct 2024
+Route::get('/station-visitor-profile-2', function () {
+    return view('station-visitor-profile-2');
+});
+Route::get('/station-user-profile', function () {
+    return view('station-user-profile');
+});
+Route::get('/station-user-ratings', function () {
+    return view('station-user-ratings');
+});
+Route::get('/station-user-applied-jobs', function () {
+    return view('station-user-applied-jobs');
+});
+Route::get('/station-user-contact-info', function () {
+    return view('station-user-contact-info');
+});
+Route::get('/station-user-suscribed', function () {
+    return view('station-user-suscribed');
+});
+Route::get('/station-user-saved', function () {
+    return view('station-user-saved');
+});
+Route::get('/edit-experience', function () {
+    return view('edit-experience');
+});
+Route::get('/edit-skills', function () {
+    return view('edit-skills');
+});
+Route::get('/edit-education', function () {
+    return view('edit-education');
+});
+Route::get('/create-news-director', function () {
+    return view('popup-forms.create-news-director');
+});

@@ -384,9 +384,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div style="display: flex;
-    flex-direction: column;
-    justify-content: center;width: 383px;height: 474px;padding-inline: 24px;margin-top: 23px;text-align: center;color: #ffff;background-image: url({{ asset('user/assets/ellipse/posted-job-bg.png') }});background-size: cover;background-repeat: no-repeat;">
+                <div style="display: flex;flex-direction: column;justify-content: center;width: 383px;height: 474px;padding-inline: 24px;margin-top: 23px;text-align: center;color: #ffff;background-image: url({{ asset('user/assets/ellipse/posted-job-bg.png') }});background-size: cover;background-repeat: no-repeat;">
                     <h2 style="font-weight: bold;font-size: 36px;">Hire the right employee for your company now!</h2>
                     <p style="font-size: 20px;font-weight: 200;padding-block: 14px;">Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam.</p>
                     <div>
