@@ -1,17 +1,17 @@
 @extends('layout.main')
 @section('content')
 
-<a href="#" data-bs-toggle="modal" data-bs-target="#addDirectorModal">
+<a href="#" data-bs-toggle="modal" data-bs-target="#addDirector2Modal">
     <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" style="width: 24px;height: 24px;" alt="">
 </a>
 @endsection
 
 {{-- add news director modal --}}
-<div class="modal fade" id="addDirectorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="addDirector2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content p-3" style="border-radius: 16px;">
         <div class="modal-header py-0 pt-2" style="border-bottom: none;">
-          <h1 class="modal-title fw-bold" style="font-size: 24px;">Submit news directors</h1>
+          <h1 class="modal-title fw-bold" style="font-size: 24px;">News Director</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="#" class="fw-light">News director’s name</label>
+                        <label for="#" class="fw-light">Director’s name</label>
                         <input type="text" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
                     </div>
                 </div>
@@ -45,35 +45,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="#" class="fw-light">What station does/did this News Director work for?</label>
-                        <input type="text" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="form-group">
-                        <label for="#" class="fw-light">Station's website</label>
-                        <div class="mt-2" style="display: flex;background-color: #F2F2F2;padding-block: 10px;padding-inline-end: 10px;border-radius: 10px;">
-                            <select name="" class="ps-3" style="flex-grow: 1;margin-top: 3px;color: #828282;font-size: 14px;">
-                                <option value="" selected>Choose options</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="form-group mt-2">
-                        <label for="#" class="fw-light">News director’s  social media</label>
-                        <input type="text" class="w-100 px-3 mt-2 mb-1" placeholder="Type link here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
-                        <label for="#" class="d-flex align-items-center mt-1" style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
-                            <input type="text" class="w-100 px-3" placeholder="Type link here..." style="border: none;background-color: transparent;">
-                            <img src="{{ asset('user/assets/vectors/plus-vector-2.png') }}" class="me-3" style="width: 17px;height: 17px;" alt="">
-                        </label>
+                        <label for="#" class="fw-light">Director’s  email</label>
+                        <input type="email" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
                     </div>
                 </div>
             </div>

@@ -89,6 +89,8 @@ Route::get('/newsroom-register', function () {
 Route::get('/station-rating', function () {
     return view('station-rating');
 });
+
+// newsroom
 Route::get('/account-settings-station-profile', function () {
     return view('account-settings-station-profile');
 });
@@ -104,6 +106,23 @@ Route::get('/account-settings-verification', function () {
 Route::get('/change-password', function () {
     return view('change-password');
 });
+// user
+Route::get('/account-settings-user-profile', function () {
+    return view('user-account.account-settings-user-profile');
+});
+Route::get('/account-settings-user-contact-info', function () {
+    return view('user-account.account-settings-user-contact-info');
+});
+Route::get('/account-settings-user-subscription', function () {
+    return view('user-account.account-settings-user-subscription');
+});
+Route::get('/account-settings-user-verification', function () {
+    return view('user-account.account-settings-user-verification');
+});
+Route::get('/user-change-password', function () {
+    return view('user-account.user-change-password');
+});
+
 Route::get('/station-profile', function () {
     return view('station-profile');
 });
@@ -111,17 +130,20 @@ Route::get('/station-profile-2', function () {
     return view('station-profile-2');
 });
 
+Route::get('/station-profile-3', function () {
+    return view('station-profile-3');
+});
 Route::get('/private-messages', function () {
     return view('private-messages');
 });
 Route::get('/subscription', function () {
     return view('subscription');
 });
-Route::get('/station-profile-3', function () {
-    return view('station-profile-3');
-});
 Route::get('/station-visitor-profile', function () {
     return view('station-visitor-profile');
+});
+Route::get('/station-visitor-profile-2', function () {
+    return view('station-visitor-profile-2');
 });
 Route::get('/station-rating-user', function () {
     return view('station-rating-user');
@@ -135,10 +157,7 @@ Route::get('/station-posted-job-all-candidates', function () {
 Route::get('/contact-info-user', function () {
     return view('contact-info-user');
 });
-// 8 oct 2024
-Route::get('/station-visitor-profile-2', function () {
-    return view('station-visitor-profile-2');
-});
+
 Route::get('/station-user-profile', function () {
     return view('station-user-profile');
 });
@@ -168,4 +187,19 @@ Route::get('/edit-education', function () {
 });
 Route::get('/create-news-director', function () {
     return view('popup-forms.create-news-director');
+});
+Route::get('/apply-job-form', function () {
+    return view('popup-forms.apply-job-form');
+});
+Route::get('/director-detail-popup', function () {
+    return view('popup-forms.director-detail-popup');
+});
+Route::get('/station-user-statistic', function () {
+    return view('station-user-statistic');
+});
+Route::get('/add-news-director-2', function () {
+    return view('popup-forms.add-news-director-2');
+});
+Route::get('/job-opening-popup-form', function () {
+    return view('popup-forms.job-opening-popup-form');
 });

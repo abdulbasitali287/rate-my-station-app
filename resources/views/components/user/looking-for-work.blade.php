@@ -8,7 +8,7 @@
                         <h2 style="color: #ffff;font-weight: bold;font-size: 36px;">{{ $title }}</h2>
                         <p style="color: #ffff;font-weight: 400;font-size: 20px;padding-bottom: 25px;padding-top: 10px;">{{ $paragraph }}</p>
                         <div>
-                            <button class="job-center-subscribe-btn">{{ $buttonText }}</button>
+                            <a href="{{ url('subscription') }}" class="job-center-subscribe-btn">{{ $buttonText }}</a>
                         </div>
                     </div>
                 </div>

@@ -48,7 +48,7 @@
         </div>
         <div class="d-flex justify-content-between align-items-center pt-3">
             <div>
-                <button style="background-color: #9BDB08;border: none;color: #ffff;padding-top: 6px;padding-bottom: 8px;padding-inline: 14px;border-radius: 8px;"><span style="display: inline-block;padding-inline-end: 6px;"><img src="{{ asset('user/assets/vectors/tick-vector.png') }}" alt=""></span><span style="display: inline-block;padding-top: 1px;font-weight: 300;">Actively Hiring</span></button>
+                <a href="{{ url('job-details') }}" class="d-inline-block" style="background-color: #9BDB08;border: none;color: #ffff;padding-top: 6px;padding-bottom: 8px;padding-inline: 14px;border-radius: 8px;"><span style="display: inline-block;padding-inline-end: 6px;"><img src="{{ asset('user/assets/vectors/tick-vector.png') }}" alt=""></span><span style="display: inline-block;padding-top: 1px;font-weight: 300;">Actively Hiring</span></a>
             </div>
             <div>
                 <p style="color: #828282;"><span style="display: inline-block;padding-inline-end: 6px;"><img src="{{ asset('user/assets/vectors/timer-vector.png') }}" alt=""></span><span style="font-size: 12px;">Updated 8 hours ago</span></p>

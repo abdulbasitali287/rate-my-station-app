@@ -5,11 +5,11 @@
             <div class="col-md-9 px-0 footer-links">
                 <ul class="d-flex justify-content-start px-4">
                     <li><a href="#">Account Information</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Work for Us</a></li>
-                    <li><a href="#">Subscribe</a></li>
+                    <li><a href="{{ url('contact-us') }}">Contact Us</a></li>
+                    <li><a href="{{ url('work-for-us') }}">Work for Us</a></li>
+                    <li><a href="{{ url('subscription') }}">Subscribe</a></li>
                     <li><a href="#">Advertise</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="{{ url('terms-and-conditions') }}">Terms & Conditions</a></li>
                 </ul>
             </div>
             <div class="col-md-3 social-icons">

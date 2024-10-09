@@ -15,7 +15,9 @@
                         <a href="#" class="text-white fw-semiBold px-3 py-1" style="background-color: #89C400;border-radius: 10px;font-size: 14px;">Subscibed</a>
                     </div>
                     <div style="padding-inline-start: 14px;">
-                        <h2 class="position-relative" style="font-size: 30px;font-weight: bold;">KABC <span class="position-absolute" style="top: -4px;right: 92px;"><img src="{{ asset('user/assets/vectors/gare-vector.png') }}" alt=""></span></h2>
+                        <h2 class="position-relative" style="font-size: 30px;font-weight: bold;">KABC
+                            <span class="position-absolute" style="top: 8px;right: 104px;">
+                                <img src="{{ asset('user/assets/vectors/gare-vector.png') }}" alt=""></span></h2>
                         <p class="pb-2" style="color: #828282;">TV News Station</p>
                         <p class="fw-light" style="color: #194D79;font-size: 18px;"><span style="display: inline-block;padding-inline-end: 4px;"><img src="{{ asset('user/assets/vectors/map-vector.png') }}" alt=""></span>Los Angeles, CA | DMA: 2</p>
                     </div>
@@ -23,14 +25,14 @@
             </div>
             <div class="col-md-3 pb-4" style="border-bottom: 1px solid #E0E0E0;">
                 <div style="width: 100%;height: 100%;display: flex;flex-direction: column;justify-content: center;">
-                    <a href="#" class="text-white fw-bold border-0" style="margin-block: 6px;background-color: var(--darkCerulean);padding-block: 11px;border-radius: 12px;letter-spacing: 0.5px;transition: all 0.5s;text-align: center;">
+                    <a href="{{ url('account-settings-station-profile') }}" class="text-white fw-bold border-0" style="margin-block: 6px;background-color: var(--darkCerulean);padding-block: 11px;border-radius: 12px;letter-spacing: 0.5px;transition: all 0.5s;text-align: center;">
                         <span class="d-inline-block me-2">
                         <img src="{{ asset('user/assets/vectors/settings-vector.png') }}" alt=""></span>
                         Account settings
                     </a>
-                    <a href="#" class="fw-bold bg-transparent" style="margin-block: 6px;border: 2px solid #194D79;color: #194D79;padding-block: 11px;border-radius: 12px;letter-spacing: 0.5px;transition: all 0.5s;text-align: center;">
+                    <a href="#" class="d-flex justify-content-center align-items-center fw-bold bg-transparent" style="margin-block: 6px;border: 2px solid #194D79;color: #194D79;padding-block: 11px;border-radius: 12px;letter-spacing: 0.5px;transition: all 0.5s;text-align: center;">
                         <span class="d-inline-block me-2" style="background-color: #194D79;width: 22px;height: 22px;border-radius: 100%;">
-                        <img src="{{ asset('user/assets/vectors/plus-vector.png') }}" style="margin-top: -5px;margin-left: 1px;" alt=""></span>
+                        <img src="{{ asset('user/assets/vectors/plus-vector.png') }}" style="margin-top: 5px;margin-left: 1px;" alt=""></span>
                         Add profile section
                     </a>
                 </div>
@@ -44,13 +46,13 @@
                         <a href="{{ url('station-rating-user') }}" class="text-black">My ratings</a>
                     </li>
                     <li class="p-4">
-                        <a href="#" class="text-black">Statistic</a>
+                        <a href="{{ url('station-user-statistic') }}" class="text-black">Statistic</a>
                     </li>
                     <li class="p-4">
                         <a href="{{ url('station-posted-job') }}" class="text-black">Posted job</a>
                     </li>
                     <li class="p-4">
-                        <a href="#" class="text-black">Contact Info</a>
+                        <a href="{{ url('contact-info-user') }}" class="text-black">Contact Info</a>
                     </li>
                 </ul>
             </div>
@@ -62,16 +64,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 pt-5">
-
-
-
                 <div class="bg-white p-5 mt-4" style="padding: 20px;border-radius: 10px;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);">
                     <div class="row align-items-center pb-3">
                         <div class="col-md-8">
                             <h2 class="fw-bold" style="font-size: 24px;">About</h2>
                         </div>
                         <div class="col-md-4 text-end">
-                            <a href="#" class="fw-thin d-inline-block" style="color: #194D79;width: 26px;height: 26px;">
+                            <a href="#" class="fw-thin d-inline-block" data-bs-toggle="modal" data-bs-target="#addAboutModal" style="color: #194D79;width: 26px;height: 26px;">
                                 <img src="{{ asset('user/assets/vectors/edit-vector-26.png') }}" class="w-100 h-100"  alt="">
                             </a>
                         </div>
@@ -101,10 +100,10 @@
                             <h2 class="fw-bold" style="font-size: 24px;">News Directors</h2>
                         </div>
                         <div class="col-md-4 text-end">
-                            <a href="#" class="fw-thin d-inline-block me-3" style="color: #194D79;width: 26px;height: 26px;">
+                            <a href="#" class="fw-thin d-inline-block me-3" data-bs-toggle="modal" data-bs-target="#addDirectorModal" style="color: #194D79;width: 26px;height: 26px;">
                                 <img src="{{ asset('user/assets/vectors/plus-vector-26.png') }}" class="w-100 h-100"  alt="">
                             </a>
-                            <a href="#" class="fw-thin d-inline-block" style="color: #194D79;width: 26px;height: 26px;">
+                            <a href="#" class="fw-thin d-inline-block" data-bs-toggle="modal" data-bs-target="#addDirectorModal" style="color: #194D79;width: 26px;height: 26px;">
                                 <img src="{{ asset('user/assets/vectors/edit-vector-26.png') }}" class="w-100 h-100"  alt="">
                             </a>
                         </div>
@@ -176,10 +175,10 @@
                             <h2 class="fw-bold" style="font-size: 24px;">Award</h2>
                         </div>
                         <div class="col-md-4 text-end">
-                            <a href="#" class="fw-thin d-inline-block me-3" style="color: #194D79;width: 26px;height: 26px;">
+                            <a href="#" class="fw-thin d-inline-block me-3" data-bs-toggle="modal" data-bs-target="#addAwardModal" style="color: #194D79;width: 26px;height: 26px;">
                                 <img src="{{ asset('user/assets/vectors/plus-vector-26.png') }}" class="w-100 h-100"  alt="">
                             </a>
-                            <a href="#" class="fw-thin d-inline-block" style="color: #194D79;width: 26px;height: 26px;">
+                            <a href="#" class="fw-thin d-inline-block" data-bs-toggle="modal" data-bs-target="#addAwardModal" style="color: #194D79;width: 26px;height: 26px;">
                                 <img src="{{ asset('user/assets/vectors/edit-vector-26.png') }}" class="w-100 h-100"  alt="">
                             </a>
                         </div>
@@ -473,3 +472,159 @@
     </div>
 </section>
 @endsection
+
+
+{{-- add director modal --}}
+<div class="modal fade" id="addDirectorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content p-3" style="border-radius: 16px;">
+        <div class="modal-header py-0 pt-2" style="border-bottom: none;">
+          <h1 class="modal-title fw-bold" style="font-size: 24px;">News Director</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex align-items-center pb-3">
+                        <div class="d-flex justify-content-center align-items-end me-3" style="width: 89px;height: 89px;background-color: #F2F2F2;border-radius: 10px;">
+                            <img src="{{ asset('user/assets/img/account-profile.png') }}" style="width: 70px;height: 71px;" alt="">
+                        </div>
+                        <p style="color: #194D79;">Upload Image in <span class="fw-bold"> jpg or png format</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="#" class="fw-light">Director’s name</label>
+                        <input type="text" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
+                    </div>
+                </div>
+                <div class="col-md-6" style="align-content: center;">
+                    <div class="form-check pt-3">
+                        <input class="form-check-input me-3" type="checkbox" value="" style="width: 22px;height: 22px;border-color: #BDBDBD;">
+                        <label class="form-check-label d-inline-block mt-1 fw-light" for="flexCheckDefault">
+                            Current news director
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="#" class="fw-light">Director’s  email</label>
+                        <input type="email" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
+                    </div>
+                </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-start" style="border-top: none;">
+          <x-user.button buttonText="Save" class="px-5" />
+          <x-user.button buttonText="Cancel" class="bg-white px-5" color="#194D79" />
+        </div>
+      </div>
+    </div>
+</div>
+
+
+{{-- add about modal --}}
+<div class="modal fade" id="addAboutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content p-3" style="border-radius: 16px;">
+        <div class="modal-header py-0 pt-2" style="border-bottom: none;">
+          <h1 class="modal-title fw-bold" style="font-size: 24px;">About</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                      <label for="#" class="fw-light">You can write about your years of experience, industry, or skills.</label>
+                      <textarea name="" class="w-100 p-3 mt-2" placeholder="Type here..." id="" cols="30" rows="6" style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group pt-3">
+                        <label for="#" class="fw-light">Industry</label>
+                        <div class="mt-2" style="display: flex;background-color: #F2F2F2;padding-block: 10px;padding-inline-end: 10px;border-radius: 10px;">
+                            <select name="" class="ps-3" style="flex-grow: 1;margin-top: 3px;color: #828282;font-size: 14px;">
+                                <option value="" selected>Choose options</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group pt-3">
+                        <label for="#" class="fw-light">Station Address</label>
+                        <input type="text" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
+                    </div>
+                </div>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-start" style="border-top: none;">
+          <x-user.button buttonText="Save" class="px-5" />
+          <x-user.button buttonText="Cancel" class="bg-white px-5" color="#194D79" />
+        </div>
+      </div>
+    </div>
+</div>
+
+{{-- add awart modal --}}
+<div class="modal fade" id="addAwardModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content p-3" style="border-radius: 16px;">
+        <div class="modal-header py-0 pt-2" style="border-bottom: none;">
+          <h1 class="modal-title fw-bold" style="font-size: 24px;">Award</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="#" class="fw-light">Award title</label>
+                        <input type="text" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                      <label for="#" class="fw-light">Description</label>
+                      <textarea name="" class="w-100 p-3 mt-2" placeholder="Type here..." id="" cols="30" rows="6" style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex align-items-center py-3">
+                        <div class="d-flex justify-content-center align-items-center me-3" style="width: 89px;height: 89px;background-color: #F2F2F2;border-radius: 10px;">
+                            <img src="{{ asset('user/assets/vectors/dummy-img.png') }}" style="width: 30px;height: 28px;" alt="">
+                        </div>
+                        <p style="color: #194D79;">Upload Image in <span class="fw-bold"> jpg or png format</span></p>
+                    </div>
+                </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-start" style="border-top: none;">
+          <x-user.button buttonText="Save" class="px-5" />
+          <x-user.button buttonText="Cancel" class="bg-white px-5" color="#194D79" />
+        </div>
+      </div>
+    </div>
+</div>
+
+

@@ -27,14 +27,14 @@
             </div>
             <div class="col-md-3 pb-4" style="border-bottom: 1px solid #E0E0E0;">
                 <div style="width: 100%;height: 100%;display: flex;flex-direction: column;justify-content: center;">
-                    <a href="#" class="text-white fw-bold border-0" style="margin-block: 6px;background-color: var(--darkCerulean);padding-block: 11px;border-radius: 12px;letter-spacing: 0.5px;transition: all 0.5s;text-align: center;">
+                    <a href="{{ url('account-settings-user-profile') }}" class="text-white fw-bold border-0" style="margin-block: 6px;background-color: var(--darkCerulean);padding-block: 11px;border-radius: 12px;letter-spacing: 0.5px;transition: all 0.5s;text-align: center;">
                         <span class="d-inline-block me-2">
                         <img src="{{ asset('user/assets/vectors/settings-vector.png') }}" alt=""></span>
                         Account settings
                     </a>
                     <a href="#" class="fw-bold bg-transparent" style="margin-block: 6px;border: 2px solid #194D79;color: #194D79;padding-block: 11px;border-radius: 12px;letter-spacing: 0.5px;transition: all 0.5s;text-align: center;">
                         <span class="d-inline-block me-2" style="background-color: #194D79;width: 22px;height: 22px;border-radius: 100%;">
-                        <img src="{{ asset('user/assets/vectors/plus-vector.png') }}" style="margin-top: -5px;margin-left: 1px;" alt=""></span>
+                        <img src="{{ asset('user/assets/vectors/plus-vector.png') }}" style="margin-top: 5px;margin-left: 1px;" alt=""></span>
                         Add profile section
                     </a>
                 </div>
@@ -100,10 +100,10 @@
                                     <div class="d-flex justify-content-between">
                                         <h2 class="fw-bold" style="font-size: 24px;">Experiance</h2>
                                         <div class="d-flex">
-                                            <a href="#" class="me-4">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#addExperienceModal" class="me-4">
                                                 <img src="{{ asset('user/assets/vectors/plus-vector-26.png') }}" style="width: 24px;height: 24px;" alt="">
                                             </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#editExperienceModal">
+                                            <a href="#">
                                                 <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" style="width: 24px;height: 24px;" alt="">
                                             </a>
                                         </div>
@@ -168,10 +168,10 @@
                                     <div class="d-flex justify-content-between">
                                         <h2 class="fw-bold" style="font-size: 24px;">Skills</h2>
                                         <div class="d-flex">
-                                            <a href="#" class="me-4">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#addSkillsModal" class="me-4">
                                                 <img src="{{ asset('user/assets/vectors/plus-vector-26.png') }}" style="width: 24px;height: 24px;" alt="">
                                             </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#editSkillsModal">
+                                            <a href="#">
                                                 <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" style="width: 24px;height: 24px;" alt="">
                                             </a>
                                         </div>
@@ -210,10 +210,10 @@
                                     <div class="d-flex justify-content-between">
                                         <h2 class="fw-bold" style="font-size: 24px;">Education</h2>
                                         <div class="d-flex">
-                                            <a href="#" class="me-4">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#addEducationModal" class="me-4">
                                                 <img src="{{ asset('user/assets/vectors/plus-vector-26.png') }}" style="width: 24px;height: 24px;" alt="">
                                             </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#editEducationModal">
+                                            <a href="#">
                                                 <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" style="width: 24px;height: 24px;" alt="">
                                             </a>
                                         </div>
@@ -417,7 +417,7 @@
 </div>
 
 {{-- experience modal --}}
-<div class="modal fade" id="editExperienceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="addExperienceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content p-3" style="border-radius: 16px;">
       <div class="modal-header py-0 pt-2" style="border-bottom: none;">
@@ -550,7 +550,7 @@
 </div>
 
 {{-- skills modal --}}
-<div class="modal fade" id="editSkillsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="addSkillsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content p-3" style="border-radius: 16px;">
         <div class="modal-header py-0 pt-2" style="border-bottom: none;">
@@ -586,7 +586,7 @@
   </div>
 
 {{-- education modal --}}
-<div class="modal fade" id="editEducationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="addEducationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content p-3" style="border-radius: 16px;">
         <div class="modal-header py-0 pt-2" style="border-bottom: none;">

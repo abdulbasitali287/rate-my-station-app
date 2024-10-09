@@ -360,7 +360,7 @@
                             <h2 class="fw-bold" style="font-size: 28px;">Newsletter</h2>
                         </div>
                         <div class="col-md-4 text-center">
-                            <a href="#" class="see-all-link">See all</a>
+                            <a href="{{ url('newsletter') }}" class="see-all-link">See all</a>
                         </div>
                     </div>
                     <div class="row">
@@ -432,7 +432,7 @@
 
             <div class="row pt-5">
                 <div class="col text-center">
-                    <button class="see-all-products-btn">See all Products</button>
+                    <a href="{{ url('shop') }}" class="see-all-products-btn">See all Products</a>
                 </div>
             </div>
         </div>

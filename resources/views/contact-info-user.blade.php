@@ -15,7 +15,7 @@
                         <a href="#" class="text-white fw-semiBold px-3 py-1" style="background-color: #89C400;border-radius: 10px;font-size: 14px;">Subscibed</a>
                     </div>
                     <div style="padding-inline-start: 14px;">
-                        <h2 class="position-relative" style="font-size: 30px;font-weight: bold;">KABC <span class="position-absolute" style="top: -4px;right: 92px;"><img src="{{ asset('user/assets/vectors/gare-vector.png') }}" alt=""></span></h2>
+                        <h2 class="position-relative" style="font-size: 30px;font-weight: bold;">KABC <span class="position-absolute" style="top: -2px;right: 104px;"><img src="{{ asset('user/assets/vectors/gare-vector.png') }}" alt=""></span></h2>
                         <p class="pb-2" style="color: #828282;">TV News Station</p>
                         <p class="fw-light" style="color: #194D79;font-size: 18px;"><span style="display: inline-block;padding-inline-end: 4px;"><img src="{{ asset('user/assets/vectors/map-vector.png') }}" alt=""></span>Los Angeles, CA | DMA: 2</p>
                     </div>
@@ -23,7 +23,7 @@
             </div>
             <div class="col-md-3 pb-4" style="border-bottom: 1px solid #E0E0E0;">
                 <div style="width: 100%;height: 100%;display: flex;flex-direction: column;justify-content: center;">
-                    <a href="#" class="text-white fw-bold border-0" style="margin-block: 6px;background-color: var(--darkCerulean);padding-block: 11px;border-radius: 12px;letter-spacing: 0.5px;transition: all 0.5s;text-align: center;">
+                    <a href="{{ url('account-settings-station-profile') }}" class="text-white fw-bold border-0" style="margin-block: 6px;background-color: var(--darkCerulean);padding-block: 11px;border-radius: 12px;letter-spacing: 0.5px;transition: all 0.5s;text-align: center;">
                         <span class="d-inline-block me-2">
                         <img src="{{ asset('user/assets/vectors/settings-vector.png') }}" alt=""></span>
                         Account settings

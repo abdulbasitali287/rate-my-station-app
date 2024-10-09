@@ -27,7 +27,7 @@
             </div>
             <div class="col-md-3 pb-4" style="border-bottom: 1px solid #E0E0E0;">
                 <div style="width: 100%;height: 100%;display: flex;flex-direction: column;justify-content: center;">
-                    <a href="#" class="text-white fw-bold border-0" style="margin-block: 6px;background-color: var(--darkCerulean);padding-block: 11px;border-radius: 12px;letter-spacing: 0.5px;transition: all 0.5s;text-align: center;">
+                    <a href="{{ url('account-settings-user-profile') }}" class="text-white fw-bold border-0" style="margin-block: 6px;background-color: var(--darkCerulean);padding-block: 11px;border-radius: 12px;letter-spacing: 0.5px;transition: all 0.5s;text-align: center;">
                         <span class="d-inline-block me-2">
                         <img src="{{ asset('user/assets/vectors/settings-vector.png') }}" alt=""></span>
                         Account settings
