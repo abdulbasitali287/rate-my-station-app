@@ -16,10 +16,10 @@
             <p class="card-price pb-3">${{ $amount }}</p>
             <div class="row">
                 <div class="col-md-6">
-                    <a href="{{ url('product-detail') }}" class="view-details-btn btn btn-view-details w-100">View Details</a>
+                    <a href="{{ url('product-detail') }}" class="d-inline-block text-center w-100 fw-bold view-details">View Details</a>
                 </div>
                 <div class="col-md-6">
-                    <button class="add-to-cart-btn btn btn-add-to-cart w-100">Add to Cart</button>
+                    <a href="#" class="d-inline-block text-center w-100 add-to-cart-btn">Add to Cart</a>
                 </div>
             </div>
         </div>

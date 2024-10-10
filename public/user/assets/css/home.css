@@ -1,0 +1,299 @@
+@import url('/user/assets/css/common/newsletter-sidebar.css');
+/* ============================== */
+        /* home css */
+/* ============================== */
+/* Hero Section */
+#home-main .banner-section {
+    height: 500px;
+    background-image: url('/user/assets/ellipse/banner-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home-main #hero-center-div {
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-main .hero-heading h1 {
+    width: 100%;
+    font-size: 58px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 60px;
+}
+
+#home-main .hero-search {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#home-main .hero-search .input-group {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#home-main .hero-search-prepend {
+    background-color: #89C400;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#home-main .hero-search-prepend span {
+    background-color: #89C400;
+}
+
+#home-main .input-group .btn.dropdown-toggle {
+    border-radius: 0;
+    border: none;
+    background-color: #89C400;
+    color: #FFF;
+}
+
+#home-main .form-control {
+    color: #828282;
+    border: none;
+    outline: none;
+    padding-inline: 24px;
+}
+#home-main .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#home-main .input-group-append .input-group-text {
+    border: 0;
+    border-radius: 0;
+    height: 100%;
+    padding-inline: 14px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.hero-search .input-group-text .small-icon,
+#home-main .hero-search .input-group-text .search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+#home-main .hero-link {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #fff;
+}
+
+#home-main .hero-link:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Styling */
+#home-main .input-group-prepend .dropdown-toggle {
+    border-radius: 0;
+    border: none;
+    background-color: #89C400;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+#home-main .btn.dropdown-toggle::after {
+    content: '';
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    margin-left: 8px;
+    margin-inline-start: 16px;
+}
+
+#home-main .input-group-prepend .dropdown-menu {
+    min-width: 200px;
+}
+
+#home-main .review-container {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+#home-main .review-header {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F2F2F2;
+    margin-bottom: 20px;
+}
+
+#home-main .review-header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#home-main .review-image img {
+    width: 52px;
+    height: 52px;
+}
+
+#home-main .review-title {
+    font-weight: 500;
+}
+
+#home-main .job-details-link {
+    color: #194D79;
+    font-weight: 500;
+}
+
+#home-main .review-verification {
+    text-align: right;
+}
+
+.gare-icon img,
+#home-main .rating-logo img {
+    width: 47px;
+    height: 47px;
+}
+
+#home-main .verified-rating {
+    color: #89C400;
+}
+
+.rating-of,
+#home-main .news-channel-name {
+    color: #828282;
+}
+
+#home-main .news-director-info {
+    padding-left: 10px;
+}
+
+#home-main .news-director {
+    color: #828282;
+}
+
+#home-main .current-badge {
+    padding: 2px 10px;
+    background-color: #89C400;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 10px;
+}
+
+#home-main .news-director-name {
+    font-weight: 700;
+}
+
+#home-main .review-content-block {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.work-experience-label,
+.additional-comments-label,
+#home-main .review-director-label {
+    color: #828282;
+}
+
+#home-main .comments-section {
+    padding: 7px 0;
+}
+
+#home-main .see-more-link {
+    color: #194D79;
+    font-weight: 600;
+}
+
+#home-main .ratings-section .rating-bars {
+    padding: 10px 0;
+}
+
+#home-main .rating-bar {
+    display: inline-block;
+    width: 34px;
+    height: 12px;
+    border-radius: 15px;
+}
+
+#home-main .rating-bar.active {
+    background-color: #89C400;
+}
+
+#home-main .rating-bar.inactive {
+    background-color: #F2F2F2;
+}
+
+#home-main .review-tags {
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E0E0E0;
+}
+#home-main .review-tags p {
+    color: #828282;
+    font-size: 14px;
+}
+
+#home-main .tag {
+    padding: 2px 10px;
+    background-color: #F2F2F2;
+    border-radius: 6px;
+    margin-right: 5px;
+    color: #828282;
+}
+
+.like-button,
+#home-main .report-button {
+    background-color: #F2F2F2;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    color: #89C400;
+    margin-right: 5px;
+}
+
+#home-main .report-button {
+    color: #828282;
+}
+
+#home-main .submitted-date {
+    color: #828282;
+}
+
+#home-main .review-response {
+    display: flex;
+    margin-top: 15px;
+}
+
+#home-main .review-response-logo img {
+    width: 56px;
+    height: 43px;
+}
+
+#home-main .response-message {
+    background-color: #F2F2F2;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+#home-main .response-date {
+    color: #828282;
+    padding-top: 10px;
+}
+#home-main .rating-label{
+    color: #828282;
+    font-size: 14px;
+}
+#home-main .review-footer .submitted-date{
+    font-size: 14px;
+    color: #828282;
+}

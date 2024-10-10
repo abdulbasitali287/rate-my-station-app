@@ -42,6 +42,6 @@
 <x-user.product-carousel />
 
 {{-- looking for work --}}
-<x-user.looking-for-work title="Looking for Work?" paragraph="Subscribe to our Job Center for instant access to thousands of job opportunities in media." />
+<x-user.searching-queries title="Looking for Work?" paragraph="Subscribe to our Job Center for instant access to thousands of job opportunities in media." />
 
 @endsection

@@ -137,5 +137,5 @@
 </section>
 
 {{-- looking for work --}}
-<x-user.looking-for-work title="Stil have question?" buttonText="Contact us" paragraph="Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. " />
+<x-user.searching-queries title="Stil have question?" buttonText="Contact us" paragraph="Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. " />
 @endsection

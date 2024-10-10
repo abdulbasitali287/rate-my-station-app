@@ -1,0 +1,110 @@
+/* ============================== */
+        /* Newsletter Sidebar css */
+/* ============================== */
+/* General Styling */
+.left-title-header{
+    padding-block: 18px;
+}
+.right-title-header{
+    padding-block: 18px;
+}
+.left-col-title {
+    font-size: 36px;
+}
+.right-col-title {
+    font-size: 28px;
+}
+.see-all-link {
+    color: #194D79;
+}
+/* Latest Article Styling */
+.latest-article {
+    width: 384px;
+    background: #fff;
+    border-radius: 13px;
+    margin: 10px 0 15px;
+}
+
+.latest-article-image {
+    width: 100%;
+    height: 211px;
+}
+
+.latest-article-image img {
+    object-fit: cover;
+}
+
+.latest-article-title {
+    padding: 20px 20px 40px;
+}
+
+.latest-article-title p {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+/* Newsletter Subscribe Styling */
+.newsletter-subscribe {
+    width: 384px;
+    background: #fff;
+    border-radius: 13px;
+    margin: 10px 0 25px;
+    padding: 20px;
+}
+
+.newsletter-subscribe h6 {
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.newsletter-subscribe .form-control {
+    background-color: #F2F2F2;
+    font-size: 14px;
+    padding: 12px;
+    margin: 15px 0;
+}
+
+.newsletter-subscribe .subscribe-btn {
+    background-color: #194D79;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* RMS Follow Section */
+#lr-main-heading {
+    margin-bottom: 0;
+}
+
+.rms-follow-section {
+    margin-top: 10px;
+}
+.rms-follow-section h2{
+    font-size: 28px;
+}
+
+.rms-follow {
+    width: 384px;
+    background: #fff;
+    border-radius: 13px;
+    margin: 10px 0 25px;
+    padding: 20px;
+}
+
+.rms-social-item {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 18px;
+    height: 22px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.rms-social-item span {
+    font-weight: bold;
+}

@@ -1,4 +1,15 @@
 
+
+@import url('/user/assets/css/common/product-card.css');
+@import url('/user/assets/css/common/searching-queries.css');
+@import url('/user/assets/css/common/header.css');
+@import url('/user/assets/css/about.css');
+@import url('/user/assets/css/jobs.css');
+@import url('/user/assets/css/job-details.css');
+@import url('/user/assets/css/home.css');
+@import url('/user/assets/css/newsletter.css');
+@import url('/user/assets/css/shop.css');
+
 /* ============================== */
         /* variables */
 /* ============================== */
@@ -18,13 +29,13 @@
 .public-sans-body {
     font-family: "Public Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400; /* You can change the value between 100 to 900 */
+    font-weight: 400;
     font-style: normal;
 }
-#lr-main-heading{
+/* #lr-main-heading{
     font-weight: 700;
     padding-block: 30px;
-}
+} */
 p{
     margin: 0;
 }
@@ -45,199 +56,11 @@ select{
     border: none;
     background-color: transparent;
 }
-option{
-}
 button{
     border: none;
     background-color: transparent;
 }
-/* ============================== */
-        /* header css */
-/* ============================== */
-/* Logo container */
-header{
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Ensure it's on top of other elements */
-    height: 85px; /* Example height */
-    background-color: #fff; /* Optional, just to make it visible */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-header .container > div:first-child {
-    width: 136px;
-    height: 34px;
-}
-header .container > div:first-child img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
-/* Menu list items (li) */
-header .container .flex-grow-1 ul li {
-    padding-inline: 18px;
-}
-
-/* Links inside the menu (a tags) */
-header .container .flex-grow-1 ul li a {
-    font-weight: 400;
-    color: #000;
-    font-size: 18px;
-}
-header .container .flex-grow-1 ul li.active a::after {
-    content: '';
-    display: flex;
-    width: 35px;
-    border-bottom: 3px solid #89C400;
-    margin-inline: auto;
-}
-
-/* Cart icon container */
-header .container > div:last-child > div:first-child {
-    /* padding-inline: 10px;
-    display: flex;
-    margin-inline-end: 10px; */
-}
-header .container > div:last-child > div:first-child span{
-    /* width: 18px;
-    height: 18px;
-    background-color: #9BDB08;
-    position: absolute;
-    top: -6px;
-    right: 0;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffff;
-    font-size: 12px; */
-}
-/* Login link */
-header .container > div:last-child > div:last-child a {
-    color: var(--darkCerulean);
-    border: 2px solid var(--darkCerulean);
-    padding-inline: 39px;
-    padding-block: 7px;
-    border-radius: 8px;
-    font-weight: bold;
-}
-/* ============================== */
-/* hero section css */
-/* ============================== */
-/* Hero Section */
-#hero-section {
-    height: 500px;
-    background-image: url('/user/assets/ellipse/banner-bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#hero-section #hero-center-div {
-    width: 720px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#hero-section .hero-heading h1 {
-    width: 100%;
-    font-size: 58px;
-    font-weight: bold;
-    color: #fff;
-    line-height: 60px;
-}
-
-#hero-section .hero-search {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-#hero-section .hero-search .input-group {
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.hero-search-prepend {
-    background-color: #89C400;
-    padding: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-}
-.hero-search-prepend span{
-    background-color: #89C400;
-}
-
-#hero-section .input-group .btn.dropdown-toggle {
-    border-radius: 0;
-    border: none;
-    background-color: #89C400;
-    color: #FFF;
-}
-
-#hero-section .form-control {
-    color: #828282;
-    border: none;
-    outline: none;
-    padding-inline: 24px;
-}
-#hero-section .form-control:focus{
-    outline: none;
-    box-shadow: none;
-}
-#hero-section .input-group-append .input-group-text {
-    border: 0;
-    border-radius: 0;
-    height: 100%;
-    padding-inline: 14px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-#hero-section .hero-search .input-group-text .small-icon,
-#hero-section .hero-search .input-group-text .search-icon {
-    width: 20px;
-    height: 20px;
-}
-
-#hero-section .hero-link {
-    font-size: 18px;
-    font-weight: 500;
-    text-decoration: underline;
-    cursor: pointer;
-    color: #ffff;
-}
-
-#hero-section .hero-link:hover {
-    text-decoration: underline;
-}
-
-/* Dropdown Styling */
-#hero-section .input-group-prepend .dropdown-toggle {
-    border-radius: 0;
-    border: none;
-    background-color: #89C400;
-    color: #FFF;
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-}
-/* Customizing the dropdown button arrow */
-#hero-section .btn.dropdown-toggle::after {
-    content: '';
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    transform: rotate(45deg);
-    margin-left: 8px;
-    margin-inline-start: 16px;
-}
-.input-group-prepend .dropdown-menu {
-    min-width: 200px;
-}
 /* view page banner background image */
 /* #hero-section.view-page-banner {
     background-size: cover;
@@ -249,7 +72,7 @@ header .container > div:last-child > div:last-child a {
 /* ============================== */
 /* RateMyStationShop css */
 /* ============================== */
-#shop-container {
+/* #shop-container {
     padding: 20px 0;
 }
 
@@ -279,69 +102,8 @@ header .container > div:last-child > div:last-child a {
     color: #89C400;
     margin-top: 1rem;
     font-weight: 600;
-}
+} */
 
-/* ============================== */
-/* About us css */
-/* ============================== */
-#about-us-section {
-    margin-top: -380px;
-}
-
-#about-us-section .about-card {
-    padding: 25px;
-    margin-block: 10px;
-    background-color: #FFFFFF;
-    border-radius: 12px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#about-us-section .about-card h6 {
-    color: var(--darkCerulean);
-    font-size: 16px;
-    font-weight: 700;
-}
-
-#about-us-section .about-card p {
-    font-weight: 700;
-    padding-block: 10px;
-}
-
-#about-us-section .creator-image-container {
-    width: 402px;
-    height: 402px;
-    border-radius: 24px;
-    overflow: hidden;
-}
-
-#about-us-section .creator-image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#about-us-section .creator-message-block {
-    background-color: #F2F2F2;
-    padding: 26px;
-    border-radius: 10px;
-}
-
-#about-us-section .creator-message-block img {
-    width: 80px;
-    height: 60px;
-    object-fit: cover;
-}
-
-#about-us-section .creator-message-block h6 {
-    color: var(--darkCerulean);
-    font-size: 16px;
-    font-weight: 700;
-}
-
-#about-us-section .creator-message-block p {
-    font-weight: 700;
-    padding-bottom: 10px;
-}
 /* ============================== */
 /* JOBS OPENING PAGE CSS */
 /* ============================== */
@@ -355,9 +117,9 @@ header .container > div:last-child > div:last-child a {
 /* ============================== */
         /* VIEW JOB PAGE CSS */
 /* ============================== */
-#view-job-main .container{
+/* #view-job-main .container{
     border-bottom: 1px solid #BDBDBD;
-}
+} */
 /* ============================== */
         /* pagination */
 /* ============================== */
@@ -428,7 +190,7 @@ header .container > div:last-child > div:last-child a {
 /* ============================== */
         /* hover elements */
 /* ============================== */
-.subscribe-btn{
+/* .subscribe-btn{
     background-color: var(--darkCerulean);
     color: #ffff;
     font-weight: 500;
@@ -441,7 +203,7 @@ header .container > div:last-child > div:last-child a {
 }
 .subscribe-btn:hover{
     background-color: var(--trueBlueHover);
-}
+} */
 .load-more-btn-parent{
     display: flex;
     justify-content: center;
@@ -461,7 +223,7 @@ header .container > div:last-child > div:last-child a {
 .load-more-btn:hover{
     background-color: var(--trueBlueHover);
 }
-.view-details-btn{
+/* .view-details-btn{
     color: var(--darkCerulean);
     border: 2px solid var(--darkCerulean);
     padding-block: 8px;
@@ -469,8 +231,8 @@ header .container > div:last-child > div:last-child a {
 }
 .view-details-btn:hover{
     border-color: var(--darkCerulean);
-}
-.add-to-cart-btn{
+} */
+/* .add-to-cart-btn{
     background-color: var(--darkCerulean);
     color: #fff;
     border: 2px solid transparent;
@@ -480,7 +242,7 @@ header .container > div:last-child > div:last-child a {
 .add-to-cart-btn:hover{
     background-color: var(--trueBlueHover);
     color: var(--white);
-}
+} */
 .see-all-products-btn{
     background-color: var(--darkCerulean);
     color: #fff;
@@ -494,7 +256,7 @@ header .container > div:last-child > div:last-child a {
 .see-all-products-btn:hover{
     background-color: var(--trueBlueHover);
 }
-.job-center-subscribe-btn{
+/* .job-center-subscribe-btn{
     background-color: #ffff;
     border: 1px solid transparent;
     border-radius: 10px;
@@ -509,7 +271,7 @@ header .container > div:last-child > div:last-child a {
     background-color: transparent;
     color: var(--white);
     border: 1px solid var(--white);
-}
+} */
 
 /* ============================== */
 /* TERMS ADN CONDITIONS CSS */
@@ -567,7 +329,7 @@ header .container > div:last-child > div:last-child a {
 #notifications-section #notification-list-card p > span:last-child{
     font-size: 12px;
 }
-#latest-articles .see-all-link {
+/* #latest-articles .see-all-link {
     color: #194D79;
 }
 #latest-articles .latest-article {
@@ -582,7 +344,7 @@ header .container > div:last-child > div:last-child a {
     height: 211px;
 }
 #latest-articles .latest-article > div:first-child img {
-    object-fit: 'conver';
+    object-fit: 'cover';
 }
 #latest-articles .latest-article > div:last-child {
     padding-inline: 20px;
@@ -650,7 +412,7 @@ header .container > div:last-child > div:last-child a {
 
 #latest-articles .rms-social-item span {
     font-weight: bold;
-}
+} */
 /* ============================== */
 /* AUTHENTICATION LOGIN CSS */
 /* ============================== */

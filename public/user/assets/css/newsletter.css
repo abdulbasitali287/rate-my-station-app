@@ -1,0 +1,184 @@
+/* ============================== */
+        /* newsletter */
+/* ============================== */
+#newsletter-main .banner-section {
+    height: 500px;
+    background-image: url('/user/assets/ellipse/banner-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Custom margin class */
+#newsletter-main .mt-minus-412 {
+    margin-top: -412px;
+}
+
+/* General Styling */
+#newsletter-main .newsletter-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+/* Newsletter content styling */
+#newsletter-main .newsletter-content {
+    padding: 40px 80px;
+}
+
+#newsletter-main .newsletter-content h1 {
+    font-size: 36px;
+}
+
+#newsletter-main .text-muted {
+    color: #828282;
+}
+#newsletter-main .text-muted img{
+    width: 15px;
+    height: 14px;
+}
+
+#newsletter-main .text-small {
+    font-size: 12px;
+}
+
+#newsletter-main .author-name {
+    color: #194D79;
+    font-weight: 500;
+}
+
+#newsletter-main .article-excerpt {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Dot indicators */
+#newsletter-main .dot-indicators {
+    padding-top: 10px;
+}
+
+#newsletter-main .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+    background-color: #E0E0E0;
+    border-radius: 50%;
+}
+
+#newsletter-main .dot.active {
+    background-color: #194D79;
+}
+
+/* Box shadow and border radius */
+#newsletter-main .shadow {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#newsletter-main .rounded-lg {
+    border-radius: 18px;
+}
+
+/* ======================== */
+/* ======================== */
+/* Search bar styling */
+#newsletter-main .search-bar {
+    border: 1px solid #828282;
+    border-radius: 10px;
+    max-width: 28rem;
+}
+
+#newsletter-main .search-bar input {
+    padding-inline-start: 10px;
+    padding-block: 8px;
+    background-color: transparent;
+}
+
+#newsletter-main .search-bar .input-group-text img {
+    display: inline-block;
+}
+
+/* Text and button styling */
+#newsletter-main .text-muted {
+    color: #828282;
+}
+
+#newsletter-main .fw-medium {
+    font-weight: 500;
+}
+
+/* Dropdown button styling */
+#newsletter-main .btn-outline-secondary {
+    color: #828282;
+    border-color: #828282;
+}
+
+#newsletter-main .btn-outline-secondary:hover {
+    color: #333;
+}
+
+/* Additional spacing and layout fixes */
+#newsletter-main .pe-3 {
+    padding-right: 1rem !important;
+}
+
+#newsletter-main .pe-2 {
+    padding-right: 0.5rem !important;
+}
+/* ========================= */
+/* ========================= */
+/* General styling */
+#newsletter-main .main-img-article .shadow-sm {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#newsletter-main .main-img-article /* #large-img-article img {
+    border-radius: 18px;
+} */
+
+#newsletter-main .main-img-article #large-img-article .btn {
+    background-color: transparent;
+}
+
+/* List items for stats */
+#newsletter-main .main-img-article ul.d-flex.list-unstyled li {
+    display: flex;
+    align-items: center;
+}
+
+#newsletter-main .main-img-article ul.d-flex.list-unstyled li img {
+    margin-top: -6px;
+}
+
+#newsletter-main .main-img-article .large-article-footer .lg-footer-left-side span:first-child{
+    color: #828282;
+}
+#newsletter-main .main-img-article .large-article-footer .lg-footer-left-side span:last-child{
+    color: #194D79;
+}
+#newsletter-main .main-img-article .header-date .small{
+    margin-top: 5px;
+}
+/* ============================ */
+/* ============================ */
+/* General styling */
+
+#newsletter-main .small-img-article .img-container {
+    width: 360px;
+}
+
+#newsletter-main .small-img-article .img-container img {
+    object-fit: cover;
+    border-radius: 18px 0 0 18px;
+}
+#newsletter-main .small-img-article .small-card-article-header p span:last-child{
+    margin-top: 3px;
+}
+#newsletter-main .small-img-article .small-card-article-footer p span:last-child{
+    color: #194D79;
+}
+#newsletter-main .small-img-article .small-card-article-footer p span:first-child{
+    color: #828282;
+}

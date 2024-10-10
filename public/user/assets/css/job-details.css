@@ -1,0 +1,142 @@
+/* ============================== */
+        /* Job Details */
+/* ============================== */
+
+/* Banner Section */
+#job-details-main .banner-section {
+    height: 294px;
+    background-image: url('/user/assets/ellipse/job-opening.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Job Details Section */
+#job-details-main .job-details-section {
+    margin-top: -164px;
+}
+#job-details-main .job-details-section .main{
+    border-radius: 12px;
+}
+#job-details-main .job-details-section .justify-content-around{
+    background-color: #F2F2F2;
+}
+#job-details-main .job-details-section .justify-content-around span{
+    color: #194D79;
+}
+
+#job-details-main .logo-container {
+    width: 137px;
+    height: 106px;
+}
+
+#job-details-main .job-details-section .first-col .icons-text{
+    border-radius: 10px;
+}
+#job-details-main .job-details-section .second-col div a:first-child{
+    border: 2px solid #828282;
+    border-radius: 10px;
+    padding: 10px 28px;
+}
+#job-details-main .job-details-section .second-col div a:last-child{
+    border: 2px solid #828282;
+    border-radius: 10px;
+    padding: 10px 28px;
+}
+
+#job-details-main .subscribe-btn{
+    background-color: var(--darkCerulean);
+    color: #ffff;
+    font-weight: 500;
+    width: 100%;
+    padding-block: 11px;
+    border-radius: 12px;
+    border: none;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+}
+#job-details-main .subscribe-btn:hover{
+    background-color: var(--trueBlueHover);
+}
+
+/*  */
+#job-details-main .job-description-section {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+#job-details-main .job-description-section .container{
+    border-bottom: 2px solid #BDBDBD;
+    padding-bottom: 40px;
+}
+
+#job-details-main .job-content {
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#job-details-main .job-details, .qualifications, .additional-info {
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 30px;
+}
+
+#job-details-main .job-details {
+    padding-bottom: 10px;
+}
+
+#job-details-main .job-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-block: 10px;
+}
+
+#job-details-main .job-description-text {
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+#job-details-main .qualification-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+#job-details-main .qualification-list {
+    padding-left: 2em;
+    font-weight: 300;
+}
+#job-details-main .qualification-list li{
+    list-style: disc;
+}
+
+#job-details-main .additional-info {
+    padding-top: 50px;
+}
+
+#job-details-main .info-item {
+    padding: 10px 0;
+}
+
+#job-details-main .info-label {
+    color: #828282;
+}
+
+#job-details-main .info-value {
+    font-weight: bold;
+}
+
+#job-details-main .save-btn-container {
+    padding-top: 40px;
+}
+
+#job-details-main .save-btn {
+    border: none;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+#job-details-main .icon-wrapper {
+    display: inline-block;
+    padding-right: 10px;
+}

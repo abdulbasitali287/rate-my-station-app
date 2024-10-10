@@ -12,7 +12,7 @@
                 <li class="{{ Request::is('about') ? 'active' : '' }}"><a href="{{ url('about') }}">About</a></li>
                 <li class="{{ Request::is('newsletter') ? 'active' : '' }}"><a
                         href="{{ url('newsletter') }}">Newsletter</a></li>
-                <li class="{{ Request::is('view-jobs') ? 'active' : '' }}"><a href="{{ url('view-jobs') }}">Jobs</a>
+                <li class="{{ Request::is('jobs') ? 'active' : '' }}"><a href="{{ url('jobs') }}">Jobs</a>
                 </li>
                 <li class="{{ Request::is('shop') ? 'active' : '' }}"><a href="{{ url('shop') }}">Shop</a></li>
                 <li class="{{ Request::is('contact-us') ? 'active' : '' }}"><a

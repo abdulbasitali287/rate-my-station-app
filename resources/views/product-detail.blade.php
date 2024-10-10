@@ -193,40 +193,39 @@
 </section>
 
 {{-- new arrivals --}}
-<section>
+<section class="product-cards-section">
     <div class="container">
-        <div class="d-flex justify-content-between py-4">
+        <div class="d-flex justify-content-between pt-4">
             <h2 class="fw-bold">Similar products</h2>
             <a href="#" style="font-weight: normal;color: #194D79;">See all</a>
         </div>
     </div>
-    {{-- shop container --}}
-    <div id="shop-container" class="container position-relative">
+    <div class="container product-cards-container">
         <div class="row">
 
-            <x-user.product-card visibility="visible" image="user/assets/img/image-1.png" title="Don’t Make Me Use My News Voice Face Mask" amount="18.00" />
+            <x-user.product-card visibility="visible" image="user/assets/img/image-1.png"
+                title="Don’t Make Me Use My News Voice Face Mask" amount="18.00" />
 
-            <x-user.product-card visibility="visible" image="user/assets/img/image-2.png" title="America Needs Local News Sweatshirt" amount="25.00 – $33.50" />
+            <x-user.product-card visibility="visible" image="user/assets/img/image-2.png"
+                title="America Needs Local News Sweatshirt" amount="25.00 – $33.50" />
 
             <x-user.product-card image="user/assets/img/image-3.png" title="Anonymous Source Onesie" amount="18.00" />
 
-            <x-user.product-card image="user/assets/img/image-4.png" title="You Are A PKG Framed Poster" amount="26.00 – $105.00" />
+            <x-user.product-card image="user/assets/img/image-4.png" title="You Are A PKG Framed Poster"
+                amount="26.00 – $105.00" />
 
         </div>
-        <div class="d-flex justify-content-between position-absolute" style="top: 0;right: 0;left: 0;transform: translate()">
-            <button type="button" style="background-color: #FFFFFF;padding-inline: 15px;padding-block: 7px;border-radius: 100%;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);border: none;transform: translate(-20px, 235px);"><img src="{{ asset('user/assets/vectors/left-arrow-gray.png') }}" alt=""></button>
-            <button type="button" style="background-color: #FFFFFF;padding-inline: 15px;padding-block: 7px;border-radius: 100%;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);border: none;transform: translate(20px, 235px);"><img src="{{ asset('user/assets/vectors/right-arrow-gray.png') }}" alt=""></button>
+        <div class="d-flex justify-content-between position-absolute" style="top: 50%;right: -26px;left: -26px;opacity: 0.8">
+            <button type="button" style="background-color: #FFFFFF;padding-inline: 15px;padding-block: 10px;border-radius: 100%;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);border: none;"><img src="{{ asset('user/assets/vectors/left-arrow-gray.png') }}" alt=""></button>
+            <button type="button" style="background-color: #FFFFFF;padding-inline: 15px;padding-block: 10px;border-radius: 100%;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);border: none;"><img src="{{ asset('user/assets/vectors/right-arrow-gray.png') }}" alt=""></button>
         </div>
     </div>
 </section>
 
-<!-- Button trigger modal -->
-{{-- <button type="button" class="btn btn-primary" >
-    Launch demo modal
-  </button> --}}
+@endsection
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="container p-4">
@@ -276,4 +275,3 @@
       </div>
     </div>
   </div>
-@endsection

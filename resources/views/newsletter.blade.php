@@ -1,130 +1,169 @@
 @extends('layout.main')
 
 @section('content')
+    <main id="newsletter-main">
 
-    {{-- Hero Section --}}
-    <section id="hero-section" class="hero-section"></section>
+        {{-- banner Section --}}
+        <section class="banner-section"></section>
 
-    <section style="margin-top: -412px;">
-        <div class="container">
-            <div class="row overflow-hidden" style="border-radius: 18px;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);">
-                <div class="col-md-6 p-0">
-                    <div class="">
-                        <img src="{{ asset('user/assets/img/newsletter-banner.png') }}" style="width: 100%;" alt="">
+        <section class="newsletter-banner mt-minus-412">
+            <div class="container">
+                <div class="row overflow-hidden rounded-lg shadow">
+                    <div class="col-md-6 p-0">
+                        <img src="{{ asset('user/assets/img/newsletter-banner.png') }}" class="w-100" alt="Newsletter Banner">
                     </div>
-                </div>
-                <div class="col-md-6 p-0 bg-white">
-                    <div style="padding-inline: 80px;padding-block: 40px;">
-                        <h1 class="fw-bold">Can Starting In A Top 50 Market Really Ruin Your Journalism Career?</h1>
-                        <div class="d-flex justify-content-between py-4">
-                            <p style="color: #828282;"><span style="display: inline-block;padding-inline-end: 6px;"><img src="{{ asset('user/assets/vectors/timer-vector.png') }}" alt=""></span><span style="font-size: 12px;">Updated 8 hours ago</span></p>
-                            <p><span>Written by </span><span style="color: #194D79;font-weight: 500;">Soul Witness</span></p>
-                        </div>
-                        <p>
-                            Feugiat sagittis, turpis et a fermentum blandit amet in phasellus. Nibh nunc ultrices ac at at sit purus pellentesque a. Urna, eget elit at risus tempus, fames amet. Nulla cursus diam vel amet lacus, sem id. Cursus auctor pulvinar dignissim mauris non ultrices. Sed.
-                        </p>
-                        <div style="padding-block: 10px;">
-                            <span class="d-inline-block p-1 me-1" style="background-color: #194D79;border-radius: 100%;"></span>
-                            <span class="d-inline-block p-1 me-1" style="background-color: #E0E0E0;border-radius: 100%;"></span>
-                            <span class="d-inline-block p-1 me-1" style="background-color: #E0E0E0;border-radius: 100%;"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="row py-4">
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-8">
-                            <div class="input-group" style="width: max-content;border-radius: 10px;overflow: hidden;display: flex;align-items: center;padding-block: 3px;padding-inline-end: 10px;border: 1px solid #4F4F4F;">
-                                <input type="text" placeholder="Search articles or writer" style="padding-inline-end: 252px;padding-inline-start: 10px;padding-block: 4px;border: none;background-color: transparent;">
-                                <span><img src="{{ asset('user/assets/vectors/search-30.png') }}" style="display: inline-block;background-color: transparent;" alt=""></span>
+                    <div class="col-md-6 p-0 bg-white">
+                        <div class="newsletter-content h-100">
+                            <h1 class="fw-bold">Can Starting In A Top 50 Market Really Ruin Your Journalism Career?</h1>
+                            <div class="d-flex justify-content-between py-4">
+                                <p class="text-muted">
+                                    <span class="me-1"><img src="{{ asset('user/assets/vectors/timer-vector.png') }}"
+                                            alt="Timer"></span>
+                                    <span class="text-small">Updated 8 hours ago</span>
+                                </p>
+                                <p><span>Written by </span><span class="author-name">Soul Witness</span></p>
+                            </div>
+                            <p class="article-excerpt fw-light">
+                                Feugiat sagittis, turpis et a fermentum blandit amet in phasellus. Nibh nunc ultrices ac at
+                                at sit purus pellentesque a. Urna, eget elit at risus tempus, fames amet. Nulla cursus diam
+                                vel amet lacus, sem id. Cursus auctor pulvinar dignissim mauris non ultrices. Sed.
+                            </p>
+                            <div class="dot-indicators pt-5">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex justify-content-end">
-                    <div class="d-flex">
+            </div>
+        </section>
+
+
+        <section class="filter-header">
+
+            <div class="container py-4">
+                <div class="row">
+                    <!-- Search Input -->
+                    <div class="col-md-8">
+                        <div class="input-group d-flex justify-content-center align-items-center search-bar">
+                            <input type="text" class="fw-light border-0 ps-3 flex-grow-1"
+                                placeholder="Search articles or writer">
+                            <span class="input-group-text bg-transparent border-0 pe-3">
+                                <img src="{{ asset('user/assets/vectors/search-30.png') }}" width="19" height="19"
+                                    alt="Search Icon">
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Filter & Sort Options -->
+                    <div class="col-md-4 d-flex justify-content-end">
                         <div class="d-flex align-items-center pe-3">
-                            <p class="pe-2" style="color: #828282;font-weight: 500;font-size: 14px;">Filter</p>
-                            <div class="input-group-prepend">
-                                <button class="btn btn-outline-secondary dropdown-toggle" style="color: #828282;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Writer</button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="#">Action</a>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                  <a class="dropdown-item" href="#">Something else here</a>
-                                  <div role="separator" class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Separated link</a>
-                                </div>
-                              </div>
+                            <p class="mb-0 pe-2 text-muted fw-medium">Filter</p>
+                            <div class="dropdown">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Writer
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                </ul>
+                            </div>
                         </div>
+
                         <div class="d-flex align-items-center">
-                            <p class="pe-2" style="color: #828282;font-weight: 500;font-size: 14px;">Short</p>
-                            <div class="input-group-prepend">
-                                <button class="btn btn-outline-secondary dropdown-toggle" style="color: #828282;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Newest</button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="#">Action</a>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                  <a class="dropdown-item" href="#">Something else here</a>
-                                  <div role="separator" class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Separated link</a>
-                                </div>
-                              </div>
+                            <p class="mb-0 pe-2 text-muted fw-medium">Sort</p>
+                            <div class="dropdown">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Newest
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        {{-- latest articles & recommended --}}
-        <div class="container" style="border-bottom: 1px solid #BDBDBD;padding-bottom: 30px;">
-            <div class="row">
-                {{-- latest ratings --}}
-                <div class="col col-md-8">
-                    <div id="lr-main-heading">
-                        <h2>Latest Articles</h2>
-                    </div>
-                    {{-- large image card --}}
-                    <div>
-                        <div id="large-img-article" class="overflow-hidden mb-3" style="border-radius: 18px;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);">
-                            <div>
-                                <div>
-                                    <img src="{{ asset('user/assets/img/time-watch.png') }}" width="100%" alt="">
-                                </div>
-                                <div class="bg-white" style="padding: 25px;">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <p style="color: #828282;display: flex;align-items: center;">
-                                                <span style="display: inline-block;padding-inline-end: 3px;">
-                                                    <img src="{{ asset('user/assets/vectors/timer.png') }}" width="15px" alt="">
-                                                </span>
-                                                <span style="font-size: 12px;display: inline-block;padding-top: 5px;padding-inline-start: 3px;">May 24, 2022</span>
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="{{ asset('user/assets/img/three-dots-2.png') }}" alt="">
-                                            </button>
-                                            <div class="dropdown-menu">
 
-                                            </div>
-                                        </div>
-                                    </div>
+            {{-- latest articles & recommended --}}
+            <div class="container latest-articles" style="border-bottom: 1px solid #BDBDBD;padding-bottom: 30px;">
+                <div class="row">
+                    {{-- latest ratings --}}
+                    <div class="col col-md-8">
+                        <div class="row">
+                            <div class="col-12 right-title-header">
+                                <h2>Latest Articles</h2>
+                            </div>
+                        </div>
+                        {{-- large image card --}}
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="overflow-hidden mb-3 shadow-sm rounded-3 main-img-article">
                                     <div>
-                                        <h3 style="font-weight: 800;line-height: 41px;">10 Ways To Stay Healthy While Working A Crazy News Schedule</h3>
-                                    </div>
-                                    <div class="d-flex justify-content-between pt-3">
-                                        <p><span>Written by </span><span style="color: #194D79;font-weight: 500">Soul Witness</span></p>
                                         <div>
-                                            <div>
-                                                <ul class="d-flex">
-                                                    <li class="px-2"><span class="d-inline-block" style="margin-inline-end: 10px;width: 18px;"><img class="w-100 h-100" src="{{ asset('user/assets/vectors/figma-thumb.png') }}" style="margin-top: -6px;" alt=""></span><span>35</span></li>
-                                                    <li class="px-2"><span class="d-inline-block" style="margin-inline-end: 10px;width: 18px;"><img class="w-100 h-100" src="{{ asset('user/assets/vectors/figma-message.png') }}" style="margin-top: -6px;" alt=""></span><span>25</span></li>
-                                                    <li class="px-2"><span class="d-inline-block" style="margin-inline-end: 10px;width: 18px;"><img class="w-100 h-100" src="{{ asset('user/assets/vectors/figma-share.png') }}" style="margin-top: -6px;" alt=""></span><span>15</span></li>
+                                            <img src="{{ asset('user/assets/img/time-watch.png') }}" class="img-fluid"
+                                                alt="Article Image">
+                                        </div>
+                                        <div class="bg-white p-4">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="text-muted d-flex align-items-center mb-0 header-date">
+                                                    <span class="me-2">
+                                                        <img src="{{ asset('user/assets/vectors/timer.png') }}"
+                                                            width="13" height="14" alt="Timer Icon">
+                                                    </span>
+                                                    <span class="small">May 24, 2022</span>
+                                                </p>
+                                                <button class="btn btn-sm" type="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="{{ asset('user/assets/img/three-dots-2.png') }}"
+                                                        alt="More Options">
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <!-- Dropdown content goes here -->
+                                                </div>
+                                            </div>
+
+                                            <h3 class="fw-bold lh-base mt-3">10 Ways To Stay Healthy While Working A Crazy
+                                                News Schedule</h3>
+
+                                            <div
+                                                class="d-flex justify-content-between align-items-center pt-3 large-article-footer">
+                                                <p class="mb-0 lg-footer-left-side">
+                                                    <span>Written by </span>
+                                                    <span class="fw-bold bold-span">Soul Witness</span>
+                                                </p>
+                                                <ul class="d-flex list-unstyled mb-0 lg-footer-right-side">
+                                                    <li class="px-2 d-flex align-items-center">
+                                                        <img src="{{ asset('user/assets/vectors/figma-thumb.png') }}"
+                                                            class="img-fluid me-2" width="21" height="19"
+                                                            alt="Thumbs Up">
+                                                        <span>35</span>
+                                                    </li>
+                                                    <li class="px-2 d-flex align-items-center">
+                                                        <img src="{{ asset('user/assets/vectors/figma-message.png') }}"
+                                                            class="img-fluid me-2" width="18px" alt="Comments">
+                                                        <span>25</span>
+                                                    </li>
+                                                    <li class="px-2 d-flex align-items-center">
+                                                        <img src="{{ asset('user/assets/vectors/figma-share.png') }}"
+                                                            class="img-fluid me-2" width="18px" alt="Share">
+                                                        <span>15</span>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -132,228 +171,270 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="small-img-articles">
-                            <div class="d-flex overflow-hidden mb-3" style="border-radius: 18px;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);">
-                                <div style="width: 360px;">
-                                    <img src="{{ asset('user/assets/img/taking-picture.png') }}" class="w-100 h-100" style="object-fit: cover;" alt="">
-                                </div>
-                                <div class="bg-white" style="padding: 25px;">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <p style="color: #828282;display: flex;align-items: center;">
-                                                <span style="display: inline-block;padding-inline-end: 3px;">
-                                                    <img src="{{ asset('user/assets/vectors/timer.png') }}" width="15px" alt="">
+                        {{-- small image card --}}
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex overflow-hidden mb-3 shadow-sm rounded-3 small-img-article">
+                                    <div class="img-container">
+                                        <img src="{{ asset('user/assets/img/taking-picture.png') }}"
+                                            class="img-fluid h-100" alt="Taking Picture">
+                                    </div>
+                                    <div class="bg-white p-4">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center small-card-article-header">
+                                            <p class="text-muted d-flex align-items-center mb-0">
+                                                <span class="me-2">
+                                                    <img src="{{ asset('user/assets/vectors/timer.png') }}"
+                                                        width="13" height="14" alt="Timer">
                                                 </span>
-                                                <span style="font-size: 12px;display: inline-block;padding-top: 5px;padding-inline-start: 3px;">May 24, 2022</span>
+                                                <span>May 24, 2022</span>
                                             </p>
-                                        </div>
-                                        <div>
-                                            <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="{{ asset('user/assets/img/three-dots-2.png') }}" alt="">
+                                            <button class="btn btn-sm" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <img src="{{ asset('user/assets/img/three-dots-2.png') }}"
+                                                    alt="More Options">
                                             </button>
                                             <div class="dropdown-menu">
-
+                                                <!-- Dropdown content goes here -->
                                             </div>
                                         </div>
-                                    </div>
-                                    <div style="padding-inline-end: 22px;">
-                                        <h3 style="font-weight: bold;line-height: 41px;">10 Ways To Stay Healthy While Working A Crazy News Schedule</h3>
-                                    </div>
-                                    <div class="d-flex justify-content-between pt-3">
-                                        <p><span>Written by </span><span style="color: #194D79;font-weight: 500">Soul Witness</span></p>
-                                        <div>
-                                            <ul class="d-flex">
-                                                <li class="px-2"><span class="d-inline-block" style="margin-inline-end: 10px;width: 18px;"><img class="w-100 h-100" src="{{ asset('user/assets/vectors/figma-thumb.png') }}" style="margin-top: -6px;" alt=""></span><span>35</span></li>
-                                                <li class="px-2"><span class="d-inline-block" style="margin-inline-end: 10px;width: 18px;"><img class="w-100 h-100" src="{{ asset('user/assets/vectors/figma-message.png') }}" style="margin-top: -6px;" alt=""></span><span>25</span></li>
-                                                <li class="px-2"><span class="d-inline-block" style="margin-inline-end: 10px;width: 18px;"><img class="w-100 h-100" src="{{ asset('user/assets/vectors/figma-share.png') }}" style="margin-top: -6px;" alt=""></span><span>15</span></li>
+                                        <h3 class="fw-bold mt-3 lh-base pe-3">10 Ways To Stay Healthy While Working A Crazy
+                                            News Schedule</h3>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center pt-3 small-card-article-footer">
+                                            <p class="mb-0">
+                                                <span>Written by </span>
+                                                <span class="fw-bold">Soul Witness</span>
+                                            </p>
+                                            <ul class="d-flex list-unstyled mb-0">
+                                                <li class="px-2 d-flex align-items-center">
+                                                    <img src="{{ asset('user/assets/vectors/figma-thumb.png') }}"
+                                                        class="img-fluid me-2" width="18px" alt="Thumbs Up">
+                                                    <span>35</span>
+                                                </li>
+                                                <li class="px-2 d-flex align-items-center">
+                                                    <img src="{{ asset('user/assets/vectors/figma-message.png') }}"
+                                                        class="img-fluid me-2" width="18px" alt="Comments">
+                                                    <span>25</span>
+                                                </li>
+                                                <li class="px-2 d-flex align-items-center">
+                                                    <img src="{{ asset('user/assets/vectors/figma-share.png') }}"
+                                                        class="img-fluid me-2" width="18px" alt="Share">
+                                                    <span>15</span>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex overflow-hidden mb-3" style="border-radius: 18px;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);">
-                                <div style="width: 360px;">
-                                    <img src="{{ asset('user/assets/img/news-printer.png') }}" class="w-100 h-100" style="object-fit: cover;" alt="">
-                                </div>
-                                <div class="bg-white" style="padding: 25px;">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <p style="color: #828282;display: flex;align-items: center;">
-                                                <span style="display: inline-block;padding-inline-end: 3px;">
-                                                    <img src="{{ asset('user/assets/vectors/timer.png') }}" width="15px" alt="">
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex overflow-hidden mb-3 shadow-sm rounded-3 small-img-article">
+                                    <div class="img-container">
+                                        <img src="{{ asset('user/assets/img/news-printer.png') }}"
+                                            class="img-fluid h-100" alt="Taking Picture">
+                                    </div>
+                                    <div class="bg-white p-4">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center small-card-article-header">
+                                            <p class="text-muted d-flex align-items-center mb-0">
+                                                <span class="me-2">
+                                                    <img src="{{ asset('user/assets/vectors/timer.png') }}"
+                                                        width="13" height="14" alt="Timer">
                                                 </span>
-                                                <span style="font-size: 12px;display: inline-block;padding-top: 5px;padding-inline-start: 3px;">May 24, 2022</span>
+                                                <span>May 24, 2022</span>
                                             </p>
-                                        </div>
-                                        <div>
-                                            <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="{{ asset('user/assets/img/three-dots-2.png') }}" alt="">
+                                            <button class="btn btn-sm" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <img src="{{ asset('user/assets/img/three-dots-2.png') }}"
+                                                    alt="More Options">
                                             </button>
                                             <div class="dropdown-menu">
-
+                                                <!-- Dropdown content goes here -->
                                             </div>
                                         </div>
-                                    </div>
-                                    <div style="padding-inline-end: 22px;">
-                                        <h3 style="font-weight: bold;line-height: 41px;">10 Ways To Stay Healthy While Working A Crazy News Schedule</h3>
-                                    </div>
-                                    <div class="d-flex justify-content-between pt-3">
-                                        <p><span>Written by </span><span style="color: #194D79;font-weight: 500">Soul Witness</span></p>
-                                        <div>
-                                            <ul class="d-flex">
-                                                <li class="px-2"><span class="d-inline-block" style="margin-inline-end: 10px;width: 18px;"><img class="w-100 h-100" src="{{ asset('user/assets/vectors/figma-thumb.png') }}" style="margin-top: -6px;" alt=""></span><span>35</span></li>
-                                                <li class="px-2"><span class="d-inline-block" style="margin-inline-end: 10px;width: 18px;"><img class="w-100 h-100" src="{{ asset('user/assets/vectors/figma-message.png') }}" style="margin-top: -6px;" alt=""></span><span>25</span></li>
-                                                <li class="px-2"><span class="d-inline-block" style="margin-inline-end: 10px;width: 18px;"><img class="w-100 h-100" src="{{ asset('user/assets/vectors/figma-share.png') }}" style="margin-top: -6px;" alt=""></span><span>15</span></li>
+                                        <h3 class="fw-bold mt-3 lh-base pe-3">10 Ways To Stay Healthy While Working A Crazy
+                                            News Schedule</h3>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center pt-3 small-card-article-footer">
+                                            <p class="mb-0">
+                                                <span>Written by </span>
+                                                <span class="fw-bold">Soul Witness</span>
+                                            </p>
+                                            <ul class="d-flex list-unstyled mb-0">
+                                                <li class="px-2 d-flex align-items-center">
+                                                    <img src="{{ asset('user/assets/vectors/figma-thumb.png') }}"
+                                                        class="img-fluid me-2" width="18px" alt="Thumbs Up">
+                                                    <span>35</span>
+                                                </li>
+                                                <li class="px-2 d-flex align-items-center">
+                                                    <img src="{{ asset('user/assets/vectors/figma-message.png') }}"
+                                                        class="img-fluid me-2" width="18px" alt="Comments">
+                                                    <span>25</span>
+                                                </li>
+                                                <li class="px-2 d-flex align-items-center">
+                                                    <img src="{{ asset('user/assets/vectors/figma-share.png') }}"
+                                                        class="img-fluid me-2" width="18px" alt="Share">
+                                                    <span>15</span>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex overflow-hidden mb-3" style="border-radius: 18px;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);">
-                                <div style="width: 360px;">
-                                    <img src="{{ asset('user/assets/img/preparing-camera.png') }}" class="w-100 h-100" style="object-fit: cover;" alt="">
-                                </div>
-                                <div class="bg-white" style="padding: 25px;">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <p style="color: #828282;display: flex;align-items: center;">
-                                                <span style="display: inline-block;padding-inline-end: 3px;">
-                                                    <img src="{{ asset('user/assets/vectors/timer.png') }}" width="15px" alt="">
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex overflow-hidden mb-3 shadow-sm rounded-3 small-img-article">
+                                    <div class="img-container">
+                                        <img src="{{ asset('user/assets/img/preparing-camera.png') }}"
+                                            class="img-fluid h-100" alt="Taking Picture">
+                                    </div>
+                                    <div class="bg-white p-4">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center small-card-article-header">
+                                            <p class="text-muted d-flex align-items-center mb-0">
+                                                <span class="me-2">
+                                                    <img src="{{ asset('user/assets/vectors/timer.png') }}"
+                                                        width="13" height="14" alt="Timer">
                                                 </span>
-                                                <span style="font-size: 12px;display: inline-block;padding-top: 5px;padding-inline-start: 3px;">May 24, 2022</span>
+                                                <span>May 24, 2022</span>
                                             </p>
-                                        </div>
-                                        <div>
-                                            <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="{{ asset('user/assets/img/three-dots-2.png') }}" alt="">
+                                            <button class="btn btn-sm" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <img src="{{ asset('user/assets/img/three-dots-2.png') }}"
+                                                    alt="More Options">
                                             </button>
                                             <div class="dropdown-menu">
-
+                                                <!-- Dropdown content goes here -->
                                             </div>
                                         </div>
+                                        <h3 class="fw-bold mt-3 lh-base pe-3">10 Ways To Stay Healthy While Working A Crazy
+                                            News Schedule</h3>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center pt-3 small-card-article-footer">
+                                            <p class="mb-0">
+                                                <span>Written by </span>
+                                                <span class="fw-bold">Soul Witness</span>
+                                            </p>
+                                            <ul class="d-flex list-unstyled mb-0">
+                                                <li class="px-2 d-flex align-items-center">
+                                                    <img src="{{ asset('user/assets/vectors/figma-thumb.png') }}"
+                                                        class="img-fluid me-2" width="18px" alt="Thumbs Up">
+                                                    <span>35</span>
+                                                </li>
+                                                <li class="px-2 d-flex align-items-center">
+                                                    <img src="{{ asset('user/assets/vectors/figma-message.png') }}"
+                                                        class="img-fluid me-2" width="18px" alt="Comments">
+                                                    <span>25</span>
+                                                </li>
+                                                <li class="px-2 d-flex align-items-center">
+                                                    <img src="{{ asset('user/assets/vectors/figma-share.png') }}"
+                                                        class="img-fluid me-2" width="18px" alt="Share">
+                                                    <span>15</span>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div style="padding-inline-end: 22px;">
-                                        <h3 style="font-weight: bold;line-height: 41px;">10 Ways To Stay Healthy While Working A Crazy News Schedule</h3>
-                                    </div>
-                                    <div class="d-flex justify-content-between pt-3">
-                                        <p><span>Written by </span><span style="color: #194D79;font-weight: 500">Soul Witness</span></p>
-                                        <div>
-                                            <div>
-                                                <ul class="d-flex">
-                                                    <li class="px-2"><span class="d-inline-block" style="margin-inline-end: 10px;width: 18px;"><img class="w-100 h-100" src="{{ asset('user/assets/vectors/figma-thumb.png') }}" style="margin-top: -6px;" alt=""></span><span>35</span></li>
-                                                    <li class="px-2"><span class="d-inline-block" style="margin-inline-end: 10px;width: 18px;"><img class="w-100 h-100" src="{{ asset('user/assets/vectors/figma-message.png') }}" style="margin-top: -6px;" alt=""></span><span>25</span></li>
-                                                    <li class="px-2"><span class="d-inline-block" style="margin-inline-end: 10px;width: 18px;"><img class="w-100 h-100" src="{{ asset('user/assets/vectors/figma-share.png') }}" style="margin-top: -6px;" alt=""></span><span>15</span></li>
-                                                </ul>
-                                            </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- pagination --}}
+                        <x-user.pagination />
+
+                    </div>
+                    <div class="col col-md-4">
+                        <div class="row align-items-center left-title-header">
+                            <div class="col-md-8">
+                                <h2 class="fw-bold right-col-title">Recommended</h2>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <a href="{{ url('newsletter') }}" class="see-all-link">See all</a>
+                            </div>
+                        </div>
+                        <div class="row latest-articles">
+                            <div class="col-12">
+                                {{-- latest posts --}}
+                                {{-- loop div --}}
+                                <x-user.latest-article />
+                                <x-user.latest-article path="user/assets/img/2.png"
+                                    title="Working Christmas and New Year's Eve doesn’t have to be depressing" />
+                                <x-user.latest-article path="user/assets/img/3.png"
+                                    title="Is Jumping from Journalism to PR and Communications a Good Idea?" />
+
+                                {{-- newsletter subscribe --}}
+                                <div class="newsletter-subscribe">
+                                    <h6>Subscribe to our Newsletter, so you'll never miss one</h6>
+                                    <input type="email" placeholder="Your email" class="form-control">
+                                    <button class="subscribe-btn w-100 fw-bold">Subscribe</button>
+                                </div>
+
+                                {{-- rms follow --}}
+                                <div class="rms-follow-section">
+                                    <h2 class="fw-bold">Follow RMS</h2>
+                                    <div class="rms-follow">
+                                        <div class="rms-social-item">
+                                            <img src="{{ asset('user/assets/vectors/facebook-vector.png') }}"
+                                                class="social-icon" alt="Facebook">
+                                            <span>@RateMyStation</span>
+                                        </div>
+                                        <div class="rms-social-item">
+                                            <img src="{{ asset('user/assets/vectors/instagram-vector.png') }}"
+                                                class="social-icon" alt="Instagram">
+                                            <span>@RateMyStation</span>
+                                        </div>
+                                        <div class="rms-social-item">
+                                            <img src="{{ asset('user/assets/vectors/twitter-vector.png') }}"
+                                                class="social-icon" alt="Twitter">
+                                            <span>@RateMyStation</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    {{-- pagination --}}
-                    <x-user.pagination />
-
                 </div>
-                <div class="col col-md-4">
-                    <section id="newsletter">
-                        {{-- heading --}}
-                        <div id="lr-main-heading" class="d-flex justify-content-between align-items-center">
-                            <h2>Recommend</h2>
-                            <a href="#" style="font-weight: normal;color: #194D79;">See all</a>
-                        </div>
-                        {{-- latest posts --}}
-                        <div>
-                            {{-- loop div --}}
-                            <div style="width: 384px;background: #ffff;border-radius: 13px;margin-top: 10px;margin-bottom: 25px;">
-                                <div style="width: 100%;height: 211px;">
-                                    <img src="{{ asset('user/assets/img/1.png') }}" alt="" style="width: 100%;height: 100%;object-fit: conver;">
-                                </div>
-                                <div style="padding-inline: 20px;padding-top: 20px;padding-bottom: 40px;">
-                                    <p style="font-weight: 800;font-size: 16px;">
-                                        20 Things Jurnalism Students Should Know Before Working in Local News Station
-                                    </p>
-                                </div>
-                            </div>
-                            <div style="width: 384px;background: #ffff;border-radius: 13px;margin-top: 10px;margin-bottom: 25px;">
-                                <div style="width: 100%;height: 211px;">
-                                    <img src="{{ asset('user/assets/img/2.png') }}" alt="" style="width: 100%;height: 100%;object-fit: conver;">
-                                </div>
-                                <div style="padding-inline: 20px;padding-top: 20px;padding-bottom: 40px;">
-                                    <p style="font-weight: 800;font-size: 16px;">
-                                        20 Things Jurnalism Students Should Know Before Working in Local News Station
-                                    </p>
-                                </div>
-                            </div>
-                            <div style="width: 384px;background: #ffff;border-radius: 13px;margin-top: 10px;margin-bottom: 25px;">
-                                <div style="width: 100%;height: 211px;">
-                                    <img src="{{ asset('user/assets/img/3.png') }}" alt="" style="width: 100%;height: 100%;object-fit: conver;">
-                                </div>
-                                <div style="padding-inline: 20px;padding-top: 20px;padding-bottom: 40px;">
-                                    <p style="font-weight: 800;font-size: 16px;">
-                                        20 Things Jurnalism Students Should Know Before Working in Local News Station
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        {{-- newsletter subscribe --}}
-                        <div>
-                            <div style="width: 384px;background: #ffff;border-radius: 13px;margin-top: 10px;margin-bottom: 25px;padding: 20px;">
-                                <h6 style="font-weight: 800;line-height: 23px;">Subscribe to our Newsletter, so you'll never miss one</h6>
-                                <input type="text" placeholder="Your email" class="form-control" style="background-color: #F2F2F2;font-size: 14px;padding-block: 12px;margin-block: 15px;">
-                                <button style="background-color: #194D79;color: #ffff;font-weight: 500;width: 100%;padding-block: 11px;border-radius: 12px;border: none;letter-spacing: 0.5px;">Subscribe</button>
-                            </div>
-                        </div>
-                        {{-- rms --}}
-                        <div>
-                            <div id="lr-main-heading" style="padding-block: 0px;">
-                                <h2>Follow RMS</h2>
-                            </div>
-                            <div style="width: 384px;background: #ffff;border-radius: 13px;margin-top: 10px;margin-bottom: 25px;padding: 20px;">
-                                <div style="padding-block: 5px;">
-                                    <span style="display: inline-block;padding-inline-end: 10px;"><img src="{{ asset('user/assets/vectors/facebook-vector.png') }}" style="width: 18px;height: 22px;object-fit: contain;" alt=""></span>
-                                    <span style="font-weight: bold;">@RateMyStation</span>
-                                </div>
-                                <div style="padding-block: 5px;">
-                                    <span style="display: inline-block;padding-inline-end: 10px;"><img src="{{ asset('user/assets/vectors/instagram-vector.png') }}" style="width: 18px;height: 22px;object-fit: contain;" alt=""></span>
-                                    <span style="font-weight: bold;">@RateMyStation</span>
-                                </div>
-                                <div style="padding-block: 5px;">
-                                    <span style="display: inline-block;padding-inline-end: 10px;"><img src="{{ asset('user/assets/vectors/twitter-vector.png') }}" style="width: 18px;height: 22px;object-fit: contain;" alt=""></span>
-                                    <span style="font-weight: bold;">@RateMyStation</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section>
-        {{-- shop container --}}
-        <div id="shop-container" class="container">
-            <div class="row justify-content-center">
-                <div id="lr-main-heading" class="text-center">
-                    <h2>RateMyStation's Shop</h2>
-                </div>
-            </div>
-
-            <div class="row">
-
-                <x-user.product-card visibility="visible" image="user/assets/img/image-1.png" title="Don’t Make Me Use My News Voice Face Mask" amount="18.00" />
-
-                <x-user.product-card visibility="visible" image="user/assets/img/image-2.png" title="America Needs Local News Sweatshirt" amount="25.00 – $33.50" />
-
-                <x-user.product-card image="user/assets/img/image-3.png" title="Anonymous Source Onesie" amount="18.00" />
-
-                <x-user.product-card image="user/assets/img/image-4.png" title="You Are A PKG Framed Poster" amount="26.00 – $105.00" />
 
             </div>
-        </div>
+        </section>
 
-    </section>
+        {{-- product cards section --}}
+        <section class="product-cards-section">
+            <div class="container product-cards-container">
+                <div class="row justify-content-center py-4">
+                    <div class="text-center">
+                        <h2 class="fw-bold product-section-title">RateMyStation's Shop</h2>
+                    </div>
+                </div>
 
+                <div class="row">
+
+                    <x-user.product-card visibility="visible" image="user/assets/img/image-1.png"
+                        title="Don’t Make Me Use My News Voice Face Mask" amount="18.00" />
+
+                    <x-user.product-card visibility="visible" image="user/assets/img/image-2.png"
+                        title="America Needs Local News Sweatshirt" amount="25.00 – $33.50" />
+
+                    <x-user.product-card image="user/assets/img/image-3.png" title="Anonymous Source Onesie"
+                        amount="18.00" />
+
+                    <x-user.product-card image="user/assets/img/image-4.png" title="You Are A PKG Framed Poster"
+                        amount="26.00 – $105.00" />
+
+                </div>
+                <div class="d-flex justify-content-between position-absolute"
+                    style="top: 50%;right: -26px;left: -26px;opacity: 0.8">
+                    <button type="button"
+                        style="background-color: #FFFFFF;padding-inline: 15px;padding-block: 7px;border-radius: 100%;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);border: none;"><img
+                            src="{{ asset('user/assets/vectors/left-arrow-gray.png') }}" alt=""></button>
+                    <button type="button"
+                        style="background-color: #FFFFFF;padding-inline: 15px;padding-block: 7px;border-radius: 100%;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);border: none;"><img
+                            src="{{ asset('user/assets/vectors/right-arrow-gray.png') }}" alt=""></button>
+                </div>
+            </div>
+        </section>
+
+    </main>
 @endsection

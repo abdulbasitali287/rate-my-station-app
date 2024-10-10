@@ -101,5 +101,5 @@
 
 
 {{-- looking for work --}}
-<x-user.looking-for-work path="user/assets/ellipse/still-question-bg.png" title="Stil have question?" buttonText="Contact us" paragraph="Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. " />
+<x-user.searching-queries path="user/assets/ellipse/still-question-bg.png" title="Stil have question?" buttonText="Contact us" paragraph="Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. " />
 @endsection
