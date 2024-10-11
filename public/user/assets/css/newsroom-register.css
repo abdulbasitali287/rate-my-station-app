@@ -1,0 +1,83 @@
+/* ============================== */
+        /* newsroom register */
+/* ============================== */
+/* Styles for Newsroom Registration */
+#newsroom-register-main .registration-box {
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#newsroom-register-main .bg-login-image {
+    height: 100%;
+    background-image: url('/user/assets/ellipse/authentication/login-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 16px;
+}
+
+#newsroom-register-main .subscription-note {
+    font-weight: 300;
+    color: #828282;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+#newsroom-register-main .subscription-note-text {
+    color: #828282;
+    padding-top: 35px;
+}
+
+#newsroom-register-main .learn-more {
+    font-size: 14px;
+    color: #89C400;
+    border-bottom: 2px solid #89C400;
+}
+
+#newsroom-register-main .subscriptions {
+    width: 126px;
+    height: 120px;
+    position: relative;
+}
+
+#newsroom-register-main .subscriptions input[type="radio"] {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: 2px solid #E0E0E0;
+    background-color: white;
+    -webkit-appearance: none;
+    z-index: 1000;
+}
+
+#newsroom-register-main .subscription-content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsroom-register-main .subscription-label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #194D79;
+}
+
+#newsroom-register-main .subscription-price {
+    font-size: 18px;
+}
+
+#newsroom-register-main .save-badge {
+    position: absolute;
+    left: 26px;
+    bottom: -12px;
+    background-color: #194D79;
+    padding-block: 4px;
+    padding-inline: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+}

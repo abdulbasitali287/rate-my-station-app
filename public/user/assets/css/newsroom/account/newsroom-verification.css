@@ -1,0 +1,30 @@
+/* ================================ */
+    /* newsroom verification */
+/* ================================ */
+
+#newsroom-verification-main .request-verification-card {
+    background-color: white; /* Background color for the card */
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#newsroom-verification-main .sidebar-column {
+    border-inline-end: 1px solid #BDBDBD;
+}
+
+#newsroom-verification-main .request-verification-title {
+    font-size: 24px; /* Font size for the title */
+}
+
+#newsroom-verification-main .upload-container {
+    padding-top: 1rem; /* Padding for the upload container */
+}
+
+#newsroom-verification-main .upload-icon {
+    cursor: pointer; /* Cursor style for upload icons */
+}
+
+#newsroom-verification-main .upload-instruction-text {
+    font-size: 20px; /* Font size for the upload instruction text */
+    color: #194D79; /* Color for the instruction text */
+}

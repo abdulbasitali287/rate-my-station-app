@@ -1,0 +1,46 @@
+/* ================================ */
+        /* newsroom profile */
+/* ================================ */
+#newsroom-profile .profile-card {
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+#newsroom-profile .sidebar-column {
+    border-inline-end: 1px solid #BDBDBD;
+}
+
+#newsroom-profile .profile-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#newsroom-profile .profile-image-upload {
+    cursor: pointer;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 10px; /* Add some padding if needed */
+}
+
+#newsroom-profile .upload-info {
+    font-size: 20px;
+    color: #194D79;
+    cursor: pointer;
+}
+
+#newsroom-profile .custom-select-container {
+    display: flex;
+    background-color: #F2F2F2;
+    padding-block: 11px;
+    padding-inline-end: 10px;
+    border-radius: 10px;
+}
+
+#newsroom-profile .custom-select {
+    flex-grow: 1;
+    padding-inline-start: 10px;
+    margin-top: 3px;
+    color: #828282;
+    font-size: 14px;
+}

@@ -1,0 +1,33 @@
+/* ============================== */
+/* TERMS ADN CONDITIONS CSS */
+/* ============================== */
+#tac-banner-section{
+    height: 194px;
+    background-image: url('/user/assets/ellipse/terms-and-conditions-banner-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#tac-banner-section #tac-banner-content h1{
+    font-size: 48px;
+}
+#tac-banner-section #tac-banner-content p{
+    font-weight: 300;
+    font-size: 18px;
+}
+#tac-content-section .tac-all-cards{
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+#tac-content-section .tac-heading{
+    font-size: 20px;
+    font-weight: 600;
+}
+#tac-content-section .tag-line{
+    font-weight: 300;
+    font-size: 14px;
+    color: #828282;
+}
+#tac-content-section .tac-paragraph{
+    font-weight: 300;
+    font-size: 16px;
+}

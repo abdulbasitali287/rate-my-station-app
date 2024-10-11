@@ -1,0 +1,44 @@
+@import url('/user/assets/css/common/employee-login-tabs.css');
+/* ============================== */
+        /* employee login */
+/* ============================== */
+
+/* Custom Card */
+#employee-login-main .custom-card {
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Login Background */
+#employee-login-main .login-background {
+    height: 635px;
+    background-image: url('/user/assets/ellipse/authentication/login-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 16px;
+}
+
+/* Title Styling */
+#employee-login-main .title {
+    font-size: 48px;
+}
+
+/* Employee and Newsroom Tabs */
+#employee-login-main a.active {
+    color: #89C400;
+    font-size: 24px;
+}
+
+#employee-login-main .newsroom-tab {
+    color: #828282;
+    font-size: 24px;
+}
+#employee-login-main .forgot-password {
+    color: #828282;
+}
+
+/* Register Link */
+#employee-login-main .register-link {
+    color: #89C400;
+    border-bottom: 2px solid #89C400;
+}

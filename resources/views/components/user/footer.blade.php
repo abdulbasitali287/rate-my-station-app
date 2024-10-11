@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-9 px-0 footer-links">
                 <ul class="d-flex justify-content-start px-4">
-                    <li><a href="#">Account Information</a></li>
+                    <li><a href="{{ url('employee-login') }}">Account Information</a></li>
                     <li><a href="{{ url('contact-us') }}">Contact Us</a></li>
                     <li><a href="{{ url('work-for-us') }}">Work for Us</a></li>
                     <li><a href="{{ url('subscription') }}">Subscribe</a></li>

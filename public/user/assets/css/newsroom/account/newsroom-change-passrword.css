@@ -1,0 +1,31 @@
+/* ================================ */
+    /* newsroom change password */
+/* ================================ */
+#newsroom-change-password-main .change-password-card {
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#newsroom-change-password-main .sidebar-column {
+    border-inline-end: 1px solid red; /* Right border for sidebar */
+}
+
+#newsroom-change-password-main .security-section {
+    margin-bottom: 1.5rem; /* Space below the security section */
+}
+
+#newsroom-change-password-main .security-title {
+    font-size: 24px; /* Font size for the security title */
+}
+
+#newsroom-change-password-main .change-password-section {
+    margin-top: 1.5rem; /* Space above the change password section */
+}
+
+#newsroom-change-password-main .change-password-title {
+    font-size: 24px; /* Font size for the change password title */
+}
+
+#newsroom-change-password-main .button-group {
+    margin-top: 1.5rem; /* Space above the button group */
+}

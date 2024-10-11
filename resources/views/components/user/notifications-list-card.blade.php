@@ -1,5 +1,5 @@
 @props(['path' => 'user/assets/img/notification-card-abc-7-logo.png','alt' => '','date' => 'May 24, 2022','bgColor' => '#CEE3F5','heading' => 'You received an interview request from','boldText' => 'KABC','paragraph' => 'In magna ipsum suscipit quam aenean lectus id aenean. Ac adipiscing tellus, laoreet sem in mattis euismod aliquam. Pharetra vitae dui tortor ut porta pretium.'])
-<div id="notification-list-card" class="d-flex align-items-center p-3 mb-3" style="background-color: {{ $bgColor }};">
+<div class="d-flex align-items-center p-3 mb-3 notification-list-card" style="background-color: {{ $bgColor }};">
     <div class="pe-4">
         <img src="{{ asset($path) }}" alt="{{ $alt }}">
     </div>

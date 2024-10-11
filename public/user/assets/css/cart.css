@@ -1,0 +1,133 @@
+/* ============================== */
+        /* add to cart */
+/* ============================== */
+
+#cart-main .checkout-btn {
+    margin-block: 6px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid #194D79;
+    color: #194D79;
+    padding-block: 8px;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+#cart-main .checkout-btn:hover {
+    background-color: #194D79;
+    color: #F2F2F2;
+}
+
+#cart-main .cart-title {
+    font-size: 36px;
+    font-weight: bold;
+    padding-block: 16px;
+}
+
+#cart-main .cart-label {
+    color: #828282;
+}
+
+#cart-main .order-summary {
+    width: 100%;
+    max-width: 383px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 16px;
+    margin-top: 22px;
+}
+
+#cart-main .order-summary h6 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#cart-main .order-summary label {
+    font-size: 16px;
+    color: #828282;
+}
+
+#cart-main .order-summary strong {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#cart-main .order-total {
+    font-size: 20px;
+}
+
+#cart-main .coupon-input {
+    width: 100%;
+    padding-block: 8px;
+    padding-inline-start: 10px;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    border: none;
+}
+
+/* ==================== */
+/* cart component css */
+/* ==================== */
+#cart-main .cart-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#cart-main .cart-image {
+    width: 142px;
+    height: 141px;
+    object-fit: cover;
+}
+
+#cart-main .cart-product-info {
+    padding-inline: 16px;
+}
+
+#cart-main .cart-product-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#cart-main .cart-quantity-control {
+    display: flex;
+    align-items: center;
+    padding-inline: 16px;
+}
+
+#cart-main .quantity-input {
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    display: flex;
+    padding-inline: 8px;
+}
+
+#cart-main .quantity-btn {
+    padding: 8px 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#cart-main .quantity-display {
+    border: none;
+    width: 80px;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+}
+
+#cart-main .cart-total-price {
+    padding-inline: 16px;
+    font-size: 24px;
+}
+
+#cart-main .cart-remove {
+    padding-inline: 16px;
+    cursor: pointer;
+}

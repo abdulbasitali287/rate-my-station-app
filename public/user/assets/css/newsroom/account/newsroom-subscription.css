@@ -1,0 +1,66 @@
+/* ================================ */
+    /* newsroom subscription */
+/* ================================ */
+#newsroom-subscription-main .account-subscription-card {
+    background-color: white; /* Background color for the card */
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#newsroom-subscription-main .sidebar-column {
+    border-inline-end: 1px solid #BDBDBD;
+}
+
+#newsroom-subscription-main .account-subscription-title {
+    font-size: 24px;
+}
+
+#newsroom-subscription-main .subscription-container {
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+#newsroom-subscription-main .subscription-details {
+    display: flex;
+    background-color: #9BDB08;
+}
+
+#newsroom-subscription-main .subscription-indicator {
+    background-color: #89C400;
+    display: inline-block;
+    width: 10px; /* Adjust width as necessary */
+    height: 100%; /* Set height to match the container */
+}
+
+#newsroom-subscription-main .subscription-info {
+    padding: 1rem; /* Padding for subscription info */
+}
+
+#newsroom-subscription-main .subscription-duration {
+    font-size: 36px;
+}
+
+#newsroom-subscription-main .subscription-label {
+    font-size: 24px;
+    margin-top: -10px;
+}
+
+#newsroom-subscription-main .subscription-price-container {
+    border: 2px solid #E0E0E0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-inline-start: 110px; /* Adjust padding as necessary */
+}
+
+#newsroom-subscription-main .subscription-price {
+    font-size: 28px;
+    color: #194D79;
+}
+
+#newsroom-subscription-main .subscription-active-status {
+    color: #828282;
+}
+
+#newsroom-subscription-main .change-plan-link {
+    color: #194D79; /* Color for the link */
+}

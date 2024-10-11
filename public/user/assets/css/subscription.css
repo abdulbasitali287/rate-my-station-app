@@ -1,0 +1,169 @@
+/* ============================== */
+        /* subscription */
+/* ============================== */
+
+/* Hero Section */
+#subscription-main .banner-section {
+    height: 456px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/user/assets/ellipse/subscription-bg.png');
+}
+
+/* Subscription Section */
+#subscription-main .subscription-section {
+    margin-top: -340px;
+}
+
+#subscription-main .subscription-container {
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#subscription-main .subscription-header {
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 40px;
+}
+
+#subscription-main .subscription-title {
+    font-size: 48px;
+}
+
+#subscription-main .subscription-description {
+    font-size: 16px;
+    margin-top: 20px;
+    padding-right: 50px;
+}
+
+#subscription-main .subscription-list-item {
+    font-size: 18px;
+    display: flex;
+    font-weight: 500;
+    line-height: 35.5px;
+}
+
+#subscription-main .icon-wrap {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+#subscription-main .icon {
+    width: 100%;
+    height: 100%;
+}
+
+#subscription-main .plan-card {
+    width: 260px;
+    height: 386px;
+    border: 2px solid #E0E0E0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#subscription-main .plan-button {
+    width: 200px;
+    height: 42px;
+    font-size: 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #828282;
+    background-color: #E0E0E0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-weight: 600;
+    margin: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 0;
+}
+
+#subscription-main .plan-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding-bottom: 20px;
+}
+#subscription-main .plan-content .save-more-section{
+    padding-top: 36px;
+}
+
+#subscription-main .plan-title {
+    color: #194D79;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+#subscription-main .plan-subscription {
+    color: #828282;
+    font-size: 24px;
+}
+
+#subscription-main .plan-price {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#subscription-main .plan-discount {
+    font-size: 14px;
+    background-color: #89C400;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#subscription-main .discount-banner {
+    background-color: #89C400;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#subscription-main .discount-text {
+    color: white;
+}
+
+#subscription-main .discount-code {
+    border: 1px dashed #ffff;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Footer */
+#subscription-main .subscription-footer {
+    padding-top: 40px;
+}
+
+#subscription-main .lock-img {
+    width: 28px;
+    height: 38px;
+    margin-right: 20px;
+}
+
+#subscription-main .subscription-info {
+    font-size: 16px;
+    color: #828282;
+}
+
+#subscription-main .payment-info {
+    font-size: 14px;
+    color: #828282;
+}
+
+#subscription-main .payment-cards {
+    width: 260px;
+    height: 40px;
+}

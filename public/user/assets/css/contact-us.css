@@ -1,0 +1,103 @@
+/* ============================== */
+/* contact-us css */
+/* ============================== */
+#contact-us-main .banner-section {
+    height: 564px;
+    background-image: url('/user/assets/ellipse/contact-banner-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#contact-us-main .contact-card {
+    margin-top: -465px;
+}
+#contact-us-main .contact-card .container {
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+#contact-us-main .contact-card .row:first-child{
+    border-bottom: 1px solid #E0E0E0;
+}
+
+#contact-us-main .heading-section {
+    padding-bottom: 100px;
+}
+
+#contact-us-main .heading-section .heading {
+    font-weight: bold;
+    font-size: 48px;
+    padding-block: 10px;
+}
+
+#contact-us-main .heading-section .sub-heading {
+    font-weight: 300;
+}
+
+.contact-form input,
+#contact-us-main .contact-form textarea {
+    display: block;
+    width: 100%;
+    color: #828282;
+    background-color: #F2F2F2;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding-inline: 10px;
+    padding-block: 8px;
+}
+
+#contact-us-main .contact-form button[type=submit] {
+    width: max-content;
+    margin-block: 6px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid #194D79;
+    border-radius: 10px;
+    color: #194D79;
+    padding-inline: 70px;
+    padding-block: 8px;
+    transition: all 0.5s;
+}
+#contact-us-main .contact-form button[type=submit]:hover {
+    background-color: #194D79;
+    border-color: transparent;
+    color: #FFFFFF;
+}
+
+/* .address-section */
+#contact-us-main .contact-footer .facebook-btn {
+    background-color: #1877F2;
+    color: #FFFFFF;
+    padding-inline: 24px;
+    padding-block: 12px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+
+#contact-us-main .contact-footer img {
+    height: 20px;
+    padding-inline-end: 10px;
+}
+
+#contact-us-main .contact-footer span {
+    font-size: 15px;
+}
+
+#contact-us-main .contact-footer .instagram-btn {
+    background-color: #EE2987;
+    color: #FFFFFF;
+    padding-inline: 24px;
+    padding-block: 12px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+
+#contact-us-main .contact-footer .twitter-btn {
+    background-color: #55ACEE;
+    color: #FFFFFF;
+    padding-inline: 24px;
+    padding-block: 12px;
+    font-weight: 300;
+    border-radius: 10px;
+}

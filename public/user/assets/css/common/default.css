@@ -1,0 +1,46 @@
+/* ============================== */
+        /* variables */
+/* ============================== */
+:root {
+    --darkCerulean: #194D79;
+    --trueBlueHover: #006bca;
+    --white: #ffffff;
+}
+/* ============================== */
+        /* default */
+/* ============================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.public-sans-body {
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+input:focus{
+    outline: none;
+}
+select{
+    border: none;
+    background-color: transparent;
+}
+button{
+    border: none;
+    background-color: transparent;
+}

@@ -27,7 +27,7 @@ Route::get('/job-details', function () {
 Route::get('/contact-us', function () {
     return view('contact-us');
 });
-Route::get('/faqs', function () {
+Route::get('/faqss', function () {
     return view('faqs');
 });
 Route::get('/product-detail', function () {
@@ -54,11 +54,11 @@ Route::get('/cart', function () {
 Route::get('/station-form', function () {
     return view('station-form');
 });
-Route::get('/faq-search', function () {
-    return view('faq-search');
+Route::get('/faqs-search', function () {
+    return view('faqs-search');
 });
-Route::get('/faq-detail', function () {
-    return view('faq-detail');
+Route::get('/faqs-detail', function () {
+    return view('faqs-detail');
 });
 Route::get('/work-for-us', function () {
     return view('work-for-us');
@@ -90,38 +90,44 @@ Route::get('/station-rating', function () {
     return view('station-rating');
 });
 
-// newsroom
+// ======================
+    // newsroom account
+// ======================
 Route::get('/account-settings-station-profile', function () {
-    return view('account-settings-station-profile');
+    return view('newsroom.account.newsroom-profile');
 });
 Route::get('/account-settings-contact-info', function () {
-    return view('account-settings-contact-info');
+    return view('newsroom.account.newsroom-contact-info');
 });
 Route::get('/account-settings-subscription', function () {
-    return view('account-settings-subscription');
+    return view('newsroom.account.newsroom-subscription');
 });
 Route::get('/account-settings-verification', function () {
-    return view('account-settings-verification');
+    return view('newsroom.account.newsroom-verification');
 });
 Route::get('/change-password', function () {
-    return view('change-password');
+    return view('newsroom.account.newsroom-change-password');
 });
-// user
+
+// ===================
+    // user account
+// ===================
 Route::get('/account-settings-user-profile', function () {
-    return view('user-account.account-settings-user-profile');
+    return view('user.account.user-profile');
 });
 Route::get('/account-settings-user-contact-info', function () {
-    return view('user-account.account-settings-user-contact-info');
+    return view('user.account.user-contact-info');
 });
 Route::get('/account-settings-user-subscription', function () {
-    return view('user-account.account-settings-user-subscription');
+    return view('user.account.user-subscription');
 });
 Route::get('/account-settings-user-verification', function () {
-    return view('user-account.account-settings-user-verification');
+    return view('user.account.user-verification');
 });
 Route::get('/user-change-password', function () {
-    return view('user-account.user-change-password');
+    return view('user.account.user-change-password');
 });
+
 
 Route::get('/station-profile', function () {
     return view('station-profile');

@@ -1,0 +1,283 @@
+/* ============================== */
+        /* private messages */
+/* ============================== */
+
+/* Main messages section */
+#private-messages-main .private-message-card .shadow-row {
+    border-radius: 12px;box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+#private-messages-main .private-message-card .bottom-border-col {
+    border-inline-end: 1px solid #E0E0E0;
+}
+#private-messages-main .messages-section {
+    min-height: 650px;
+}
+
+/* Section title styling */
+#private-messages-main .messages-section .section-title {
+    font-size: 36px;
+}
+
+/* Search input container styling */
+#private-messages-main .messages-section .search-label {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding-block: 3px;
+    padding-inline-end: 10px;
+    border: transparent;
+}
+
+/* Search input styling */
+#private-messages-main .messages-section .search-input {
+    padding-inline-start: 10px;
+    padding-block: 4px;
+    border: none;
+    background-color: transparent;
+}
+
+/* Search icon styling */
+#private-messages-main .messages-section .search-icon {
+    width: 21px;
+    height: 22px;
+    background-color: transparent;
+}
+
+/* Message list styling */
+#private-messages-main .messages-section .message-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Individual message item */
+#private-messages-main .messages-section .message-item {
+    display: flex;
+    padding: 1rem 0;
+}
+
+/* Message avatar container */
+#private-messages-main .messages-section .message-avatar {
+    width: 53px;
+    height: 53px;
+}
+
+/* Message content */
+#private-messages-main .messages-section .message-content {
+    flex-grow: 1;
+}
+
+/* Message header containing author and time */
+#private-messages-main .messages-section .message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Author name */
+#private-messages-main .messages-section .message-author {
+    font-size: 18px;
+}
+
+/* Message time */
+#private-messages-main .messages-section .message-time {
+    font-size: 12px;
+    color: #828282;
+}
+
+/* Message body containing preview and unread count */
+#private-messages-main .messages-section .message-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Message preview text */
+#private-messages-main .messages-section .message-preview {
+    font-size: 14px;
+    color: #828282;
+}
+
+/* Unread message count */
+#private-messages-main .messages-section .message-unread-count {
+    background-color: #89C400;
+    font-size: 12px;
+    width: 19px;
+    height: 19px;
+    text-align: center;
+    border-radius: 100%;
+    padding-top: 1px;
+}
+/*  */
+/* Profile section */
+#private-messages-main .read-messages .message-header {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+#private-messages-main .read-messages .profile-img-wrapper {
+    width: 58px;
+    height: 58px;
+    margin-inline-end: 10px;
+}
+
+#private-messages-main .read-messages .profile-img {
+    width: 100%;
+    height: 100%;
+}
+
+#private-messages-main .read-messages .user-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#private-messages-main .read-messages .status-text {
+    font-size: 14px;
+    color: #828282;
+    font-weight: 300;
+}
+
+#private-messages-main .read-messages .flag-icon-wrapper {
+    width: 15px;
+    height: 22px;
+}
+
+#private-messages-main .read-messages .flag-icon {
+    width: 100%;
+    height: 100%;
+}
+
+#private-messages-main .read-messages .report-text {
+    color: #828282;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Message buttons */
+#private-messages-main .read-messages .message-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+    overflow: hidden;
+    font-weight: 300;
+}
+
+#private-messages-main .read-messages .sent-msg-btn {
+    background-color: #194D79;
+    color: white;
+}
+
+#private-messages-main .read-messages .received-msg-btn-right {
+    background-color: #F2F2F2;
+    color: black;
+    border-radius: 10px 10px 10px 0;
+}
+#private-messages-main .read-messages .received-msg-btn-left {
+    background-color: #194D79;
+    color: #FFFFFF;
+    border-radius: 10px 10px 0px 10px;
+}
+
+#private-messages-main .read-messages .msg-time {
+    font-size: 12px;
+    color: #828282;
+    text-align: right;
+    display: block;
+    padding-top: 4px;
+}
+
+/* Separator */
+#private-messages-main .read-messages .separator {
+    align-items: center;
+}
+
+#private-messages-main .read-messages .separator-line {
+    border-top: 1px solid #E0E0E0;
+}
+
+#private-messages-main .read-messages .separator-text {
+    font-size: 14px;
+    color: #828282;
+    padding: 0 16px;
+    font-weight: 300;
+}
+
+/* Message input */
+#private-messages-main .read-messages .message-input-wrapper {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+#private-messages-main .read-messages .message-input {
+    width: 100%;
+    border: none;
+    background-color: #F2F2F2;
+    font-weight: 300;
+    color: #828282;
+    padding-right: 12px;
+}
+
+#private-messages-main .read-messages .input-icon {
+    padding: 0 8px;
+}
+
+
+
+/* Wrapper */
+#private-messages-main .chat-wrapper {
+    right: 0;
+    padding-inline: 30px;
+}
+
+/* Header and Footer styling */
+#private-messages-main .chat-wrapper .chat-header, .chat-footer {
+    background-color: #194D79;
+    width: 389px;
+    height: 64px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/* User Information */
+#private-messages-main .chat-wrapper .user-img {
+    width: 39px;
+    height: 39px;
+}
+
+#private-messages-main .chat-wrapper .user-status {
+    background-color: #89C400;
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+}
+
+#private-messages-main .chat-wrapper .user-name {
+    font-size: 18px;
+}
+
+/* Footer Info */
+#private-messages-main .chat-wrapper .chat-icon-wrapper {
+    width: 24px;
+    height: 23px;
+}
+
+#private-messages-main .chat-wrapper .footer-text {
+    font-size: 18px;
+}
+
+/* Icons */
+#private-messages-main .chat-wrapper .chat-icon {
+    width: 18px;
+    height: 18px;
+}
+
+#private-messages-main .chat-wrapper .close-icon {
+    width: 13px;
+    height: 13px;
+}
+
+#private-messages-main .chat-wrapper .arrow-icon {
+    width: 12px;
+    height: 7px;
+}

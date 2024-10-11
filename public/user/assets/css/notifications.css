@@ -1,0 +1,60 @@
+/* ============================== */
+        /* notifications */
+/* ============================== */
+#notifications .notifications-header {
+    padding-block: 18px;
+}
+
+#notifications .notifications-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.notifications-header .filter-label,
+#notifications .notifications-header .sort-label {
+    color: #828282;
+    font-weight: 500;
+    font-size: 14px;
+    padding-inline-end: 0.5rem;
+}
+
+#notifications .notifications-header .dropdown-toggle {
+    color: #828282;
+    border-color: #CED4DA;
+}
+
+#notifications .notifications-header .input-group-prepend {
+    display: flex;
+    align-items: center;
+    margin-inline-start: 0.5rem;
+}
+
+#notifications .notifications-header .dropdown-menu {
+    padding: 0.5rem 1rem;
+}
+
+#notifications .notifications-header .dropdown-divider {
+    margin-block: 0.5rem;
+}
+/* notification component */
+#notifications .notifications-section .notifications-list-card-parent{
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+#notifications .notifications-section .notification-list-card{
+    border-radius: 10px;
+}
+#notifications .notifications-section .notification-list-card strong{
+    font-size: 16px;
+    color: #194D79;
+}
+#notifications .notifications-section .notification-list-card .paragraph{
+    font-size: 16px;
+}
+#notifications .notifications-section .notification-list-card p:last-child{
+    color: #194D79;
+}
+#notifications .notifications-section .notification-list-card p > span:last-child{
+    font-size: 12px;
+}

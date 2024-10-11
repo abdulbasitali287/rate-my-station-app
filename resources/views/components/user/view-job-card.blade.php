@@ -9,23 +9,23 @@
 ])
 
 <div class="col-md-6">
-    <div class="job-card bg-white my-4">
+    <div class="job-card bg-white my-4 p-4">
         <!-- Job Card Header -->
-        <div class="d-flex justify-content-between">
+        <div class="job-card-header d-flex justify-content-between">
             <!-- Company Logo -->
             <div class="company-logo">
-                <img src="{{ asset($logoImgPath) }}" class="w-100 h-100" alt="">
+                <img src="{{ asset($logoImgPath) }}" class="logo-img" alt="">
             </div>
 
             <!-- Job Title and Company -->
-            <div class="d-flex flex-column flex-grow-1 ps-3">
+            <div class="job-info d-flex flex-column flex-grow-1 ps-3 justify-content-center">
                 <h6 class="job-title">{{ $title }}</h6>
-                <p class="text-muted">{{ $subHeading }}</p>
+                <p>{{ $subHeading }}</p>
             </div>
 
             <!-- Options Menu -->
             <div>
-                <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn btn-sm options-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img src="{{ asset('user/assets/img/three-dots.png') }}" alt="">
                 </button>
                 <div class="dropdown-menu"></div>
@@ -35,19 +35,19 @@
         <!-- Job Details -->
         <div class="job-details d-flex justify-content-around my-3">
             <!-- Location -->
-            <div class="pe-4">
+            <div class="detail-item pe-4">
                 <span><img src="{{ asset($iconOne) }}" class="detail-icon" alt=""></span>
                 <span class="detail-text">{{ $textOne }}</span>
             </div>
 
             <!-- Salary -->
-            <div class="pe-4">
+            <div class="detail-item pe-4">
                 <span><img src="{{ asset('user/assets/vectors/dollar-50.png') }}" class="detail-icon" alt=""></span>
                 <span class="detail-text">{{ $textTwo }}</span>
             </div>
 
             <!-- Job Type -->
-            <div class="pe-4">
+            <div class="detail-item pe-4">
                 <span><img src="{{ asset('user/assets/vectors/briefcase-30.png') }}" class="detail-icon" alt=""></span>
                 <span class="detail-text">{{ $textThree }}</span>
             </div>
@@ -61,16 +61,16 @@
         </ul>
 
         <!-- Footer: Actively Hiring Button and Last Updated -->
-        <div class="d-flex justify-content-between align-items-center pt-3">
+        <div class="job-card-footer d-flex justify-content-between align-items-center pt-3">
             <!-- Actively Hiring -->
-            <a href="{{ url('job-details') }}" class="btn actively-hiring-btn">
+            <a href="{{ url('job-details') }}" class="actively-hiring-btn">
                 <img src="{{ asset('user/assets/vectors/tick-vector.png') }}" alt="">
                 Actively Hiring
             </a>
 
             <!-- Last Updated -->
-            <p class="text-muted updated-info">
-                <img src="{{ asset('user/assets/vectors/timer-vector.png') }}" alt="">
+            <p class="text-muted updated-info fw-light">
+                <img src="{{ asset('user/assets/vectors/timer-vector.png') }}" width="16" height="16" class="me-1" alt="">
                 Updated 8 hours ago
             </p>
         </div>
