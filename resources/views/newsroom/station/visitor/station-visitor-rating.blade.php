@@ -25,14 +25,12 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div style="width: 100%;height: 100%;display: flex;flex-direction: column;justify-content: center;">
-                        <button class="subscribe-btn" style="margin-block: 6px;">Rate This Station</button>
+                    <div class="d-flex flex-column" style="width: max-content;">
+                        <a href="#" class="rate-station-btn">Rate This Station</a>
                         <div class="d-flex justify-content-between align-items-center">
-                            <button class="fw-bold bg-transparent"
-                                style="padding-inline: 70px;padding-block: 11px;border-radius: 12px;letter-spacing: 0.5px;transition: all 0.5s;border:2px solid #194D79;color: #194D79;">Job
-                                Openings</button>
+                                <a href="{{ url('jobs-opening') }}" class="job-openings-btn">Job Openings</a>
                             <img src="{{ asset('user/assets/vectors/v-flag-station-rating.png') }}"
-                                style="width: 15px;height: 20px;" alt="">
+                                style="width: 16px;height: 20px;" alt="">
                         </div>
                     </div>
                 </div>

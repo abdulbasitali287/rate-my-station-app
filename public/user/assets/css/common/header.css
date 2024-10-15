@@ -61,7 +61,7 @@ header .container > div:last-child > div:first-child span{
 }
 /* Login link */
 header .container > div:last-child > div:last-child a {
-    color: var(--darkCerulean);
+    /* color: var(--darkCerulean); */
     border: 2px solid var(--darkCerulean);
     padding-inline: 39px;
     padding-block: 7px;

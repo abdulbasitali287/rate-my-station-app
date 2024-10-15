@@ -30,7 +30,7 @@
                     <h2 style="font-weight: bold;font-size: 36px;">Can't find Station you're looking for?</h2>
                     <p style="font-size: 20px;font-weight: 200;padding-block: 14px;">Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. </p>
                     <div>
-                        <a href="#" style="color: #000;display: inline-block;background-color: #ffff;padding-inline: 24px;padding-block: 14px;margin-top: 20px;font-weight: bold;border-radius: 10px;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);">Submit a Station</a>
+                        <a href="{{ url('station-form') }}" class="submit-station-btn" >Submit a Station</a>
                     </div>
                 </div>
             </div>

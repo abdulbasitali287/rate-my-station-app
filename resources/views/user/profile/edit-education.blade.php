@@ -246,121 +246,134 @@
         </div>
     </div>
 </section>
+    {{-- education modal --}}
+    <div class="modal fade" id="editEducationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content p-3" style="border-radius: 16px;">
+            <div class="modal-header py-0 pt-2" style="border-bottom: none;">
+            <h1 class="modal-title fw-bold" style="font-size: 24px;">Education</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="#" class="fw-light">School</label>
+                            <input type="text" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="align-content: center;">
+                        <div class="form-group">
+                            <label for="#" class="fw-light">Degree</label>
+                            <input type="text" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="#" class="fw-light">Field of study</label>
+                            <input type="text" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 pt-3">
+                        <label for="#" class="fw-light">Start date</label>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pt-2">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div style="display: flex;background-color: #F2F2F2;padding-block: 10px;padding-inline-end: 10px;border-radius: 10px;">
+                                        <select name="" class="ps-3" style="flex-grow: 1;margin-top: 3px;color: #828282;font-size: 14px;">
+                                            <option value="" selected>Month</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div style="display: flex;background-color: #F2F2F2;padding-block: 10px;padding-inline-end: 10px;border-radius: 10px;">
+                                        <select name="" class="ps-3" style="flex-grow: 1;margin-top: 3px;color: #828282;font-size: 14px;">
+                                            <option value="" selected>Year</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 pt-3">
+                        <label for="#" class="fw-light">End date</label>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pt-2">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div style="display: flex;background-color: #F2F2F2;padding-block: 10px;padding-inline-end: 10px;border-radius: 10px;">
+                                        <select name="" class="ps-3" style="flex-grow: 1;margin-top: 3px;color: #828282;font-size: 14px;">
+                                            <option value="" selected>Month</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div style="display: flex;background-color: #F2F2F2;padding-block: 10px;padding-inline-end: 10px;border-radius: 10px;">
+                                        <select name="" class="ps-3" style="flex-grow: 1;margin-top: 3px;color: #828282;font-size: 14px;">
+                                            <option value="" selected>Year</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="#" class="fw-light">Description</label>
+                            <textarea name="" class="w-100 p-3 my-3" placeholder="Type here..." id="" cols="30" rows="6" style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;"></textarea>
+                            </div>
+                    </div>
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-start" style="border-top: none;">
+                <button type="button" class="profile-modal-submit-btn">Save</button>
+                <button type="button" class="profile-modal-cancel-btn close-modal">Cancel</button>
+            </div>
+        </div>
+        </div>
+    </div>
 
 @endsection
 
-{{-- education modal --}}
-<div class="modal fade" id="editEducationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content p-3" style="border-radius: 16px;">
-        <div class="modal-header py-0 pt-2" style="border-bottom: none;">
-          <h1 class="modal-title fw-bold" style="font-size: 24px;">Education</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-              <div class="row">
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="#" class="fw-light">School</label>
-                          <input type="text" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
-                      </div>
-                  </div>
-                  <div class="col-md-6" style="align-content: center;">
-                    <div class="form-group">
-                        <label for="#" class="fw-light">Degree</label>
-                        <input type="text" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
-                    </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-12">
-                      <div class="form-group">
-                          <label for="#" class="fw-light">Field of study</label>
-                          <input type="text" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-12 pt-3">
-                      <label for="#" class="fw-light">Start date</label>
-                  </div>
-                  <div class="col-12">
-                      <div class="row pt-2">
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                  <div style="display: flex;background-color: #F2F2F2;padding-block: 10px;padding-inline-end: 10px;border-radius: 10px;">
-                                      <select name="" class="ps-3" style="flex-grow: 1;margin-top: 3px;color: #828282;font-size: 14px;">
-                                          <option value="" selected>Month</option>
-                                          <option value="1">1</option>
-                                          <option value="2">2</option>
-                                          <option value="3">3</option>
-                                      </select>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                  <div style="display: flex;background-color: #F2F2F2;padding-block: 10px;padding-inline-end: 10px;border-radius: 10px;">
-                                      <select name="" class="ps-3" style="flex-grow: 1;margin-top: 3px;color: #828282;font-size: 14px;">
-                                          <option value="" selected>Year</option>
-                                          <option value="1">1</option>
-                                          <option value="2">2</option>
-                                          <option value="3">3</option>
-                                      </select>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-12 pt-3">
-                      <label for="#" class="fw-light">End date</label>
-                  </div>
-                  <div class="col-12">
-                      <div class="row pt-2">
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                  <div style="display: flex;background-color: #F2F2F2;padding-block: 10px;padding-inline-end: 10px;border-radius: 10px;">
-                                      <select name="" class="ps-3" style="flex-grow: 1;margin-top: 3px;color: #828282;font-size: 14px;">
-                                          <option value="" selected>Month</option>
-                                          <option value="1">1</option>
-                                          <option value="2">2</option>
-                                          <option value="3">3</option>
-                                      </select>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                  <div style="display: flex;background-color: #F2F2F2;padding-block: 10px;padding-inline-end: 10px;border-radius: 10px;">
-                                      <select name="" class="ps-3" style="flex-grow: 1;margin-top: 3px;color: #828282;font-size: 14px;">
-                                          <option value="" selected>Year</option>
-                                          <option value="1">1</option>
-                                          <option value="2">2</option>
-                                          <option value="3">3</option>
-                                      </select>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-12">
-                      <div class="form-group">
-                          <label for="#" class="fw-light">Description</label>
-                          <textarea name="" class="w-100 p-3 my-3" placeholder="Type here..." id="" cols="30" rows="6" style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;"></textarea>
-                        </div>
-                  </div>
-              </div>
-          </form>
-        </div>
-        <div class="modal-footer d-flex justify-content-start" style="border-top: none;">
-          <x-user.button buttonText="Save" class="px-5" />
-          <x-user.button buttonText="Cancel" class="bg-white px-5" color="#194D79" />
-        </div>
-      </div>
-    </div>
-  </div>
+  @push('scripts')
+  <script>
+      $(document).ready(function () {
+          $(document).on('click', '.close-modal', function () {
+              // Wrap the closest modal in jQuery object
+              let modal = $(this).closest('.modal');
+              console.log(modal);  // For debugging purposes
+              modal.modal('hide'); // Close the modal
+          });
+      });
+  </script>
+
+  @endpush

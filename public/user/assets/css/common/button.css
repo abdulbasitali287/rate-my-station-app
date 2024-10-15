@@ -251,3 +251,165 @@
     background-color: #194D79;
     color: white;
 }
+.see-profile {
+    width: 186px;
+    height: 46px;
+    font-size: 16px;
+    background-color: #194D79;
+    color: white;
+    border-radius: 10px;
+    /* margin-block: 6px; */
+    margin-inline-end: 10px;
+    font-weight: bold;
+    border: 2px solid #194D79;
+    /* padding-inline: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.see-ratings {
+    width: 186px;
+    height: 46px;
+    font-size: 16px;
+    color: #194D79;
+    border-radius: 10px;
+    /* margin-block: 6px; */
+    margin-inline-end: 10px;
+    font-weight: bold;
+    border: 2px solid #194D79;
+    /* padding-inline: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.see-profile:hover {
+    background-color: var(--trueBlueHover);
+    border-color: transparent;
+}
+.see-ratings:hover {
+    background-color: #194D79;
+    color: white;
+}
+.submit-station-btn {
+    color: #000;display: inline-block;background-color: #ffff;padding-inline: 24px;padding-block: 14px;margin-top: 20px;border: 2px solid transparent;font-weight: bold;border-radius: 10px;box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);transition: all 0.5s;
+}
+.submit-station-btn:hover {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+/* ============================== */
+.station-submit-btn {
+    width: 187px;
+    height: 46px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #194D79;
+    color: white;
+    margin-block: 6px;
+    margin-inline-end: 10px;
+    font-weight: bold;
+    /* border: 2px solid #194D79; */
+    padding-inline: 50px;
+    padding-block: 8px;
+    transition: all 0.5s;
+}
+.station-submit-btn:hover {
+    background-color: var(--trueBlueHover);
+}
+.station-cancel-btn {
+    width: 187px;
+    height: 46px;
+    font-size: 16px;
+    border-radius: 10px;
+    color: #194D79;
+    margin-block: 6px;
+    margin-inline-end: 10px;
+    font-weight: bold;
+    border: 2px solid #194D79;
+    padding-inline: 50px;
+    padding-block: 8px;
+    transition: all 0.5s;
+}
+.station-cancel-btn:hover {
+    background-color: #194D79;
+    color: white;
+}
+/* ============================ */
+.profile-modal-submit-btn {
+    width: 133px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #194D79;
+    color: white;
+    font-size: 16px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin-block: 6px;
+    margin-inline-end: 10px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.profile-modal-submit-btn:hover {
+    background-color: var(--trueBlueHover);
+}
+/* ============================ */
+.profile-modal-cancel-btn {
+    width: 133px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #194D79;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-block: 6px;
+    margin-inline-end: 10px;
+    font-weight: bold;
+    border: 2px solid #194D79;
+    transition: all 0.5s;
+}
+.profile-modal-cancel-btn:hover {
+    background-color: #194D79;
+    color: white;
+}
+/* =============================== */
+.rate-station-btn {
+    width: 239px;height: 46px;display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #194D79;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-block: 6px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+}
+.rate-station-btn:hover {
+    background-color: var(--trueBlueHover);
+}
+/* ================================ */
+.job-openings-btn {
+    width: 184px;height: 46px;display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #194D79;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-block: 6px;
+    font-weight: bold;
+    border: 2px solid #194D79;
+    transition: all 0.5s;
+}
+.job-openings-btn:hover {
+    background-color: #194D79;
+    color: white;
+}

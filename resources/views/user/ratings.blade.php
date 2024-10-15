@@ -534,10 +534,10 @@
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center pt-3">
                                         <div>
-                                            <button class="actively-hiring-btn">
+                                            <a href="{{ url('jobs-opening') }}" class="actively-hiring-btn">
                                                 <span><img src="{{ asset('user/assets/vectors/tick-vector.png') }}" class="tick-icon" alt=""></span>
                                                 <span class="hiring-text">Actively Hiring</span>
-                                            </button>
+                                            </a>
                                         </div>
                                         <div>
                                             <p class="update-info"><span><img src="{{ asset('user/assets/vectors/timer-vector.png') }}" alt=""></span><span class="update-text">Updated 8 hours ago</span></p>
@@ -566,10 +566,10 @@
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center pt-3">
                                         <div>
-                                            <button class="actively-hiring-btn">
+                                            <a href="{{ url('jobs-opening') }}" class="actively-hiring-btn">
                                                 <span><img src="{{ asset('user/assets/vectors/tick-vector.png') }}" class="tick-icon" alt=""></span>
                                                 <span class="hiring-text">Actively Hiring</span>
-                                            </button>
+                                            </a>
                                         </div>
                                         <div>
                                             <p class="update-info"><span><img src="{{ asset('user/assets/vectors/timer-vector.png') }}" alt=""></span><span class="update-text">Updated 8 hours ago</span></p>

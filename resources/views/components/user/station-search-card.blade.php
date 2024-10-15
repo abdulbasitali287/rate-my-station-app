@@ -8,8 +8,8 @@
                     <p style="color: #828282;">TV News   |   Los Angeles, CA   |   DMA: 2</p>
                 </div>
                 <div class="d-flex pt-3">
-                    <button class="subscribe-btn fw-bold me-3">See Profile</button>
-                    <button class="subscribe-btn fw-bold me-3" style="background-color: transparent;border: 2px solid #194D79;color: #194D79;">See Ratings</button>
+                    <a href="#" class="see-profile fw-bold me-3">See Profile</a>
+                    <a href="#" class="see-ratings fw-bold me-3">See Ratings</a>
                 </div>
             </div>
         </div>

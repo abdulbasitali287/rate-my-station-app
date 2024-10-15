@@ -36,7 +36,7 @@
                                                 <div class="form-group py-2">
                                                     <x-user.label label="Station type" />
                                                     <div class="select-container">
-                                                        <select name="" class="form-select">
+                                                        <select name="" class="" style="width: 100%;background-color: #F2F2F2;color: #828282;border: none;border-radius: 10px;background-color: #F2F2F2;padding-inline-start: 10px;padding-block: 10px;">
                                                             <option value="" selected>Choose options</option>
                                                             <option value="1">1</option>
                                                             <option value="2">2</option>

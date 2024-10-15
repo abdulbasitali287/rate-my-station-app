@@ -50,7 +50,7 @@
                         <div class="contact-card">
                             <h2>Can't find the question you're looking for?</h2>
                             <p>Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum.</p>
-                            <div>
+                            <div class="d-flex justify-content-center">
                                 <a href="{{ url('contact-us') }}" class="contact-button">Contact us</a>
                             </div>
                         </div>

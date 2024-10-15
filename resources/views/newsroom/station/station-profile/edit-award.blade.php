@@ -38,19 +38,19 @@
             <div class="col-12">
                 <ul class="d-flex">
                     <li class="px-4 pt-4 pb-3 fw-bold" style="border-bottom: 4px solid #89C400;">
-                        <a href="#" class="text-black">Profile</a>
+                        <a href="{{ url('station-profile') }}" class="text-black">Profile</a>
                     </li>
                     <li class="p-4">
-                        <a href="#" class="text-black">My ratings</a>
+                        <a href="{{ url('station-rating') }}" class="text-black">My ratings</a>
                     </li>
                     <li class="p-4">
-                        <a href="#" class="text-black">Statistic</a>
+                        <a href="{{ url('station-statistic') }}" class="text-black">Statistic</a>
                     </li>
                     <li class="p-4">
-                        <a href="#" class="text-black">Posted job</a>
+                        <a href="{{ url('station-posted-jobs') }}" class="text-black">Posted job</a>
                     </li>
                     <li class="p-4">
-                        <a href="#" class="text-black">Contact Info</a>
+                        <a href="{{ url('station-contact-info') }}" class="text-black">Contact Info</a>
                     </li>
                 </ul>
             </div>
@@ -90,7 +90,7 @@
                         </div>
                         <div class="col-2 d-flex justify-content-end align-items-center">
                             <div class="d-flex align-items-center">
-                                <a href="#">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#addAwardModal">
                                     <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" alt="">
                                 </a>
                             </div>
@@ -113,7 +113,7 @@
                         </div>
                         <div class="col-2 d-flex justify-content-end align-items-center">
                             <div class="d-flex align-items-center">
-                                <a href="#">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#addAwardModal">
                                     <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" alt="">
                                 </a>
                             </div>
@@ -136,7 +136,7 @@
                         </div>
                         <div class="col-2 d-flex justify-content-end align-items-center">
                             <div class="d-flex align-items-center">
-                                <a href="#">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#addAwardModal">
                                     <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" alt="">
                                 </a>
                             </div>
@@ -193,4 +193,65 @@
         </div>
     </div>
 </section>
+
+    {{-- add award modal --}}
+    <div class="modal fade" id="addAwardModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content p-3" style="border-radius: 16px;">
+            <div class="modal-header py-0 pt-2" style="border-bottom: none;">
+            <h1 class="modal-title fw-bold" style="font-size: 24px;">Award</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="#" class="fw-light">Award title</label>
+                            <input type="text" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                        <label for="#" class="fw-light">Description</label>
+                        <textarea name="" class="w-100 p-3 mt-2" placeholder="Type here..." id="" cols="30" rows="6" style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center py-3">
+                            <div class="d-flex justify-content-center align-items-center me-3" style="width: 89px;height: 89px;background-color: #F2F2F2;border-radius: 10px;">
+                                <img src="{{ asset('user/assets/vectors/dummy-img.png') }}" style="width: 30px;height: 28px;" alt="">
+                            </div>
+                            <p style="color: #194D79;">Upload Image in <span class="fw-bold"> jpg or png format</span></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-start" style="border-top: none;">
+                <button type="button" class="profile-modal-submit-btn">Save</button>
+                <button type="button" class="profile-modal-cancel-btn close-modal">Cancel</button>
+            </div>
+        </div>
+        </div>
+    </div>
 @endsection
+
+
+@push('scripts')
+<script>
+    $(document).ready(function () {
+        $(document).on('click', '.close-modal', function () {
+            // Wrap the closest modal in jQuery object
+            let modal = $(this).closest('.modal');
+            console.log(modal);  // For debugging purposes
+            modal.modal('hide'); // Close the modal
+        });
+    });
+</script>
+
+@endpush

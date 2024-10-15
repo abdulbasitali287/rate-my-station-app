@@ -16,7 +16,7 @@
                         <x-user.form-group label="Enter your email" placeholder="Type  your email here..." />
                     </div>
                     <div class="col-md-6">
-                        <div class="form-group py-4">
+                        <div class="form-group py-2">
                             <x-user.label label="Station category:" />
                             <div style="display: flex;background-color: #F2F2F2;padding-block: 10px;padding-inline-end: 10px;border-radius: 10px;">
                                 <label for="#" style="display: inline-block;padding-inline: 12px;"><img src="{{ asset('user/assets/vectors/tv-vector.png') }}" alt=""></label>
@@ -35,8 +35,10 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="py-4">
-                            <x-user.button type="submit" buttonText="Submit" />
-                            <x-user.button type="button" buttonText="Cancel" class="bg-white" color="#194D79"/>
+                            <button type="submit" class="station-submit-btn">Submit</button>
+                            <button type="submit" class="station-cancel-btn">Cancel</button>
+                            {{-- <x-user.button type="submit" buttonText="Submit" />
+                            <x-user.button type="button" buttonText="Cancel" class="bg-white" color="#194D79"/> --}}
                         </div>
                     </div>
                     <div class="col-md-6">

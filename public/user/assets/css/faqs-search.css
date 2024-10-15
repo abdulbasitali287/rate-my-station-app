@@ -82,13 +82,26 @@
 }
 
 #faqs-search .contact-button {
+    width: 231px;
+    height: 64px;
     color: #000;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
     padding-inline: 24px;
     padding-block: 14px;
     margin-top: 20px;
     font-weight: bold;
-    border-radius: 10px;
+    font-size: 20px;
+    border-radius: 15px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    transition: all 0.5s;
+
+}
+#faqs-search .contact-button:hover {
+    background-color: transparent;
+    color: white;
+    border-color: white;
 }

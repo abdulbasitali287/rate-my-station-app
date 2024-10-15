@@ -129,13 +129,6 @@ Route::get('/user-change-password', function () {
 });
 
 
-// Route::get('/station-profile', function () {
-//     return view('station-profile');
-// });
-Route::get('/station-profile-2', function () {
-    return view('station-profile-2');
-});
-
 Route::get('/private-messages', function () {
     return view('private-messages');
 });
@@ -149,12 +142,22 @@ Route::get('/subscription', function () {
 
 // station visitor profile
 Route::get('/station-visitor-profile', function () {
-    return view('newsroom.station.station-visitor-profile');
+    return view('newsroom.station.visitor.station-visitor-profile');
+});
+Route::get('/station-visitor-rating', function () {
+    return view('newsroom.station.visitor.station-visitor-rating');
 });
 // station logged-in
 Route::get('/station-profile', function () {
-    return view('newsroom.station.station-profile');
+    return view('newsroom.station.station-profile.station-profile');
 });
+    Route::get('/edit-news-director', function () {
+        return view('newsroom.station.station-profile.edit-news-director');
+    });
+    Route::get('/edit-award', function () {
+        return view('newsroom.station.station-profile.edit-award');
+    });
+
 Route::get('/station-rating', function () {
     return view('newsroom.station.station-rating');
 });
@@ -217,9 +220,9 @@ Route::get('/apply-job-form', function () {
 Route::get('/director-detail-popup', function () {
     return view('popup-forms.director-detail-popup');
 });
-Route::get('/add-news-director-2', function () {
-    return view('popup-forms.add-news-director-2');
-});
+// Route::get('/add-news-director-2', function () {
+//     return view('popup-forms.add-news-director-2');
+// });
 // Route::get('/job-opening-popup-form', function () {
 //     return view('popup-forms.job-opening-popup-form');
 // });

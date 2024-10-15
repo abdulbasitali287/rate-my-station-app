@@ -1,190 +1,264 @@
 @extends('layout.main')
 @section('content')
-
-    <main id="station-visitor-prfile-main">
-        {{-- banner section --}}
+    <main id="station-profile-main">
+        {{-- banner Section --}}
         <section class="banner-section"></section>
 
-
+        {{-- station profile section --}}
         <section class="station-profile-section">
             <div class="container">
                 <div class="row station-profile-container">
-                    <div class="col-md-9 station-profile-col station-profile-details">
+                    <div class="col-md-9 pb-4 border-bottom">
                         <div class="d-flex">
                             <div class="text-center pe-4">
-                                <div class="station-logo-wrapper">
-                                    <img class="w-100 h-100" src="{{ asset('user/assets/img/Logo.jpg') }}" style="object-fit: cover;" alt="">
+                                <div class="logo-container">
+                                    <img class="logo-image" src="{{ asset('user/assets/img/Logo.jpg') }}" alt="">
                                 </div>
-                                <a href="#" class="subscribed-button">Subscribed</a>
+                                <a href="#" class="subscribe-button">Subscribed</a>
                             </div>
                             <div class="station-info">
-                                <h2 class="station-name">KABC <span class="position-absolute" style="top: -4px;right: 92px;"><img src="{{ asset('user/assets/vectors/gare-vector.png') }}" alt=""></span></h2>
-                                <p class="station-subtitle">TV News Station</p>
-                                <p class="station-location"><span style="display: inline-block;padding-inline-end: 4px;"><img src="{{ asset('user/assets/vectors/map-vector.png') }}" alt=""></span>Los Angeles, CA | DMA: 2</p>
+                                <h2 class="station-name">KABC
+                                    <span class="station-icon">
+                                        <img src="{{ asset('user/assets/vectors/gare-vector.png') }}" alt=""></span>
+                                </h2>
+                                <p class="station-tagline">TV News Station</p>
+                                <p class="station-location pt-2">
+                                    <span class="location-icon d-inline-block me-2"><img src="{{ asset('user/assets/vectors/map-vector.png') }}" alt=""></span>Los Angeles, CA | DMA: 2
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 station-actions">
-                        <a href="#" class="ratings-button">See Station’s ratings</a>
-                        <div class="contact-actions">
-                            <a href="#" class="contact-info-button">
-                                <span class="d-inline-block" style="background-color: #194D79;width: 22px;height: 22px;border-radius: 100%;">
-                                    <img src="{{ asset('user/assets/vectors/chat-blue-icon.png') }}" style="margin-top: -5px;margin-left: 1px;" alt="">
-                                </span>
+                    <div class="col-md-3 pb-4 d-flex justify-content-center align-items-center border-bottom">
+                        <div class="account-actions">
+                            <a href="{{ url('newsroom-profile') }}" class="account-settings-button d-flex justify-content-center align-items-center">
+                                <span class="d-inline-block me-2">
+                                    <img src="{{ asset('user/assets/vectors/settings-vector.png') }}" alt=""></span>
+                                Account settings
                             </a>
-                            <a href="#" class="contact-info-button flex-grow-1 fw-bold">Contact Info</a>
+                            <a href="#" class="add-profile-section-button d-flex justify-content-center align-items-center">
+                                <span class="me-2 add-icon">
+                                    <img src="{{ asset('user/assets/vectors/plus-vector.png') }}" alt=""></span>
+                                Add profile section
+                            </a>
                         </div>
+                    </div>
+                    <div class="col-12">
+                        <ul class="navigation-menu d-flex">
+                            <li class="menu-item active">
+                                <a href="{{ url('station-profile') }}" class="text-black">Profile</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="{{ url('station-rating') }}" class="text-black">My ratings</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="{{ url('station-statistic') }}" class="text-black">Statistic</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="{{ url('station-posted-jobs') }}" class="text-black">Posted job</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="{{ url('station-contact-info') }}" class="text-black">Contact Info</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-
         <section>
-            <div class="container p-0">
+            <div class="container px-0">
                 <div class="row">
                     <div class="col-md-8">
 
-                        {{-- station visitor about --}}
-                        <div class="bg-white p-5 mt-4 visitor-about-wrapper">
+                        {{-- about section --}}
+                        <div class="bg-white p-5 mt-4 about-card">
                             <div class="row align-items-center pb-3">
-                                <div class="col-12">
-                                    <h2 class="about-title">About</h2>
+                                <div class="col-md-8">
+                                    <h2 class="fw-bold custom-title">About</h2>
+                                </div>
+                                <div class="col-md-4 text-end">
+                                    <a href="#" class="fw-thin d-inline-block edit-icon" data-bs-toggle="modal" data-bs-target="#addAboutModal">
+                                        <img src="{{ asset('user/assets/vectors/edit-vector-26.png') }}" class="w-100 h-100" alt="">
+                                    </a>
                                 </div>
                             </div>
-                            <div class="row about-border">
+                            <div class="row pb-4 bottom-border">
                                 <div class="col-12">
                                     <p class="fw-light">Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna, ut egestas vivamus proin. Velit leo scelerisque pulvinar vestibulum in nunc a tortor mollis. Fusce pretium est ipsum elementum parturient. Venenatis, ac nulla non varius dolor. Ornare consectetur mauris, adipiscing tristique a leo. Habitant pharetra tellus habitasse vestibulum nibh quisque. Sed vel condimentum enim leo tortor mi magna tincidunt. Egestas bibendum id eget quisque semper ultricies. Gravida viverra massa faucibus vestibulum condimentum.</p>
                                 </div>
                             </div>
                             <div class="row pt-4">
                                 <div class="col-md-4">
-                                    <strong class="about-section-title">Industry</strong>
-                                    <p class="about-section-text">TV Broadcasting</p>
+                                    <strong class="fw-semiBold custom-strong">Industry</strong>
+                                    <p class="fw-light custom-light">TV Broadcasting</p>
                                 </div>
                                 <div class="col-md-8">
-                                    <strong class="about-section-title">Station Address</strong>
-                                    <p class="about-section-text">3891 Ranchview Dr. Richardson, California 62639</p>
+                                    <strong class="fw-semiBold custom-strong">Station Address</strong>
+                                    <p class="fw-light custom-light">3891 Ranchview Dr. Richardson, California 62639</p>
                                 </div>
                             </div>
                         </div>
 
-                        {{-- station news directors --}}
-                        <div class="bg-white p-5 mt-4 news-directors-wrapper">
+                        {{-- news directors section --}}
+                        <div class="bg-white p-5 mt-4 news-directors">
                             <div class="row align-items-center pb-4">
-                                <div class="col-12">
+                                <div class="col-md-8">
                                     <h2 class="fw-bold news-directors-title">News Directors</h2>
                                 </div>
+                                <div class="col-md-4 text-end">
+                                    <a href="#" class="fw-thin d-inline-block me-3 icon-link" data-bs-toggle="modal" data-bs-target="#addDirectorModal">
+                                        <img src="{{ asset('user/assets/vectors/plus-vector-26.png') }}" class="w-100 h-100" alt="">
+                                    </a>
+                                    <a href="{{ url('edit-news-director') }}" class="fw-thin d-inline-block icon-link">
+                                        <img src="{{ asset('user/assets/vectors/edit-vector-26.png') }}" class="w-100 h-100" alt="">
+                                    </a>
+                                </div>
                             </div>
                             <div class="d-flex justify-content-between pb-4 mb-4">
                                 <div class="d-flex align-items-center">
-                                    <div class="news-directors-image">
+                                    <div class="image-container">
                                         <img src="{{ asset('user/assets/img/director-search-1.png') }}" class="w-100 h-100" alt="">
                                     </div>
-                                    <div class="news-directors-text">
-                                        <p style="font-size: 16px;">
+                                    <div class="text-padding">
+                                        <p class="paragraph-text">
                                             <span class="fw-semiBold" style="color: #777777;"> News Director </span>
-                                            <span class="fw-semiBold news-directors-status current-status">current</span>
+                                            <span class="fw-semiBold status-current">current</span>
                                         </p>
-                                        <strong style="font-size: 26px;">Brooklyn Simmons</strong>
+                                        <strong class="name-text">Brooklyn Simmons</strong>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
-                                    <x-user.button buttonText="Send email" class="bg-white" color="#194D79" />
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#addDirectorModal">
+                                        <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" alt="">
+                                    </a>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between pb-4 mb-4">
                                 <div class="d-flex align-items-center">
-                                    <div class="news-directors-image">
+                                    <div class="image-container">
                                         <img src="{{ asset('user/assets/img/station-rating-1.png') }}" class="w-100 h-100" alt="">
                                     </div>
-                                    <div class="news-directors-text">
-                                        <p style="font-size: 16px;">
+                                    <div class="text-padding">
+                                        <p class="paragraph-text">
                                             <span class="fw-semiBold" style="color: #777777;"> News Director </span>
-                                            <span class="fw-semiBold news-directors-status past-status">Past</span>
+                                            <span class="fw-semiBold status-past">Past</span>
                                         </p>
-                                        <strong style="font-size: 26px;">Ronald Richards</strong>
+                                        <strong class="name-text">Ronald Richards</strong>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
-                                    <x-user.button buttonText="Send email" class="bg-white" color="#194D79" />
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#addDirectorModal">
+                                        <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" alt="">
+                                    </a>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between pb-4 mb-4">
                                 <div class="d-flex align-items-center">
-                                    <div class="news-directors-image">
+                                    <div class="image-container">
                                         <img src="{{ asset('user/assets/img/review-1-img.png') }}" class="w-100 h-100" alt="">
                                     </div>
-                                    <div class="news-directors-text">
-                                        <p style="font-size: 16px;">
+                                    <div class="text-padding">
+                                        <p class="paragraph-text">
                                             <span class="fw-semiBold" style="color: #777777;"> News Director </span>
-                                            <span class="fw-semiBold news-directors-status past-status">Past</span>
+                                            <span class="fw-semiBold status-past">Past</span>
                                         </p>
-                                        <strong style="font-size: 26px;">Sally Ramirez</strong>
+                                        <strong class="name-text">Sally Ramirez</strong>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
-                                    <x-user.button buttonText="Send email" class="bg-white" color="#194D79" />
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#addDirectorModal">
+                                        <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        {{-- station visitor award --}}
+                        {{-- award section --}}
                         <div class="bg-white p-5 mt-4 award-container">
                             <div class="row align-items-center pb-2">
-                                <div class="col-12">
-                                    <h2 class="fw-bold award-heading">Award</h2>
+                                <div class="col-md-8">
+                                    <h2 class="fw-bold award-title">Award</h2>
+                                </div>
+                                <div class="col-md-4 text-end">
+                                    <a href="#" class="fw-thin d-inline-block me-3" data-bs-toggle="modal" data-bs-target="#addAwardModal" style="color: #194D79;width: 26px;height: 26px;">
+                                        <img src="{{ asset('user/assets/vectors/plus-vector-26.png') }}" class="w-100 h-100" alt="">
+                                    </a>
+                                    <a href="{{ url('edit-award') }}" class="fw-thin d-inline-block" style="color: #194D79;width: 26px;height: 26px;">
+                                        <img src="{{ asset('user/assets/vectors/edit-vector-26.png') }}" class="w-100 h-100" alt="">
+                                    </a>
                                 </div>
                             </div>
-                            <div class="row py-4 award-item">
+                            <div class="row py-4 award-row">
                                 <div class="col-2">
-                                    <div class="award-image">
+                                    <div style="width: 125px;height: 125px;">
                                         <img src="{{ asset('user/assets/img/silver-logo.png') }}" class="w-100 h-100" alt="">
                                     </div>
                                 </div>
-                                <div class="col-10">
+                                <div class="col-8">
                                     <div class="ps-4">
-                                        <strong class="fw-semiBold award-title">Award 2022</strong>
-                                        <p class="fw-light award-description">
+                                        <strong class="fw-semiBold award-strong">Award 2022</strong>
+                                        <p class="fw-light award-paragraph">
                                             Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.
                                         </p>
                                     </div>
                                 </div>
+                                <div class="col-2 d-flex justify-content-end align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#addAwardModal">
+                                            <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" alt="">
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="row py-4 award-item">
+                            <div class="row py-4 award-row">
                                 <div class="col-2">
-                                    <div class="award-image">
+                                    <div style="width: 125px;height: 125px;">
                                         <img src="{{ asset('user/assets/img/silver-logo.png') }}" class="w-100 h-100" alt="">
                                     </div>
                                 </div>
-                                <div class="col-10">
+                                <div class="col-8">
                                     <div class="ps-4">
-                                        <strong class="fw-semiBold award-title">Award 2022</strong>
-                                        <p class="fw-light award-description">
+                                        <strong class="fw-semiBold award-strong">Award 2022</strong>
+                                        <p class="fw-light award-paragraph">
                                             Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.
                                         </p>
                                     </div>
                                 </div>
+                                <div class="col-2 d-flex justify-content-end align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#addAwardModal">
+                                            <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" alt="">
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="row py-4 award-item">
+                            <div class="row py-4 award-row">
                                 <div class="col-2">
-                                    <div class="award-image">
+                                    <div style="width: 125px;height: 125px;">
                                         <img src="{{ asset('user/assets/img/silver-logo.png') }}" class="w-100 h-100" alt="">
                                     </div>
                                 </div>
-                                <div class="col-10">
+                                <div class="col-8">
                                     <div class="ps-4">
-                                        <strong class="fw-semiBold award-title">Award 2022</strong>
-                                        <p class="fw-light award-description">
+                                        <strong class="fw-semiBold award-strong">Award 2022</strong>
+                                        <p class="fw-light award-paragraph">
                                             Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. Viverra tortor hac sollicitudin dictum sit. Condimentum eget et commodo sapien porta felis amet pellentesque. Erat augue enim turpis risus urna.
                                         </p>
                                     </div>
                                 </div>
+                                <div class="col-2 d-flex justify-content-end align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#addAwardModal">
+                                            <img src="{{ asset('user/assets/vectors/edit-vector.png') }}" alt="">
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- Repeat for other items -->
                             <div class="row pt-4">
                                 <div class="col-12 text-center">
-                                    <a href="#" class="fw-semiBold award-more-link">3+ more</a>
+                                    <a href="#" class="fw-semiBold award-more-link">
+                                        3+ more
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -399,5 +473,170 @@
             </div>
         </section>
     </main>
+    {{-- add director modal --}}
+    <div class="modal fade" id="addDirectorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content p-3" style="border-radius: 16px;">
+            <div class="modal-header py-0 pt-2" style="border-bottom: none;">
+              <h1 class="modal-title fw-bold" style="font-size: 24px;">News Director</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center pb-3">
+                            <div class="d-flex justify-content-center align-items-end me-3" style="width: 89px;height: 89px;background-color: #F2F2F2;border-radius: 10px;">
+                                <img src="{{ asset('user/assets/img/account-profile.png') }}" style="width: 70px;height: 71px;" alt="">
+                            </div>
+                            <p style="color: #194D79;">Upload Image in <span class="fw-bold"> jpg or png format</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="#" class="fw-light">Director’s name</label>
+                            <input type="text" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="align-content: center;">
+                        <div class="form-check pt-3">
+                            <input class="form-check-input me-3" type="checkbox" value="" style="width: 22px;height: 22px;border-color: #BDBDBD;">
+                            <label class="form-check-label d-inline-block mt-1 fw-light" for="flexCheckDefault">
+                                Current news director
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="#" class="fw-light">Director’s  email</label>
+                            <input type="email" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
+                        </div>
+                    </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-start" style="border-top: none;">
+                <button type="button" class="profile-modal-submit-btn">Save</button>
+                <button type="button" class="profile-modal-cancel-btn close-modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+    </div>
 
+
+    {{-- add about modal --}}
+    <div class="modal fade" id="addAboutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content p-3" style="border-radius: 16px;">
+            <div class="modal-header py-0 pt-2" style="border-bottom: none;">
+              <h1 class="modal-title fw-bold" style="font-size: 24px;">About</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                          <label for="#" class="fw-light">You can write about your years of experience, industry, or skills.</label>
+                          <textarea name="" class="w-100 p-3 mt-2" placeholder="Type here..." id="" cols="30" rows="6" style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group pt-3">
+                            <label for="#" class="fw-light">Industry</label>
+                            <div class="mt-2" style="display: flex;background-color: #F2F2F2;padding-block: 10px;padding-inline-end: 10px;border-radius: 10px;">
+                                <select name="" class="ps-3" style="flex-grow: 1;margin-top: 3px;color: #828282;font-size: 14px;">
+                                    <option value="" selected>Choose options</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group pt-3">
+                            <label for="#" class="fw-light">Station Address</label>
+                            <input type="text" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
+                        </div>
+                    </div>
+                </div>
+
+              </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-start" style="border-top: none;">
+                <button type="button" class="profile-modal-submit-btn">Save</button>
+                <button type="button" class="profile-modal-cancel-btn close-modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    {{-- add award modal --}}
+    <div class="modal fade" id="addAwardModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content p-3" style="border-radius: 16px;">
+            <div class="modal-header py-0 pt-2" style="border-bottom: none;">
+              <h1 class="modal-title fw-bold" style="font-size: 24px;">Award</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="#" class="fw-light">Award title</label>
+                            <input type="text" class="w-100 px-3 mt-2 mb-3" placeholder="Type here..." style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;padding-block: 12px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                          <label for="#" class="fw-light">Description</label>
+                          <textarea name="" class="w-100 p-3 mt-2" placeholder="Type here..." id="" cols="30" rows="6" style="color: #828282;background-color: #F2F2F2;border: none;border-radius: 10px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center py-3">
+                            <div class="d-flex justify-content-center align-items-center me-3" style="width: 89px;height: 89px;background-color: #F2F2F2;border-radius: 10px;">
+                                <img src="{{ asset('user/assets/vectors/dummy-img.png') }}" style="width: 30px;height: 28px;" alt="">
+                            </div>
+                            <p style="color: #194D79;">Upload Image in <span class="fw-bold"> jpg or png format</span></p>
+                        </div>
+                    </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-start" style="border-top: none;">
+                <button type="button" class="profile-modal-submit-btn">Save</button>
+                <button type="button" class="profile-modal-cancel-btn close-modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+    </div>
 @endsection
+
+@push('scripts')
+<script>
+    $(document).ready(function () {
+        $(document).on('click', '.close-modal', function () {
+            // Wrap the closest modal in jQuery object
+            let modal = $(this).closest('.modal');
+            console.log(modal);  // For debugging purposes
+            modal.modal('hide'); // Close the modal
+        });
+    });
+</script>
+
+@endpush
