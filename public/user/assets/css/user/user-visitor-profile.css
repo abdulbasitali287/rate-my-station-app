@@ -1,0 +1,227 @@
+/* ================================ */
+    /* user visitor profile */
+/* ================================ */
+
+#user-visitor-profile-main .banner-section {
+    height: 294px;
+    background-image: url('/user/assets/ellipse/station-banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ======================== */
+#user-visitor-profile-main .visitor-profile-header {
+    margin-top: -164px;
+}
+
+#user-visitor-profile-main .visitor-profile-header .content-box {
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#user-visitor-profile-main .visitor-profile-header .image-box {
+    width: 157px;
+    height: 157px;
+    margin-inline-end: 24px;
+}
+
+#user-visitor-profile-main .visitor-profile-header .img-cover {
+    object-fit: cover;
+}
+
+#user-visitor-profile-main .visitor-profile-header .profile-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#user-visitor-profile-main .visitor-profile-header .profile-title {
+    color: #828282;
+    font-size: 22px;
+}
+
+#user-visitor-profile-main .visitor-profile-header .location-info {
+    color: #194D79;
+    font-size: 18px;
+}
+
+#user-visitor-profile-main .visitor-profile-header .map-icon {
+    display: inline-block;
+    padding-inline-end: 4px;
+}
+
+#user-visitor-profile-main .visitor-profile-header .btn-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#user-visitor-profile-main .visitor-profile-header .contact-info-btn {
+    background-color: transparent;
+    border: 2px solid #194D79;
+    color: #194D79;
+}
+/* ======================================= */
+#user-visitor-profile-main .visitor-data .bg-custom {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#user-visitor-profile-main .visitor-data .h2-custom {
+    font-size: 24px;
+}
+
+#user-visitor-profile-main .visitor-data .experience-img {
+    width: 46px;
+    height: 35px;
+}
+
+#user-visitor-profile-main .visitor-data .experience-title {
+    font-size: 18px;
+}
+
+#user-visitor-profile-main .visitor-data .experience-duration {
+    font-size: 14px;
+    color: #828282;
+}
+
+#user-visitor-profile-main .visitor-data .job-title {
+    font-size: 16px;
+    color: #194D79;
+}
+
+#user-visitor-profile-main .visitor-data .fulltime-text {
+    font-size: 14px;
+    color: #828282;
+}
+
+#user-visitor-profile-main .visitor-data .date-text {
+    font-size: 16px;
+    color: #89C400;
+}
+
+#user-visitor-profile-main .visitor-data .date-duration {
+    font-size: 14px;
+    color: #828282;
+}
+
+#user-visitor-profile-main .visitor-data .skill-title {
+    font-size: 18px;
+    color: #194D79;
+}
+
+#user-visitor-profile-main .visitor-data .skill-description {
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+#user-visitor-profile-main .visitor-data .education-img {
+    width: 58px;
+    height: 58px;
+}
+
+#user-visitor-profile-main .visitor-data .education-degree {
+    font-size: 18px;
+}
+
+#user-visitor-profile-main .visitor-data .education-university {
+    color: #194D79;
+}
+
+#user-visitor-profile-main .visitor-data .education-date {
+    font-size: 14px;
+    color: #828282;
+}
+/* ============================ */
+/* External CSS file */
+
+/* General Classes */
+#user-visitor-profile-main .latest-posts .job-openings-heading, .newsletter-heading {
+    font-size: 28px;
+}
+
+#user-visitor-profile-main .latest-posts .job-card {
+    width: 384px;
+    background-color: white;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#user-visitor-profile-main .latest-posts .company-logo {
+    width: 46px;
+    height: 45px;
+}
+
+#user-visitor-profile-main .latest-posts .job-info {
+    flex-grow: 1;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#user-visitor-profile-main .latest-posts .job-title {
+    font-size: 18px;
+}
+
+#user-visitor-profile-main .latest-posts .company-name {
+    color: #194D79;
+    font-size: 14px;
+}
+
+#user-visitor-profile-main .latest-posts .job-details {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding-block: 10px;
+}
+
+#user-visitor-profile-main .latest-posts .location-info, .salary-info {
+    display: flex;
+    align-items: center;
+}
+
+#user-visitor-profile-main .latest-posts .location-icon, .salary-icon {
+    width: 13px;
+    height: 14px;
+}
+
+#user-visitor-profile-main .latest-posts .location-text, .salary-text {
+    color: #194D79;
+    font-size: 14px;
+}
+
+#user-visitor-profile-main .latest-posts .actively-hiring-btn {
+    font-size: 12px;
+    background-color: #9BDB08;
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#user-visitor-profile-main .latest-posts .tick-icon {
+    width: 11px;
+    height: 11px;
+    margin-right: 4px;
+}
+
+#user-visitor-profile-main .latest-posts .hiring-text {
+    padding-top: 1px;
+}
+
+#user-visitor-profile-main .latest-posts .update-info {
+    color: #828282;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+#user-visitor-profile-main .latest-posts .update-text {
+    margin-left: 6px;
+}

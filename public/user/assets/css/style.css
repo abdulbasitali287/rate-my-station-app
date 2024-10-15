@@ -1,11 +1,13 @@
+@import url('/user/assets/css/common/header.css');
+@import url('/user/assets/css/common/footer.css');
 @import url('/user/assets/css/common/default.css');
+@import url('/user/assets/css/common/button.css');
 @import url('/user/assets/css/common/load-more-btn.css');
 @import url('/user/assets/css/common/see-all-products.css');
 @import url('/user/assets/css/common/pagination.css');
 @import url('/user/assets/css/common/product-card.css');
 @import url('/user/assets/css/common/searching-queries.css');
-@import url('/user/assets/css/common/header.css');
-@import url('/user/assets/css/common/footer.css');
+@import url('/user/assets/css/common/opening-job-card.css');
 @import url('/user/assets/css/about.css');
 @import url('/user/assets/css/jobs.css');
 @import url('/user/assets/css/job-details.css');
@@ -27,9 +29,34 @@
 @import url('/user/assets/css/faqs-search.css');
 @import url('/user/assets/css/work-for-us.css');
 @import url('/user/assets/css/terms-and-conditions.css');
-/* newsroom account */
+/* newsroom account css */
 @import url('/user/assets/css/newsroom/account/newsroom-profile.css');
 @import url('/user/assets/css/newsroom/account/newsroom-contact-info.css');
 @import url('/user/assets/css/newsroom/account/newsroom-subscription.css');
 @import url('/user/assets/css/newsroom/account/newsroom-verification.css');
 @import url('/user/assets/css/newsroom/account/newsroom-change-password.css');
+/* user account css */
+@import url('/user/assets/css/user/account/user-profile.css');
+@import url('/user/assets/css/user/account/user-contact-info.css');
+@import url('/user/assets/css/user/account/user-subscription.css');
+@import url('/user/assets/css/user/account/user-verification.css');
+@import url('/user/assets/css/user/account/user-change-password.css');
+/* station pages */
+@import url('/user/assets/css/newsroom/station/station-visitor-profile.css');
+@import url('/user/assets/css/newsroom/station/station-profile.css');
+@import url('/user/assets/css/newsroom/station/station-rating.css');
+@import url('/user/assets/css/newsroom/station/station-statistic.css');
+@import url('/user/assets/css/newsroom/station/station-posted-jobs.css');
+@import url('/user/assets/css/newsroom/station/station-applied-candidates.css');
+@import url('/user/assets/css/newsroom/station/station-contact-info.css');
+/* user logged in pages */
+@import url('/user/assets/css/user/user-visitor-profile.css');
+@import url('/user/assets/css/user/profile.css');
+@import url('/user/assets/css/user/ratings.css');
+@import url('/user/assets/css/user/applied-jobs.css');
+@import url('/user/assets/css/user/contact-info.css');
+@import url('/user/assets/css/user/subscribed.css');
+@import url('/user/assets/css/user/saved.css');
+/* jobs */
+@import url('/user/assets/css/jobs-opening.css');
+

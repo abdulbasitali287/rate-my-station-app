@@ -18,7 +18,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div id="tac-all-cards" class="bg-white px-5 p-4 my-4">
+                <div class="bg-white px-5 p-4 my-4 tac-all-cards">
                     <div class="pb-4">
                         <div class="pb-3">
                             <strong class="tac-heading">Terms of Use Agreement:</strong>

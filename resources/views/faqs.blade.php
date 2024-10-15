@@ -13,12 +13,12 @@
                     </div>
                     <div class="col-md-2">
                         <div>
-                            <button class="search-btn">
+                            <a href="{{ url('faqs-search') }}" class="search-btn d-block">
                                 <span class="d-inline-block">
                                     <img src="{{ asset('user/assets/vectors/search-30-white.png') }}" style="color: #ffff;" alt="">
                                 </span>
                                 <span>Search</span>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -98,6 +98,6 @@
         </section>
 
         {{-- looking for work --}}
-        <x-user.searching-queries title="Stil have question?" buttonText="Contact us" paragraph="Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. " />
+        <x-user.searching-queries url="contact-us" title="Stil have question?" buttonText="Contact us" paragraph="Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum. " />
     </main>
 @endsection

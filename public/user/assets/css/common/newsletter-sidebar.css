@@ -70,6 +70,10 @@
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
+    transition: all 0.5s;
+}
+.newsletter-subscribe .subscribe-btn:hover {
+    background-color: var(--trueBlueHover);
 }
 
 /* RMS Follow Section */

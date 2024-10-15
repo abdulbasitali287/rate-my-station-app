@@ -150,7 +150,7 @@
 }
 
 /* Message buttons */
-#private-messages-main .read-messages .message-btn {
+#private-messages-main .read-messages .message {
     font-size: 16px;
     padding: 8px 16px;
     overflow: hidden;

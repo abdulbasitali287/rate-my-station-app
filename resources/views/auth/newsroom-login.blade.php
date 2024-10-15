@@ -31,7 +31,7 @@
                                         <x-user.form-group label="Station’s name" placeholder="Type your username here..."/>
                                         <x-user.form-group-right-icon label="Password" type="password" placeholder="Type your password here..." />
                                         <div class="d-flex justify-content-between align-items-center pt-3">
-                                            <x-user.button buttonText="Login" class="bg-white" color="#194D79" />
+                                            <a href="{{ url('station-profile') }}" type="submit" class="login-btn">Login</a>
                                             <a href="#" class="fw-light forgot-password">Forgot password?</a>
                                         </div>
                                     </form>

@@ -126,6 +126,11 @@
     padding-block: 10px;
     padding-inline: 30px;
     border-radius: 10px;
+    transition: all 0.5s;
+}
+#product-detail-main .product-deatil-section .main-row .product-desc-col .product-specifications .qty-cart-section .add-to-cart-btn:hover {
+    background-color: #194D79;
+    color: white;
 }
 
 #product-detail-main .product-deatil-section .main-row .product-description strong {
@@ -190,14 +195,14 @@
     padding-inline-end: 10px;
 }
 
-#product-detail-main .reviews-rating-section .rating-stars .star {
+/* #product-detail-main .reviews-rating-section .rating-stars .star {
     border-radius: 20px;
     width: 22px;
     height: 8px;
     margin-inline-end: 8px;
     display: inline-block;
     background-color: #89C400;
-}
+} */
 
 #product-detail-main .reviews-rating-section .rating-stars .empty-star {
     background-color: #BDBDBD;
@@ -278,6 +283,9 @@
     font-weight: bold;
 }
 
+.add-review .close-icon {
+    cursor: pointer;
+}
 #product-detail-main .add-review .close-icon img {
     width: 20px;
     /* Adjust width if needed */
@@ -329,4 +337,72 @@
     border: none;
     padding: 10px;
     resize: none;
+}
+/* ======================== */
+        /* modal css */
+/* ======================== */
+/* Modal Container */
+.add-review .modal-content {
+    padding: 0 !important;
+    border-radius: 10px;
+}
+
+.add-review .modal-header-content {
+    padding: 0 20px;
+    align-items: center;
+}
+
+.add-review .modal-title {
+    font-size: 24px;
+    color: #333;
+}
+
+.add-review .close-icon img {
+    cursor: pointer;
+}
+
+/* Product Info */
+.add-review .product-info {
+    align-items: center;
+}
+
+.add-review .product-image img {
+    max-width: 80px;
+    margin-right: 20px;
+}
+
+.add-review .product-name {
+    font-size: 20px;
+    color: #333;
+    display: inline-block;
+}
+
+/* Rating Section */
+.add-review .quality-rating .rating-text {
+    font-size: 16px;
+    color: #828282;
+}
+
+.add-review .rating-stars .rating-star {
+    border-radius: 20px;
+    width: 35px;
+    height: 13px;
+    margin-right: 8px;
+    display: inline-block;
+    background-color: #F2F2F2;
+}
+
+/* Review Textarea */
+.add-review .review-label {
+    font-size: 16px;
+    color: #333;
+}
+
+.add-review .review-textarea {
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
 }

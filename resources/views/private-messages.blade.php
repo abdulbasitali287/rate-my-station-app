@@ -212,7 +212,7 @@
                                     <div class="col-md-6"></div>
                                     <div class="col-md-6 d-flex justify-content-end">
                                         <div class="message-sent">
-                                            <button class="message-btn received-msg-btn-left">
+                                            <button class="message received-msg-btn-left">
                                                 Lectus urna congue elementumam ent...
                                             </button>
                                             <span class="msg-time">2 min ago</span>
@@ -232,7 +232,7 @@
                                 <div class="row mx-0">
                                     <div class="col-md-6 d-flex">
                                         <div class="message-received">
-                                            <button class="message-btn received-msg-btn-right">
+                                            <button class="message received-msg-btn-right">
                                                 Lectus urna congue elementumam ent...
                                             </button>
                                             <span class="msg-time">2 min ago</span>
@@ -244,7 +244,7 @@
                                     <div class="col-md-6"></div>
                                     <div class="col-md-6 d-flex justify-content-end">
                                         <div class="message-received">
-                                            <button class="message-btn received-msg-btn-left">
+                                            <button class="message received-msg-btn-left">
                                                 Lectus urna congue elementumam ent...
                                             </button>
                                             <span class="msg-time">2 min ago</span>
@@ -255,7 +255,7 @@
                                 <div class="row mx-0">
                                     <div class="col-md-6 d-flex">
                                         <div class="message-received">
-                                            <button class="message-btn received-msg-btn-right">
+                                            <button class="message received-msg-btn-right">
                                                 Lectus urna congue elementumam ent...
                                             </button>
                                             <span class="msg-time">2 min ago</span>
@@ -267,7 +267,7 @@
                                     <div class="col-md-6"></div>
                                     <div class="col-md-6 d-flex justify-content-end">
                                         <div class="message-received">
-                                            <button class="message-btn received-msg-btn-left">
+                                            <button class="message received-msg-btn-left">
                                                 Lectus urna congue elementumam ent...
                                             </button>
                                             <span class="msg-time">2 min ago</span>
@@ -278,7 +278,7 @@
                                 <div class="row mx-0">
                                     <div class="col-md-6 d-flex">
                                         <div class="message-received">
-                                            <button class="message-btn received-msg-btn-right">
+                                            <button class="message received-msg-btn-right">
                                                 Lectus urna congue elementumam ent...
                                             </button>
                                             <span class="msg-time">2 min ago</span>
@@ -290,7 +290,7 @@
                                     <div class="col-md-6"></div>
                                     <div class="col-md-6 d-flex justify-content-end">
                                         <div class="message-received">
-                                            <button class="message-btn received-msg-btn-left">
+                                            <button class="message received-msg-btn-left">
                                                 Lectus urna congue elementumam ent...
                                             </button>
                                             <span class="msg-time">2 min ago</span>
@@ -301,7 +301,7 @@
                                 <div class="row mx-0">
                                     <div class="col-md-6 d-flex">
                                         <div class="message-received">
-                                            <button class="message-btn received-msg-btn-right">
+                                            <button class="message received-msg-btn-right">
                                                 Lectus urna congue elementumam ent...
                                             </button>
                                             <span class="msg-time">2 min ago</span>
@@ -313,7 +313,7 @@
                                     <div class="col-md-6"></div>
                                     <div class="col-md-6 d-flex justify-content-end">
                                         <div class="message-received">
-                                            <button class="message-btn received-msg-btn-left">
+                                            <button class="message received-msg-btn-left">
                                                 Lectus urna congue elementumam ent...
                                             </button>
                                             <span class="msg-time">2 min ago</span>

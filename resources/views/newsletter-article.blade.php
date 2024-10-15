@@ -165,7 +165,17 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <button class="subscribe-btn" style="width: max-content;margin-block: 6px;font-weight: bold;background-color: transparent;border: 2px solid #194D79;color: #194D79;padding-inline: 60px;padding-block: 8px;">Subscribe</button>
+                                        <button style="width: 100%;
+    font-size: 16px;
+    color: #194D79;
+    border-radius: 10px;
+    margin-block: 6px;
+    margin-inline-end: 10px;
+    font-weight: bold;
+    border: 2px solid #194D79;
+    padding-inline: 50px;
+    padding-block: 8px;
+    transition: all 0.5s;">Subscribe</button>
                                     </div>
                                 </div>
                                 {{-- more from soul witness --}}

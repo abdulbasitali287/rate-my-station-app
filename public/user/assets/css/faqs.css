@@ -45,6 +45,10 @@
     padding-inline-end: 42px;
     border-radius: 10px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+}
+#faqs-main .banner-section .search-btn:hover {
+    background-color: var(--trueBlueHover);
 }
 
 #faqs-main .banner-section .search-btn span:first-child {
@@ -71,24 +75,25 @@
     font-weight: bold;
 }
 
-#faqs-main .top-10-questions .top-10-card-row button {
+#faqs-main .top-10-questions .top-10-card-row a {
     border: none;
     background-color: transparent;
     padding-block: 16px;
+    color: #333333;
 }
 
-#faqs-main .top-10-questions .top-10-card-row button span:first-child {
+#faqs-main .top-10-questions .top-10-card-row a span:first-child {
     width: 80%;
     padding-inline: 8px;
     text-align: start;
 }
 
-#faqs-main .top-10-questions .top-10-card-row button span:last-child {
+#faqs-main .top-10-questions .top-10-card-row a span:last-child {
     width: 20%;
     padding-inline-start: 20px;
 }
 
-#faqs-main .top-10-questions .top-10-card-row button span:last-child img {
+#faqs-main .top-10-questions .top-10-card-row a span:last-child img {
     width: 10px;
     height: 16px;
 }
@@ -107,12 +112,12 @@
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-#faqs-main .topics .question-card button {
+#faqs-main .topics .question-card a {
     border: none;
     background-color: #FFFFFF;
 }
 
-#faqs-main .topics .question-card button h5 {
+#faqs-main .topics .question-card a h5 {
     color: #194D79;
     padding-inline-start: 8px;
 }
@@ -121,6 +126,7 @@
     width: 90%;
     padding-inline: 8px;
     text-align: start;
+    color: #000000;
 }
 
 #faqs-main .topics .question-card span:last-child {

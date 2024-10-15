@@ -1,0 +1,352 @@
+/* ================================ */
+        /* profile */
+/* ================================ */
+
+#user-profile-main .banner-section {
+    height: 294px;
+    background-image: url('/user/assets/ellipse/station-banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ======================== */
+/* Section */
+#user-profile-main .tabs-header-section {
+    margin-top: -164px;
+}
+
+/* Row */
+#user-profile-main .tabs-header-row {
+    padding-top: 40px;
+    padding-inline: 40px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Image container */
+#user-profile-main .image-container {
+    width: 157px;
+    height: 157px;
+    margin-bottom: 16px;
+}
+
+#user-profile-main .img-cover {
+    object-fit: cover;
+}
+
+/* Subscribed button */
+#user-profile-main .subscribed-btn {
+    width: 98px;
+    height: 26px;
+    background-color: #89C400;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    bottom: 3px;
+    right: 52px;
+    /* padding: 0.5rem 1rem; */
+    position: absolute;
+}
+
+/* Profile info container */
+#user-profile-main .profile-info-container {
+    padding-inline-start: 14px;
+}
+
+/* Profile name heading */
+#user-profile-main .profile-name-heading {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Profile title */
+#user-profile-main .profile-title {
+    font-size: 22px;
+    color: #828282;
+}
+
+#user-profile-main .profile-title .fw-bold {
+    color: #000;
+}
+
+/* Location info */
+#user-profile-main .location-info {
+    color: #194D79;
+    font-size: 18px;
+}
+
+/* Account settings button */
+/* .account-settings-btn {
+    background-color: var(--darkCerulean);
+    padding-block: 11px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    text-align: center;
+    margin-block: 6px;
+    color: white;
+    font-weight: bold;
+    border: none;
+} */
+
+/* Add profile section button */
+/* .add-section-btn {
+    border: 2px solid #194D79;
+    color: #194D79;
+    padding-block: 11px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    text-align: center;
+    margin-block: 6px;
+} */
+
+/* Active tab */
+#user-profile-main .active-tab {
+    border-bottom: 4px solid #89C400;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+}
+
+/* Tab item */
+#user-profile-main .tab-item {
+    padding: 1rem 1.5rem;
+}
+/* =========================== */
+/* External CSS file */
+#user-profile-main .about .bg-custom {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#user-profile-main .about .h2-custom {
+    font-size: 24px;
+}
+
+#user-profile-main .about .img-custom {
+    width: 24px;
+    height: 24px;
+}
+/* External CSS file */
+#user-profile-main .experience .bg-custom {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#user-profile-main .experience .h2-custom {
+    font-size: 24px;
+}
+
+#user-profile-main .experience .img-small {
+    width: 24px;
+    height: 24px;
+}
+
+#user-profile-main .experience .img-logo {
+    width: 46px;
+    height: 35px;
+}
+
+#user-profile-main .experience .title-large {
+    font-size: 18px;
+}
+
+#user-profile-main .experience .title-medium {
+    font-size: 16px;
+    color: #194D79;
+}
+#user-profile-main .experience .date-range {
+    font-size: 16px;
+    color: #89C400;
+}
+
+#user-profile-main .experience .text-light {
+    font-size: 14px;
+    color: #828282;
+}
+
+#user-profile-main .experience .text-primary {
+    color: #194D79;
+}
+
+#user-profile-main .experience .text-success {
+    color: #89C400;
+}
+#user-profile-main .skills {
+    margin-bottom: 1rem; /* mb-3 */
+}
+
+#user-profile-main .skills .bg-white {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#user-profile-main .skills h2 {
+    font-size: 24px;
+    font-weight: bold; /* fw-bold */
+}
+
+#user-profile-main .skills .skill-title {
+    font-size: 18px;
+    color: #194D79;
+    font-weight: 600; /* fw-semiBold */
+}
+
+#user-profile-main .skills .skill-description {
+    color: inherit; /* Inherit color from parent */
+    padding-top: 0.5rem; /* pt-2 */
+}
+
+#user-profile-main .skills .divider {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+#user-profile-main .skills .icon {
+    width: 24px;
+    height: 24px;
+}
+#user-profile-main .education {
+    margin-bottom: 1rem; /* mb-3 */
+}
+
+#user-profile-main .education .bg-white {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#user-profile-main .education h2 {
+    font-size: 24px;
+    font-weight: bold; /* fw-bold */
+}
+
+#user-profile-main .education .education-title {
+    font-size: 18px;
+    font-weight: 600; /* fw-semiBold */
+}
+
+#user-profile-main .education .university-name {
+    color: #194D79;
+    font-weight: 600; /* fw-semiBold */
+}
+
+#user-profile-main .education .date-range {
+    font-size: 14px;
+    color: #828282; /* For the date range text */
+}
+
+#user-profile-main .education .description {
+    color: inherit; /* Inherit color from parent */
+    padding-top: 0.5rem; /* pt-2 */
+}
+
+#user-profile-main .education .divider {
+    border-bottom: 1px solid #BDBDBD; /* Divider line */
+}
+
+#user-profile-main .education .icon {
+    width: 24px;
+    height: 24px;
+}
+
+#user-profile-main .education .education-img {
+    width: 58px;
+    height: 58px;
+}
+
+#user-profile-main .education .pb-4 {
+    padding-bottom: 1rem; /* pb-4 */
+}
+/* ============================ */
+/* External CSS file */
+
+/* General Classes */
+#user-profile-main .latest-posts .job-openings-heading, .newsletter-heading {
+    font-size: 28px;
+}
+
+#user-profile-main .latest-posts .job-card {
+    width: 384px;
+    background-color: white;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#user-profile-main .latest-posts .company-logo {
+    width: 46px;
+    height: 45px;
+}
+
+#user-profile-main .latest-posts .job-info {
+    flex-grow: 1;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#user-profile-main .latest-posts .job-title {
+    font-size: 18px;
+}
+
+#user-profile-main .latest-posts .company-name {
+    color: #194D79;
+    font-size: 14px;
+}
+
+#user-profile-main .latest-posts .job-details {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding-block: 10px;
+}
+
+#user-profile-main .latest-posts .location-info, .salary-info {
+    display: flex;
+    align-items: center;
+}
+
+#user-profile-main .latest-posts .location-icon, .salary-icon {
+    width: 13px;
+    height: 14px;
+}
+
+#user-profile-main .latest-posts .location-text, .salary-text {
+    color: #194D79;
+    font-size: 14px;
+}
+
+#user-profile-main .latest-posts .actively-hiring-btn {
+    font-size: 12px;
+    background-color: #9BDB08;
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#user-profile-main .latest-posts .tick-icon {
+    width: 11px;
+    height: 11px;
+    margin-right: 4px;
+}
+
+#user-profile-main .latest-posts .hiring-text {
+    padding-top: 1px;
+}
+
+#user-profile-main .latest-posts .update-info {
+    color: #828282;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+#user-profile-main .latest-posts .update-text {
+    margin-left: 6px;
+}

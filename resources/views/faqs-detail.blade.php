@@ -8,11 +8,11 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="py-4 breadcrumb">
-                            <span class="text-white breadcrumb-item">FAQs</span>
-                            <span><img src="{{ asset('user/assets/vectors/right-arrow-white.png') }}" alt=""></span>
-                            <span class="text-white breadcrumb-item">Search results</span>
-                            <span><img src="{{ asset('user/assets/vectors/right-arrow-white.png') }}" alt=""></span>
-                            <span class="text-white breadcrumb-item">FAQ detail</span>
+                            <a href="{{ url('faqs') }}" class="text-white breadcrumb-item">FAQs</a>
+                            <span class="d-inline-block me-2"><img src="{{ asset('user/assets/vectors/right-arrow-white.png') }}" alt=""></span>
+                            <a href="{{ url('faqs-search') }}" class="text-white breadcrumb-item">Search results</a>
+                            <span class="d-inline-block me-2"><img src="{{ asset('user/assets/vectors/right-arrow-white.png') }}" alt=""></span>
+                            <a href="{{ url('faqs-detail') }}" class="text-white breadcrumb-item">FAQ detail</a>
                         </div>
                         <div>
                             <h1 class="text-white faq-title">Pellentesque vel tristique ultrices feugiat?</h1>
@@ -102,7 +102,7 @@
         </section>
 
         {{-- looking for work --}}
-        <x-user.searching-queries path="user/assets/ellipse/still-question-bg.png" title="Still have a question?" buttonText="Contact us" paragraph="Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum." />
+        <x-user.searching-queries url="contact-us" path="user/assets/ellipse/still-question-bg.png" title="Still have a question?" buttonText="Contact us" paragraph="Pellentesque vel tristique ultrices habitasse feugiat nulla tempor quam. Et risus commodo natoque pulvinar eu, interdum." />
 
     </main>
 

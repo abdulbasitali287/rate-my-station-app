@@ -71,7 +71,7 @@
                             <div class="d-flex align-items-center pe-3">
                                 <p class="pe-2" style="color: #828282;font-weight: 500;font-size: 14px;">Filter</p>
                                 <div class="input-group-prepend">
-                                    <button class="btn btn-outline-secondary dropdown-toggle" style="color: #828282;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Writer</button>
+                                    <button class="btn btn-outline-secondary dropdown-toggle filter-dropdown" style="color: #828282;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Writer</button>
                                     <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Action</a>
                                     <a class="dropdown-item" href="#">Another action</a>
@@ -82,9 +82,9 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center">
-                                <p class="pe-2" style="color: #828282;font-weight: 500;font-size: 14px;">Short</p>
+                                <p class="pe-2" style="color: #828282;font-weight: 500;font-size: 14px;">Sort</p>
                                 <div class="input-group-prepend">
-                                    <button class="btn btn-outline-secondary dropdown-toggle" style="color: #828282;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Newest</button>
+                                    <button class="btn btn-outline-secondary dropdown-toggle sort-dropdown" style="color: #828282;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Newest</button>
                                     <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Action</a>
                                     <a class="dropdown-item" href="#">Another action</a>

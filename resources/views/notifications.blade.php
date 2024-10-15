@@ -16,7 +16,7 @@
                                     <div class="d-flex align-items-center pe-3">
                                         <p class="filter-label">Filter</p>
                                         <div class="input-group-prepend">
-                                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Unread</button>
+                                            <button class="btn btn-outline-secondary dropdown-toggle filter-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Unread</button>
                                             <div class="dropdown-menu">
                                                 <a class="dropdown-item" href="#">Action</a>
                                                 <a class="dropdown-item" href="#">Another action</a>
@@ -29,7 +29,7 @@
                                     <div class="d-flex align-items-center">
                                         <p class="sort-label">Short</p>
                                         <div class="input-group-prepend">
-                                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Newest</button>
+                                            <button class="btn btn-outline-secondary dropdown-toggle sort-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Newest</button>
                                             <div class="dropdown-menu">
                                                 <a class="dropdown-item" href="#">Action</a>
                                                 <a class="dropdown-item" href="#">Another action</a>

@@ -1,0 +1,180 @@
+/* ================================ */
+            /* saved */
+/* ================================ */
+#user-saved-main .banner-section {
+    height: 294px;
+    background-image: url('/user/assets/ellipse/station-banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ======================== */
+/* Section */
+#user-saved-main .tabs-header-section {
+    margin-top: -164px;
+}
+
+/* Row */
+#user-saved-main .tabs-header-row {
+    padding-top: 40px;
+    padding-inline: 40px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Image container */
+#user-saved-main .image-container {
+    width: 157px;
+    height: 157px;
+    margin-bottom: 16px;
+}
+
+#user-saved-main .img-cover {
+    object-fit: cover;
+}
+
+/* Subscribed button */
+#user-saved-main .subscribed-btn {
+    width: 98px;
+    height: 26px;
+    background-color: #89C400;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    bottom: 3px;
+    right: 52px;
+    /* padding: 0.5rem 1rem; */
+    position: absolute;
+}
+
+/* Profile info container */
+#user-saved-main .profile-info-container {
+    padding-inline-start: 14px;
+}
+
+/* Profile name heading */
+#user-saved-main .profile-name-heading {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Profile title */
+#user-saved-main .profile-title {
+    font-size: 22px;
+    color: #828282;
+}
+
+#user-saved-main .profile-title .fw-bold {
+    color: #000;
+}
+
+/* Location info */
+#user-saved-main .location-info {
+    color: #194D79;
+    font-size: 18px;
+}
+
+/* Active tab */
+#user-saved-main .active-tab {
+    border-bottom: 4px solid #89C400;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+}
+
+/* Tab item */
+#user-saved-main .tab-item {
+    padding: 1rem 1.5rem;
+}
+/* ============================ */
+/* External CSS file */
+
+/* General Classes */
+#user-saved-main .latest-posts {
+    padding-top: 23px;
+}
+#user-saved-main .latest-posts .job-openings-heading, .newsletter-heading {
+    font-size: 28px;
+}
+
+#user-saved-main .latest-posts .job-card {
+    width: 384px;
+    background-color: white;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#user-saved-main .latest-posts .company-logo {
+    width: 46px;
+    height: 45px;
+}
+
+#user-saved-main .latest-posts .job-info {
+    flex-grow: 1;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#user-saved-main .latest-posts .job-title {
+    font-size: 18px;
+}
+
+#user-saved-main .latest-posts .company-name {
+    color: #194D79;
+    font-size: 14px;
+}
+
+#user-saved-main .latest-posts .job-details {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding-block: 10px;
+}
+
+#user-saved-main .latest-posts .location-info, .salary-info {
+    display: flex;
+    align-items: center;
+}
+
+#user-saved-main .latest-posts .location-icon, .salary-icon {
+    width: 13px;
+    height: 14px;
+}
+
+#user-saved-main .latest-posts .location-text, .salary-text {
+    color: #194D79;
+    font-size: 14px;
+}
+
+#user-saved-main .latest-posts .actively-hiring-btn {
+    font-size: 12px;
+    background-color: #9BDB08;
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#user-saved-main .latest-posts .tick-icon {
+    width: 11px;
+    height: 11px;
+    margin-right: 4px;
+}
+
+#user-saved-main .latest-posts .hiring-text {
+    padding-top: 1px;
+}
+
+#user-saved-main .latest-posts .update-info {
+    color: #828282;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+#user-saved-main .latest-posts .update-text {
+    margin-left: 6px;
+}

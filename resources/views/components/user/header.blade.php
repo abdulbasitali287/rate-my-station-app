@@ -41,18 +41,21 @@
                         style="width: 18px;height: 18px;background-color: #9BDB08;position: absolute;top: -6px;right: 0;border-radius: 10px;display: flex;justify-content: center;align-items: center;color: #ffff;font-size: 12px;">2</span>
                 </a>
             </div>
-            {{-- <div class="ps-1">
-                <a href="{{ url('employee-login') }}">Login</a>
-            </div> --}}
         </div>
         <div class="ps-1 d-flex justify-content-center align-items-center">
-               <div class="me-2">
-                   <img src="{{ asset('user/assets/img/logged-in-img.png') }}" style="width: 43px;height: 43px;" alt="">
-               </div>
-               <div class="d-flex justify-content-center align-items-center">
-                   <strong class="fw-bold d-inline-block me-2">Brooklyn</strong>
-                   <img src="{{ asset('user/assets/vectors/down-arrow-black.png') }}" style="width: 7px;height: 7px;" alt="">
-               </div>
+                @if (Request::is(['notifications','private-messages']))
+                <div class="ps-1">
+                    <a href="{{ url('employee-login') }}" class="login-btn">Login</a>
+                </div>
+                @else
+                    <div class="me-2">
+                    <img src="{{ asset('user/assets/img/logged-in-img.png') }}" style="width: 43px;height: 43px;" alt="">
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <strong class="fw-bold d-inline-block me-2">Brooklyn</strong>
+                    <img src="{{ asset('user/assets/vectors/down-arrow-black.png') }}" style="width: 7px;height: 7px;" alt="">
+                </div>
+                @endif
             </div>
     </div>
 </header>

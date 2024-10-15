@@ -1,0 +1,357 @@
+/* ================================ */
+    /* station profile */
+/* ================================ */
+/* Section Styling */
+#station-profile-main .banner-section {
+    height: 294px;background-image: url('/user/assets/ellipse/station-banner-bg.png');background-repeat: no-repeat;background-size: cover;
+}
+#station-profile-main .station-profile-section {
+    margin-top: -164px;
+}
+
+/* Container and Row Styling */
+#station-profile-main .station-profile-section .station-profile-container {
+    padding-top: 40px;
+    padding-inline: 40px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Border Bottom */
+#station-profile-main .station-profile-section .border-bottom {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+/* Logo Container */
+#station-profile-main .station-profile-section .logo-container {
+    width: 137px;
+    height: 106px;
+    margin-bottom: 16px;
+}
+
+#station-profile-main .station-profile-section .logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Subscribe Button */
+#station-profile-main .station-profile-section .subscribe-button {
+    background-color: #89C400;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    padding: 6px 12px;
+    font-weight: semi-bold; /* Adjust to match your typography */
+}
+
+/* Station Info */
+#station-profile-main .station-profile-section .station-info {
+    padding-inline-start: 14px;
+}
+
+#station-profile-main .station-profile-section .station-name {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+#station-profile-main .station-profile-section .station-icon {
+    position: absolute;
+    top: 8px;
+    right: 122px;
+}
+
+#station-profile-main .station-profile-section .station-tagline {
+    color: #828282;
+}
+
+#station-profile-main .station-profile-section .station-location {
+    color: #194D79;
+    font-size: 18px;
+}
+
+/* Account Actions */
+#station-profile-main .station-profile-section .account-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+/* #station-profile-main .station-profile-section .account-settings-button {
+    margin-block: 6px;
+    background-color: var(--darkCerulean);
+    padding-block: 11px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: none;
+} */
+
+/* #station-profile-main .station-profile-section .add-profile-section-button {
+    margin-block: 6px;
+    border: 2px solid #194D79;
+    color: #194D79;
+    padding-block: 11px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    text-align: center;
+} */
+
+/* Add Icon */
+/* #station-profile-main .station-profile-section .add-icon {
+    background-color: #194D79;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+} */
+/* #station-profile-main .station-profile-section .add-icon img {
+    margin-top: 5px;
+} */
+
+
+/* Navigation Menu */
+#station-profile-main .station-profile-section .navigation-menu {
+    padding: 0;
+}
+
+#station-profile-main .station-profile-section .menu-item {
+    padding: 16px 24px;
+}
+
+#station-profile-main .station-profile-section .menu-item.active {
+    border-bottom: 4px solid #89C400;
+    font-weight: bold;
+}
+
+#station-profile-main .station-profile-section .text-black {
+    color: black;
+    text-decoration: none;
+}
+/* ================================ */
+/* External CSS */
+
+#station-profile-main .about-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#station-profile-main .about-card .custom-title {
+    font-size: 24px;
+}
+
+#station-profile-main .about-card .edit-icon {
+    color: #194D79;
+    width: 26px;
+    height: 26px;
+}
+
+#station-profile-main .about-card .bottom-border {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+#station-profile-main .about-card .custom-strong {
+    color: #194D79;
+    font-size: 16px;
+}
+
+#station-profile-main .about-card .custom-light {
+    color: #828282;
+}
+/* ========================== */
+/* External CSS */
+
+/* Outer card styles */
+#station-profile-main .news-directors {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styles */
+#station-profile-main .news-directors .news-directors-title {
+    font-size: 24px;
+}
+
+/* Icon styles */
+#station-profile-main .news-directors .icon-link {
+    color: #194D79;
+    width: 26px;
+    height: 26px;
+}
+
+/* Image container styles */
+#station-profile-main .news-directors .image-container {
+    width: 73px;
+    height: 73px;
+}
+
+/* Text padding */
+#station-profile-main .news-directors .text-padding {
+    padding-inline-start: 14px;
+}
+
+/* Paragraph text styles */
+#station-profile-main .news-directors .paragraph-text {
+    font-size: 16px;
+}
+
+/* Strong text styles for names */
+#station-profile-main .news-directors .name-text {
+    font-size: 26px;
+}
+
+/* Status styles */
+#station-profile-main .news-directors .status-current {
+    padding-block: 2px;
+    background-color: #89C400;
+    border-radius: 6px;
+    color: #ffff;
+    padding-inline: 10px;
+    padding-top: 0;
+    font-size: 10px;
+}
+
+#station-profile-main .news-directors .status-past {
+    padding-block: 2px;
+    background-color: #F2F2F2;
+    border-radius: 6px;
+    color: #828282;
+    padding-inline: 10px;
+    padding-top: 0;
+    font-size: 10px;
+}
+/* ============================== */
+/* External CSS */
+
+/* Main Container */
+#station-profile-main .award-container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+#station-profile-main .award-container .award-title {
+    font-size: 24px;
+}
+
+/* Row with Bottom Border */
+#station-profile-main .award-container .award-row {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+/* Strong Text for Awards */
+#station-profile-main .award-container .award-strong {
+    color: #194D79;
+    font-size: 18px;
+}
+
+/* Paragraph Text */
+#station-profile-main .award-container .award-paragraph {
+    font-size: 16px;
+}
+
+/* Link for "3+ more" */
+#station-profile-main .award-container .award-more-link {
+    color: #194D79;
+    font-size: 18px;
+}
+/* ================================= */
+#station-profile-main .job-opening-container {
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#station-profile-main .job-opening-container .job-details-row {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+/* Job Title and Count Styling */
+#station-profile-main .job-opening-container .job-opening-title {
+    font-size: 24px;
+}
+
+#station-profile-main .job-opening-container .opening-count {
+    color: #828282;
+}
+
+/* Image Styling */
+#station-profile-main .job-opening-container .job-image-container {
+    width: 167px;
+    height: 167px;
+    margin-inline-end: 32px;
+}
+
+#station-profile-main .job-opening-container .job-image {
+    width: 163px;
+    height: 160px;
+}
+
+/* Job Information and Button Styling */
+#station-profile-main .job-opening-container .job-position-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#station-profile-main .job-opening-container .company-name {
+    color: #194D79;
+    font-size: 20px;
+}
+
+#station-profile-main .job-opening-container .job-info-container {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding-block: 10px;
+}
+
+.job-location,
+.job-salary,
+#station-profile-main .job-opening-container .job-type {
+    color: #194D79;
+    font-size: 14px;
+}
+
+/* Icons */
+#station-profile-main .job-opening-container .icon-small {
+    width: 17px;
+}
+
+#station-profile-main .job-opening-container .icon-medium {
+    width: 28px;
+}
+
+/* Hiring Button */
+#station-profile-main .job-opening-container .hiring-status-btn {
+    background-color: #9BDB08;
+    border: none;
+    color: #fff;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    padding-inline: 14px;
+    border-radius: 8px;
+}
+
+#station-profile-main .job-opening-container .hiring-status-icon {
+    display: inline-block;
+    padding-inline-end: 6px;
+}
+
+#station-profile-main .job-opening-container .hiring-status-text {
+    display: inline-block;
+    padding-top: 1px;
+    font-weight: 300;
+}
+
+/* Updated Time Styling */
+#station-profile-main .job-opening-container .updated-time {
+    color: #828282;
+    font-size: 12px;
+}

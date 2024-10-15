@@ -147,6 +147,9 @@
     display: flex;
     align-items: center;
 }
+#newsletter-main .main-img-article ul.d-flex.list-unstyled span {
+    color: #828282;
+}
 
 #newsletter-main .main-img-article ul.d-flex.list-unstyled li img {
     margin-top: -6px;
@@ -160,6 +163,9 @@
 }
 #newsletter-main .main-img-article .header-date .small{
     margin-top: 5px;
+}
+#newsletter-main .main-img-article .title {
+    color: black;
 }
 /* ============================ */
 /* ============================ */

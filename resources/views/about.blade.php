@@ -117,7 +117,7 @@
 
                 <div class="row pt-5">
                     <div class="col text-center">
-                        <button class="see-all-products-btn">See all Products</button>
+                        <a href="{{ url('shop') }}" class="see-all-products-btn">See all Products</a href="{{ url('shop') }}">
                     </div>
                 </div>
             </div>

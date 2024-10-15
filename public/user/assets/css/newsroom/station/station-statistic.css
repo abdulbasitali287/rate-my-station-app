@@ -1,0 +1,134 @@
+/* ================================ */
+    /* station statistic */
+/* ================================ */
+#station-statistic-main .banner-section {
+    height: 294px;background-image: url('/user/assets/ellipse/station-banner-bg.png');background-repeat: no-repeat;background-size: cover;
+}
+/* ============================================== */
+#station-statistic-main .station-tabs-container {
+    margin-top: -164px;
+}
+#station-statistic-main .station-tabs-container .station-profile-container {
+    padding-top: 40px;
+    padding-inline: 40px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Border Bottom */
+#station-statistic-main .station-tabs-container .border-bottom {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+/* Logo Container */
+#station-statistic-main .station-tabs-container .logo-container {
+    width: 137px;
+    height: 106px;
+    margin-bottom: 16px;
+}
+
+#station-statistic-main .station-tabs-container .logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Subscribe Button */
+#station-statistic-main .station-tabs-container .subscribe-button {
+    background-color: #89C400;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    padding: 6px 12px;
+    font-weight: semi-bold; /* Adjust to match your typography */
+}
+
+/* Station Info */
+#station-statistic-main .station-tabs-container .station-info {
+    padding-inline-start: 14px;
+}
+
+#station-statistic-main .station-tabs-container .station-name {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+#station-statistic-main .station-tabs-container .station-icon {
+    position: absolute;
+    top: -2px;
+    right: 122px;
+}
+
+#station-statistic-main .station-tabs-container .station-tagline {
+    color: #828282;
+}
+
+#station-statistic-main .station-tabs-container .station-location {
+    color: #194D79;
+    font-size: 18px;
+}
+
+/* Account Actions */
+#station-statistic-main .station-tabs-container .account-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+/*
+#station-statistic-main .station-tabs-container .account-settings-button {
+    margin-block: 6px;
+    background-color: var(--darkCerulean);
+    padding-block: 11px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+#station-statistic-main .station-tabs-container .add-profile-section-button {
+    margin-block: 6px;
+    border: 2px solid #194D79;
+    color: #194D79;
+    padding-block: 11px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    text-align: center;
+} */
+
+/* Add Icon */
+/* #station-statistic-main .station-tabs-container .add-icon {
+    background-color: #194D79;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+}
+#station-statistic-main .station-tabs-container .add-icon img {
+    margin-top: -5px;
+} */
+
+
+/* Navigation Menu */
+#station-statistic-main .station-tabs-container .navigation-menu {
+    padding: 0;
+}
+
+#station-statistic-main .station-tabs-container .menu-item {
+    padding: 16px 24px;
+}
+
+#station-statistic-main .station-tabs-container .menu-item.active {
+    border-bottom: 4px solid #89C400;
+    font-weight: bold;
+}
+
+#station-statistic-main .station-tabs-container .text-black {
+    color: black;
+    text-decoration: none;
+}

@@ -108,7 +108,7 @@
                                         </div>
                                         <div class="row align-items-center">
                                             <div class="col-md-6">
-                                                <x-user.button buttonText="Register" class="bg-white" color="#194D79" />
+                                                <button type="submit" class="register-btn">Register</button>
                                             </div>
                                             <div class="col-md-6">
                                                 <x-user.checkbox label="Terms & conditions" />

@@ -69,6 +69,7 @@
 #work-for-us-main .detail-icon {
     width: 30px; /* Adjust as necessary */
     height: auto;
+    padding-inline-end: 8px;
 }
 
 #work-for-us-main .job-description {
@@ -93,6 +94,10 @@
     text-decoration: none;
     font-size: 14px;
     font-weight: 300;
+    transition: all 0.5s;
+}
+#work-for-us-main .actively-hiring-btn:hover {
+    background-color: #76ab00;
 }
 #work-for-us-main .actively-hiring-btn img {
     margin-top: -2px;

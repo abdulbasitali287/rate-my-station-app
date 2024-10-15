@@ -1,0 +1,219 @@
+/* ================================ */
+        /* ratings */
+/* ================================ */
+#user-ratings-main .banner-section {
+    height: 294px;
+    background-image: url('/user/assets/ellipse/station-banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ======================== */
+/* Section */
+#user-ratings-main .tabs-header-section {
+    margin-top: -164px;
+}
+
+/* Row */
+#user-ratings-main .tabs-header-row {
+    padding-top: 40px;
+    padding-inline: 40px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Image container */
+#user-ratings-main .image-container {
+    width: 157px;
+    height: 157px;
+    margin-bottom: 16px;
+}
+
+#user-ratings-main .img-cover {
+    object-fit: cover;
+}
+
+/* Subscribed button */
+#user-ratings-main .subscribed-btn {
+    width: 98px;
+    height: 26px;
+    background-color: #89C400;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    bottom: 3px;
+    right: 52px;
+    /* padding: 0.5rem 1rem; */
+    position: absolute;
+}
+
+/* Profile info container */
+#user-ratings-main .profile-info-container {
+    padding-inline-start: 14px;
+}
+
+/* Profile name heading */
+#user-ratings-main .profile-name-heading {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Profile title */
+#user-ratings-main .profile-title {
+    font-size: 22px;
+    color: #828282;
+}
+
+#user-ratings-main .profile-title .fw-bold {
+    color: #000;
+}
+
+/* Location info */
+#user-ratings-main .location-info {
+    color: #194D79;
+    font-size: 18px;
+}
+
+/* Active tab */
+#user-ratings-main .active-tab {
+    border-bottom: 4px solid #89C400;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+}
+
+/* Tab item */
+#user-ratings-main .tab-item {
+    padding: 1rem 1.5rem;
+}
+/* ============================ */
+#user-ratings-main .ratings-header {
+    padding-bottom: 14px;
+}
+
+#user-ratings-main .ratings-header h2 {
+    font-size: 28px;
+    font-weight: bold; /* fw-bold */
+}
+
+#user-ratings-main .ratings-header h2 span {
+    color: #828282; /* Color for the count */
+}
+
+.ratings-header .filter-dropdown,
+#user-ratings-main .ratings-header .sort-dropdown {
+    color: #828282; /* Dropdown button text color */
+}
+
+.ratings-header .filter-text,
+#user-ratings-main .ratings-header .sort-text {
+    color: #828282; /* Text color for filter and sort labels */
+    font-weight: 500; /* Font weight for the labels */
+    font-size: 14px; /* Font size for the labels */
+}
+
+#user-ratings-main .ratings-header .dropdown-menu {
+    /* Optional: Customize dropdown menu styles if needed */
+}
+
+/* Additional styles for responsiveness if required */
+@media (max-width: 768px) {
+    #user-ratings-main .ratings-header {
+        flex-direction: column; /* Stack elements on smaller screens */
+        align-items: flex-start;
+    }
+
+    #user-ratings-main .ratings-header .col-md-4 {
+        justify-content: flex-start; /* Align filter options to start */
+    }
+}
+
+/* ============================ */
+/* External CSS file */
+
+/* General Classes */
+#user-ratings-main .latest-posts .job-openings-heading, .newsletter-heading {
+    font-size: 28px;
+}
+
+#user-ratings-main .latest-posts .job-card {
+    width: 384px;
+    background-color: white;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#user-ratings-main .latest-posts .company-logo {
+    width: 46px;
+    height: 45px;
+}
+
+#user-ratings-main .latest-posts .job-info {
+    flex-grow: 1;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#user-ratings-main .latest-posts .job-title {
+    font-size: 18px;
+}
+
+#user-ratings-main .latest-posts .company-name {
+    color: #194D79;
+    font-size: 14px;
+}
+
+#user-ratings-main .latest-posts .job-details {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding-block: 10px;
+}
+
+#user-ratings-main .latest-posts .location-info, .salary-info {
+    display: flex;
+    align-items: center;
+}
+
+#user-ratings-main .latest-posts .location-icon, .salary-icon {
+    width: 13px;
+    height: 14px;
+}
+
+#user-ratings-main .latest-posts .location-text, .salary-text {
+    color: #194D79;
+    font-size: 14px;
+}
+
+#user-ratings-main .latest-posts .actively-hiring-btn {
+    font-size: 12px;
+    background-color: #9BDB08;
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#user-ratings-main .latest-posts .tick-icon {
+    width: 11px;
+    height: 11px;
+    margin-right: 4px;
+}
+
+#user-ratings-main .latest-posts .hiring-text {
+    padding-top: 1px;
+}
+
+#user-ratings-main .latest-posts .update-info {
+    color: #828282;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+#user-ratings-main .latest-posts .update-text {
+    margin-left: 6px;
+}

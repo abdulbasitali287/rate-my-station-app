@@ -19,7 +19,7 @@
                     <a href="{{ url('product-detail') }}" class="d-inline-block text-center w-100 fw-bold view-details">View Details</a>
                 </div>
                 <div class="col-md-6">
-                    <a href="#" class="d-inline-block text-center w-100 add-to-cart-btn">Add to Cart</a>
+                    <a href="{{ url('cart') }}" class="d-inline-block text-center w-100 add-to-cart-btn">Add to Cart</a>
                 </div>
             </div>
         </div>

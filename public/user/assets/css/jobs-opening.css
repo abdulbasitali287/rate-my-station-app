@@ -1,0 +1,73 @@
+/* ============================== */
+            /* Jobs opening */
+/* ============================== */
+
+#jobs-opening-main .banner-section {
+    height: 294px;
+    background-image: url('/user/assets/ellipse/job-opening.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ============================ */
+#jobs-opening-main .station-section {
+    margin-top: -164px;
+}
+
+#jobs-opening-main .station-section .station-card {
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#jobs-opening-main .station-section .station-logo {
+    width: 137px;
+    height: 106px;
+    object-fit: cover; /* Ensures the image fits within its container */
+}
+
+#jobs-opening-main .station-section .station-info {
+    padding-inline-start: 14px; /* Adds padding to the left of the station information */
+}
+
+#jobs-opening-main .station-section .station-info h2 {
+    color: #194D79;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+#jobs-opening-main .station-section .station-info h2 img {
+    position: absolute;
+    top: 9px;
+    right: 92px;
+}
+
+#jobs-opening-main .station-section .station-info p {
+    color: #828282;
+}
+
+#jobs-opening-main .station-section .station-location {
+    color: #194D79;
+}
+
+#jobs-opening-main .station-section .station-location img {
+    display: inline-block;
+    padding-inline-end: 4px;
+}
+
+#jobs-opening-main .station-section .account-actions a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Adds space between the two buttons */
+    text-decoration: none; /* Removes underline from links */
+}
+
+#jobs-opening-main .station-section .see-station-rating-btn,
+#jobs-opening-main .station-section .see-station-profile-btn {
+    /* Add any specific button styles if needed */
+}

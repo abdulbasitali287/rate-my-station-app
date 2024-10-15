@@ -1,0 +1,253 @@
+/* login button */
+.login-btn {
+    width: 186px;
+    font-size: 16px;
+    color: #194D79;
+    border-radius: 10px;
+    margin-block: 6px;
+    margin-inline-end: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #194D79;
+    padding-inline: 50px;
+    padding-block: 8px;
+    transition: all 0.5s;
+}
+.login-btn:hover {
+    background-color: #194D79;
+    color: white;
+}
+/* register button */
+.register-btn {
+    width: 186px;
+    font-size: 16px;
+    color: #194D79;
+    border-radius: 10px;
+    margin-block: 6px;
+    margin-inline-end: 10px;
+    font-weight: bold;
+    border: 2px solid #194D79;
+    padding-inline: 50px;
+    padding-block: 8px;
+    transition: all 0.5s;
+}
+.register-btn:hover {
+    background-color: #194D79;
+    color: white;
+}
+/* filter dropdown */
+.filter-dropdown {
+    transition: all 0.5s;
+}
+.filter-dropdown:hover {
+    color: white !important;
+}
+/* sort dropdown */
+.sort-dropdown {
+    transition: all 0.5s;
+}
+.sort-dropdown:hover {
+    color: white !important;
+}
+/* subscribe button */
+.subscribe-btn{
+    width: 186px;
+    font-size: 16px;
+    color: #194D79;
+    border-radius: 10px;
+    margin-block: 6px;
+    margin-inline-end: 10px;
+    font-weight: bold;
+    border: 2px solid #194D79;
+    padding-inline: 50px;
+    padding-block: 8px;
+    transition: all 0.5s;
+}
+.subscribe-btn:hover {
+    background-color: #194D79;
+    color: white;
+}
+/* account-settings-button  */
+/* .account-settings-button:hover {
+
+} */
+/* add-profile-section-button  */
+
+/*
+.add-profile-section-button {
+    transition: all 0.5s;
+}
+*/
+.see-station-rating-btn {
+    width: 239px;
+    height: 46px;
+    margin-block: 6px;
+    background-color: var(--darkCerulean);
+    padding-block: 11px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+.see-station-profile-btn {
+    width: 239px;
+    height: 46px;
+    font-weight: bold;
+    margin-block: 6px;
+    border: 2px solid #194D79;
+    color: #194D79;
+    padding-block: 11px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    text-align: center;
+    transition: all 0.5s;
+}
+.see-station-profile-btn:hover {
+    background-color: #194D79;
+    color: white;
+}
+.account-settings-button {
+    width: 220px;
+    height: 46px;
+    margin-block: 6px;
+    background-color: var(--darkCerulean);
+    padding-block: 11px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.add-profile-section-button {
+    width: 220px;
+    height: 46px;
+    font-weight: bold;
+    margin-block: 6px;
+    border: 2px solid #194D79;
+    color: #194D79;
+    padding-block: 11px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    text-align: center;
+    transition: all 0.5s;
+}
+/* .add-icon {
+    background-color: #194D79;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+} */
+.add-icon {
+    background-color: #194D79;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-icon img {
+    width: 13px;
+    height: 14px;
+}
+.add-profile-section-button:hover {
+    background-color: #194D79;
+    color: white;
+}
+
+/* message-button  */
+.message-btn {
+    background-color: #194D79;
+    width: 186px;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid #194D79;
+    padding-inline: 50px;
+    padding-block: 8px;
+    margin-block: 3px;
+    transition: all 0.5s;
+}
+.contact-info-btn {
+    background-color: white;
+    width: 186px;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid #194D79;
+    /* padding-inline: 50px; */
+    padding-inline: auto;
+    padding-block: 8px;
+    text-align: center;
+    margin-block: 3px;
+    transition: all 0.5s;
+}
+.contact-info-btn:hover {
+    background-color: #194D79;
+    color: white;
+}
+/* modal submit button */
+.modal-submit-btn {
+    width: 152px;
+    height: 46px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #194D79;
+    color: white;
+    margin-block: 6px;
+    margin-inline-end: 10px;
+    font-weight: bold;
+    /* border: 2px solid #194D79; */
+    padding-inline: 50px;
+    padding-block: 8px;
+    transition: all 0.5s;
+}
+.modal-submit-btn:hover {
+    background-color: var(--trueBlueHover);
+}
+.modal-close-btn {
+    width: 152px;
+    height: 46px;
+    font-size: 16px;
+    border-radius: 10px;
+    color: #194D79;
+    margin-block: 6px;
+    margin-inline-end: 10px;
+    font-weight: bold;
+    border: 2px solid #194D79;
+    padding-inline: 50px;
+    padding-block: 8px;
+    transition: all 0.5s;
+}
+.modal-close-btn:hover {
+    background-color: #194D79;
+    color: white;
+}
+/* rate this product button */
+.rate-product-btn {
+    width: 186px;
+    font-size: 16px;
+    color: #194D79;
+    border-radius: 10px;
+    /* margin-block: 6px; */
+    margin-inline-end: 10px;
+    font-weight: bold;
+    border: 2px solid #194D79;
+    padding-inline: 50px;
+    padding-block: 8px;
+    transition: all 0.5s;
+}
+.rate-product-btn:hover {
+    background-color: #194D79;
+    color: white;
+}

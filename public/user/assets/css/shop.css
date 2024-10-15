@@ -71,6 +71,11 @@
     border-radius: 10px;
     color: #194D79;
     font-weight: 500;
+    transition: all 0.5s;
+}
+#shop-main .discover-btn:hover {
+    background-color: #194D79;
+    color: #fff;
 }
 
 /* Small Banner Items (for the right-side banners) */

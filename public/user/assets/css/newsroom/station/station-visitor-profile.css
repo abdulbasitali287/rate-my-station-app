@@ -1,0 +1,290 @@
+/* ================================ */
+    /* station visitor profile */
+/* ================================ */
+#station-visitor-prfile-main .banner-section {
+    height: 294px;
+    background-image: url('/user/assets/ellipse/station-banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#station-visitor-prfile-main .station-profile-section {
+    margin-top: -164px;
+}
+
+#station-visitor-prfile-main .station-profile-section .station-profile-container {
+    padding-top: 40px;
+    padding-inline: 40px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#station-visitor-prfile-main .station-profile-section .station-profile-details {
+    padding-bottom: 40px;
+}
+
+#station-visitor-prfile-main .station-profile-section .station-logo-wrapper {
+    width: 137px;
+    height: 106px;
+    margin-bottom: 16px;
+}
+
+#station-visitor-prfile-main .station-profile-section .subscribed-button {
+    background-color: #89C400;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 0.25rem 0.75rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+#station-visitor-prfile-main .station-profile-section .station-info {
+    padding-inline-start: 14px;
+}
+
+#station-visitor-prfile-main .station-profile-section .station-name {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+#station-visitor-prfile-main .station-profile-section .station-subtitle {
+    color: #828282;
+    padding-bottom: 16px;
+}
+
+#station-visitor-prfile-main .station-profile-section .station-location {
+    font-size: 18px;
+    font-weight: 300;
+    color: #194D79;
+}
+
+#station-visitor-prfile-main .station-profile-section .station-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+#station-visitor-prfile-main .station-profile-section .ratings-button {
+    margin-block: 6px;
+    background-color: var(--darkCerulean);
+    padding-block: 11px;
+    border-radius: 12px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+#station-visitor-prfile-main .station-profile-section .contact-actions {
+    display: flex;
+}
+
+#station-visitor-prfile-main .station-profile-section .contact-info-button {
+    border: 2px solid #194D79;
+    color: #194D79;
+    padding-block: 11px;
+    border-radius: 12px;
+    transition: all 0.5s;
+    text-align: center;
+    padding-inline: 12px;
+    margin-inline-end: 10px;
+}
+
+/* =================== */
+#station-visitor-prfile-main .visitor-about-wrapper {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-top: 1.5rem;
+}
+
+#station-visitor-prfile-main .visitor-about-wrapper .about-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#station-visitor-prfile-main .visitor-about-wrapper .about-border {
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 1.5rem;
+}
+
+#station-visitor-prfile-main .visitor-about-wrapper .about-section-title {
+    color: #194D79;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#station-visitor-prfile-main .visitor-about-wrapper .about-section-text {
+    color: #828282;
+    font-weight: 300;
+}
+/* ===================== */
+#station-visitor-prfile-main .news-directors-wrapper {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-top: 1.5rem;
+}
+
+#station-visitor-prfile-main .news-directors-wrapper .news-directors-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#station-visitor-prfile-main .news-directors-wrapper .news-directors-image {
+    width: 73px;
+    height: 73px;
+}
+
+#station-visitor-prfile-main .news-directors-wrapper .news-directors-text {
+    padding-inline-start: 14px;
+}
+
+#station-visitor-prfile-main .news-directors-wrapper .news-directors-status {
+    font-weight: 600;
+    font-size: 10px;
+    border-radius: 6px;
+    padding-block: 2px;
+    padding-inline: 10px;
+    padding-top: 0;
+}
+
+#station-visitor-prfile-main .news-directors-wrapper .current-status {
+    background-color: #89C400;
+    color: #fff;
+}
+
+#station-visitor-prfile-main .news-directors-wrapper .past-status {
+    background-color: #F2F2F2;
+    color: #828282;
+}
+/* ====================================== */
+#station-visitor-prfile-main .award-container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#station-visitor-prfile-main .award-container .award-heading {
+    font-size: 24px;
+}
+
+#station-visitor-prfile-main .award-container .award-item {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+#station-visitor-prfile-main .award-container .award-image {
+    width: 125px;
+    height: 125px;
+}
+
+#station-visitor-prfile-main .award-container .award-title {
+    color: #194D79;
+    font-size: 18px;
+}
+
+#station-visitor-prfile-main .award-container .award-description {
+    font-size: 16px;
+}
+
+#station-visitor-prfile-main .award-container .award-more-link {
+    color: #194D79;
+    font-size: 18px;
+}
+/* =========================== */
+/* Container and Box Styling */
+#station-visitor-prfile-main .job-opening-container {
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#station-visitor-prfile-main .job-opening-container .job-details-row {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+/* Job Title and Count Styling */
+#station-visitor-prfile-main .job-opening-container .job-opening-title {
+    font-size: 24px;
+}
+
+#station-visitor-prfile-main .job-opening-container .opening-count {
+    color: #828282;
+}
+
+/* Image Styling */
+#station-visitor-prfile-main .job-opening-container .job-image-container {
+    width: 167px;
+    height: 167px;
+    margin-inline-end: 32px;
+}
+
+#station-visitor-prfile-main .job-opening-container .job-image {
+    width: 163px;
+    height: 160px;
+}
+
+/* Job Information and Button Styling */
+#station-visitor-prfile-main .job-opening-container .job-position-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#station-visitor-prfile-main .job-opening-container .company-name {
+    color: #194D79;
+    font-size: 20px;
+}
+
+#station-visitor-prfile-main .job-opening-container .job-info-container {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding-block: 10px;
+}
+
+.job-location,
+.job-salary,
+#station-visitor-prfile-main .job-opening-container .job-type {
+    color: #194D79;
+    font-size: 14px;
+}
+
+/* Icons */
+#station-visitor-prfile-main .job-opening-container .icon-small {
+    width: 17px;
+}
+
+#station-visitor-prfile-main .job-opening-container .icon-medium {
+    width: 28px;
+}
+
+/* Hiring Button */
+#station-visitor-prfile-main .job-opening-container .hiring-status-btn {
+    background-color: #9BDB08;
+    border: none;
+    color: #fff;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    padding-inline: 14px;
+    border-radius: 8px;
+}
+
+#station-visitor-prfile-main .job-opening-container .hiring-status-icon {
+    display: inline-block;
+    padding-inline-end: 6px;
+}
+
+#station-visitor-prfile-main .job-opening-container .hiring-status-text {
+    display: inline-block;
+    padding-top: 1px;
+    font-weight: 300;
+}
+
+/* Updated Time Styling */
+#station-visitor-prfile-main .job-opening-container .updated-time {
+    color: #828282;
+    font-size: 12px;
+}

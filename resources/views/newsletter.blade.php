@@ -61,7 +61,7 @@
                         <div class="d-flex align-items-center pe-3">
                             <p class="mb-0 pe-2 text-muted fw-medium">Filter</p>
                             <div class="dropdown">
-                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                <button class="btn btn-outline-secondary dropdown-toggle filter-dropdown" type="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Writer
                                 </button>
@@ -80,7 +80,7 @@
                         <div class="d-flex align-items-center">
                             <p class="mb-0 pe-2 text-muted fw-medium">Sort</p>
                             <div class="dropdown">
-                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                <button class="btn btn-outline-secondary dropdown-toggle sort-dropdown" type="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Newest
                                 </button>
@@ -107,13 +107,13 @@
                     <div class="col col-md-8">
                         <div class="row">
                             <div class="col-12 right-title-header">
-                                <h2>Latest Articles</h2>
+                                <h2 class="fw-bold">Latest Articles</h2>
                             </div>
                         </div>
                         {{-- large image card --}}
                         <div class="row">
                             <div class="col-12">
-                                <div class="overflow-hidden mb-3 shadow-sm rounded-3 main-img-article">
+                                <a href="{{ url('newsletter-article') }}" class="d-block overflow-hidden mb-3 shadow-sm rounded-3 main-img-article">
                                     <div>
                                         <div>
                                             <img src="{{ asset('user/assets/img/time-watch.png') }}" class="img-fluid"
@@ -138,7 +138,7 @@
                                                 </div>
                                             </div>
 
-                                            <h3 class="fw-bold lh-base mt-3">10 Ways To Stay Healthy While Working A Crazy
+                                            <h3 class="fw-bold lh-base mt-3 title">10 Ways To Stay Healthy While Working A Crazy
                                                 News Schedule</h3>
 
                                             <div
@@ -168,7 +168,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         {{-- small image card --}}

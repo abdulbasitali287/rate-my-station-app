@@ -62,7 +62,8 @@
                                         </div>
                                         <strong class="plan-price">$34.95/m</strong>
                                         <div class="d-flex justify-content-center">
-                                            <x-user.button buttonText="Subscribe" class="bg-white m-0" color="#194D79" />
+                                            {{-- <x-user.button buttonText="Subscribe" class="bg-white m-0" color="#194D79" /> --}}
+                                            <button type="submit" class="subscribe-btn">Subscribe</button>
                                         </div>
                                     </div>
                                 </div>
@@ -80,7 +81,7 @@
                                             <span class="plan-discount">Save more than 30%</span>
                                         </div>
                                         <div class="d-flex justify-content-center">
-                                            <x-user.button buttonText="Subscribe" class="bg-white m-0" color="#194D79" />
+                                            <button type="submit" class="subscribe-btn">Subscribe</button>
                                         </div>
                                     </div>
                                 </div>
@@ -98,7 +99,7 @@
                                             <span class="plan-discount">Save more than 30%</span>
                                         </div>
                                         <div class="d-flex justify-content-center">
-                                            <x-user.button buttonText="Subscribe" class="bg-white m-0" color="#194D79" />
+                                            <button type="submit" class="subscribe-btn">Subscribe</button>
                                         </div>
                                     </div>
                                 </div>

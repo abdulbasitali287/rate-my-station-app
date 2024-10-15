@@ -9,7 +9,7 @@ Route::get('/about', function () {
     return view('about');
 });
 Route::get('/jobs', function () {
-    return view('jobs');
+    return view('jobs.jobs');
 });
 Route::get('/newsletter', function () {
     return view('newsletter');
@@ -19,16 +19,22 @@ Route::get('/shop', function () {
 });
 
 Route::get('/jobs-opening', function () {
-    return view('job-opening');
+    return view('jobs.jobs-opening');
 });
 Route::get('/job-details', function () {
-    return view('job-details');
+    return view('jobs.job-details');
 });
 Route::get('/contact-us', function () {
     return view('contact-us');
 });
-Route::get('/faqss', function () {
+Route::get('/faqs', function () {
     return view('faqs');
+});
+Route::get('/faqs-search', function () {
+    return view('faqs-search');
+});
+Route::get('/faqs-detail', function () {
+    return view('faqs-detail');
 });
 Route::get('/product-detail', function () {
     return view('product-detail');
@@ -53,12 +59,6 @@ Route::get('/cart', function () {
 });
 Route::get('/station-form', function () {
     return view('station-form');
-});
-Route::get('/faqs-search', function () {
-    return view('faqs-search');
-});
-Route::get('/faqs-detail', function () {
-    return view('faqs-detail');
 });
 Route::get('/work-for-us', function () {
     return view('work-for-us');
@@ -86,42 +86,42 @@ Route::get('/newsroom-register', function () {
     return view('auth.newsroom-register');
 });
 
-Route::get('/station-rating', function () {
-    return view('station-rating');
-});
+// Route::get('/station-rating', function () {
+//     return view('station-rating');
+// });
 
 // ======================
     // newsroom account
 // ======================
-Route::get('/account-settings-station-profile', function () {
+Route::get('/newsroom-profile', function () {
     return view('newsroom.account.newsroom-profile');
 });
-Route::get('/account-settings-contact-info', function () {
+Route::get('/newsroom-contact-info', function () {
     return view('newsroom.account.newsroom-contact-info');
 });
-Route::get('/account-settings-subscription', function () {
+Route::get('/newsroom-subscription', function () {
     return view('newsroom.account.newsroom-subscription');
 });
-Route::get('/account-settings-verification', function () {
+Route::get('/newsroom-verification', function () {
     return view('newsroom.account.newsroom-verification');
 });
-Route::get('/change-password', function () {
+Route::get('/newsroom-change-password', function () {
     return view('newsroom.account.newsroom-change-password');
 });
 
 // ===================
     // user account
 // ===================
-Route::get('/account-settings-user-profile', function () {
+Route::get('/user-profile', function () {
     return view('user.account.user-profile');
 });
-Route::get('/account-settings-user-contact-info', function () {
+Route::get('/user-contact-info', function () {
     return view('user.account.user-contact-info');
 });
-Route::get('/account-settings-user-subscription', function () {
+Route::get('/user-subscription', function () {
     return view('user.account.user-subscription');
 });
-Route::get('/account-settings-user-verification', function () {
+Route::get('/user-verification', function () {
     return view('user.account.user-verification');
 });
 Route::get('/user-change-password', function () {
@@ -129,68 +129,85 @@ Route::get('/user-change-password', function () {
 });
 
 
-Route::get('/station-profile', function () {
-    return view('station-profile');
-});
+// Route::get('/station-profile', function () {
+//     return view('station-profile');
+// });
 Route::get('/station-profile-2', function () {
     return view('station-profile-2');
 });
 
-Route::get('/station-profile-3', function () {
-    return view('station-profile-3');
-});
 Route::get('/private-messages', function () {
     return view('private-messages');
 });
 Route::get('/subscription', function () {
     return view('subscription');
 });
+
+// ============================
+    // station pages url
+// ============================
+
+// station visitor profile
 Route::get('/station-visitor-profile', function () {
-    return view('station-visitor-profile');
+    return view('newsroom.station.station-visitor-profile');
 });
-Route::get('/station-visitor-profile-2', function () {
-    return view('station-visitor-profile-2');
+// station logged-in
+Route::get('/station-profile', function () {
+    return view('newsroom.station.station-profile');
 });
-Route::get('/station-rating-user', function () {
-    return view('station-rating-user');
+Route::get('/station-rating', function () {
+    return view('newsroom.station.station-rating');
 });
-Route::get('/station-posted-job', function () {
-    return view('station-posted-job');
+Route::get('/station-statistic', function () {
+    return view('newsroom.station.station-statistic');
 });
-Route::get('/station-posted-job-all-candidates', function () {
-    return view('station-posted-job-all-candidates');
+Route::get('/station-posted-jobs', function () {
+    return view('newsroom.station.station-posted-jobs');
 });
-Route::get('/contact-info-user', function () {
-    return view('contact-info-user');
+Route::get('/station-applied-candidates', function () {
+    return view('newsroom.station.station-applied-candidates');
+});
+Route::get('/station-contact-info', function () {
+    return view('newsroom.station.station-contact-info');
 });
 
-Route::get('/station-user-profile', function () {
-    return view('station-user-profile');
+// user logged in
+Route::get('/user-visitor-profile', function () {
+    return view('user.visitor-profile');
 });
+Route::get('/station-user-profile', function () {
+    return view('user.profile.profile');
+});
+    // profile sub pages
+    Route::get('/edit-experience', function () {
+        return view('user.profile.edit-experience');
+    });
+    Route::get('/edit-skills', function () {
+        return view('user.profile.edit-skills');
+    });
+    Route::get('/edit-education', function () {
+        return view('user.profile.edit-education');
+    });
+
 Route::get('/station-user-ratings', function () {
-    return view('station-user-ratings');
+    return view('user.ratings');
 });
 Route::get('/station-user-applied-jobs', function () {
-    return view('station-user-applied-jobs');
+    return view('user.applied-jobs');
 });
 Route::get('/station-user-contact-info', function () {
-    return view('station-user-contact-info');
+    return view('user.contact-info');
 });
 Route::get('/station-user-suscribed', function () {
-    return view('station-user-suscribed');
+    return view('user.suscribed');
 });
 Route::get('/station-user-saved', function () {
-    return view('station-user-saved');
+    return view('user.saved');
 });
-Route::get('/edit-experience', function () {
-    return view('edit-experience');
-});
-Route::get('/edit-skills', function () {
-    return view('edit-skills');
-});
-Route::get('/edit-education', function () {
-    return view('edit-education');
-});
+
+
+
+
 Route::get('/create-news-director', function () {
     return view('popup-forms.create-news-director');
 });
@@ -200,12 +217,9 @@ Route::get('/apply-job-form', function () {
 Route::get('/director-detail-popup', function () {
     return view('popup-forms.director-detail-popup');
 });
-Route::get('/station-user-statistic', function () {
-    return view('station-user-statistic');
-});
 Route::get('/add-news-director-2', function () {
     return view('popup-forms.add-news-director-2');
 });
-Route::get('/job-opening-popup-form', function () {
-    return view('popup-forms.job-opening-popup-form');
-});
+// Route::get('/job-opening-popup-form', function () {
+//     return view('popup-forms.job-opening-popup-form');
+// });

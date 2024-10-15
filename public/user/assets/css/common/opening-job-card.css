@@ -1,0 +1,101 @@
+/* ===================================== */
+        /* opening job card css */
+/* ===================================== */
+
+.job-card {
+    background-color: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.job-card .job-card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-card .logo-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.job-card .job-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-left: 1rem;
+    justify-content: center;
+}
+
+.job-card .job-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.job-card .job-info p {
+    color: #194D79;
+    font-weight: 300;
+}
+
+.job-card .options-button {
+    background: none;
+    border: none;
+}
+
+.job-card .job-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.job-card .detail-item {
+    padding-right: 1rem;
+}
+
+.job-card .detail-text {
+    color: #194D79;
+    font-weight: 300;
+}
+
+.job-card .job-description {
+    padding-left: 1rem;
+}
+
+.job-card .job-description li {
+    line-height: 1.75;
+    list-style: circle;
+}
+
+.job-card .job-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.job-card .actively-hiring-btn {
+    background-color: #9BDB08;
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+.job-card .updated-info {
+    color: #828282;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.job-card .updated-info img {
+    margin-right: 0.5rem;
+}

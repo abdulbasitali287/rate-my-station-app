@@ -1,0 +1,297 @@
+/* ================================ */
+    /* station rating */
+/* ================================ */
+#station-rating-main .banner-section {
+    height: 294px;background-image: url('/user/assets/ellipse/station-banner-bg.png');background-repeat: no-repeat;background-size: cover;
+}
+#station-rating-main .station-tabs-container {
+    margin-top: -164px;
+}
+
+/* Container and Row Styling */
+#station-rating-main .station-tabs-container .station-profile-container {
+    padding-top: 40px;
+    padding-inline: 40px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Border Bottom */
+#station-rating-main .station-tabs-container .border-bottom {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+/* Logo Container */
+#station-rating-main .station-tabs-container .logo-container {
+    width: 137px;
+    height: 106px;
+    margin-bottom: 16px;
+}
+
+#station-rating-main .station-tabs-container .logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Subscribe Button */
+#station-rating-main .station-tabs-container .subscribe-button {
+    background-color: #89C400;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    padding: 6px 12px;
+    font-weight: semi-bold; /* Adjust to match your typography */
+}
+
+/* Station Info */
+#station-rating-main .station-tabs-container .station-info {
+    padding-inline-start: 14px;
+}
+
+#station-rating-main .station-tabs-container .station-name {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+#station-rating-main .station-tabs-container .station-icon {
+    position: absolute;
+    top: -2px;
+    right: 122px;
+}
+
+#station-rating-main .station-tabs-container .station-tagline {
+    color: #828282;
+}
+
+#station-rating-main .station-tabs-container .station-location {
+    color: #194D79;
+    font-size: 18px;
+}
+
+/* Account Actions */
+#station-rating-main .station-tabs-container .account-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+/* #station-rating-main .station-tabs-container .account-settings-button {
+    margin-block: 6px;
+    background-color: var(--darkCerulean);
+    padding-block: 11px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+#station-rating-main .station-tabs-container .add-profile-section-button {
+    margin-block: 6px;
+    border: 2px solid #194D79;
+    color: #194D79;
+    padding-block: 11px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+    text-align: center;
+} */
+
+/* Add Icon */
+/* #station-rating-main .station-tabs-container .add-icon {
+    background-color: #194D79;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+}
+#station-rating-main .station-tabs-container .add-icon img {
+    margin-top: -5px;
+} */
+
+
+/* Navigation Menu */
+#station-rating-main .station-tabs-container .navigation-menu {
+    padding: 0;
+}
+
+#station-rating-main .station-tabs-container .menu-item {
+    padding: 16px 24px;
+}
+
+#station-rating-main .station-tabs-container .menu-item.active {
+    border-bottom: 4px solid #89C400;
+    font-weight: bold;
+}
+
+#station-rating-main .station-tabs-container .text-black {
+    color: black;
+    text-decoration: none;
+}
+/* ============================================== */
+#station-rating-main .station-ratings-container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#station-rating-main .station-ratings-container .station-ratings-heading {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#station-rating-main .station-ratings-container .ratings-section {
+    border-bottom: 1px solid #F2F2F2;
+}
+
+#station-rating-main .station-ratings-container .rating-number {
+    font-size: 96px;
+}
+
+#station-rating-main .station-ratings-container .sub-rating {
+    font-size: 24px;
+    color: #828282;
+}
+
+#station-rating-main .station-ratings-container .rating-description {
+    font-size: 20px;
+    color: #194D79;
+}
+
+#station-rating-main .station-ratings-container .rating-bar-bg {
+    height: 9px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+#station-rating-main .station-ratings-container .rating-bar-fill {
+    height: 100%;
+    background-color: #89C400;
+    border-radius: 20px;
+}
+
+#station-rating-main .station-ratings-container .popular-tags-title {
+    font-size: 18px;
+}
+
+#station-rating-main .station-ratings-container .tag {
+    color: #828282;
+    background-color: #F2F2F2;
+}
+/* ================================================== */
+#station-rating-main .rating-title {
+    font-size: 28px;
+    font-weight: bold; /* Assuming 'fw-bold' is equivalent to this */
+}
+
+#station-rating-main .rating-filter {
+    color: #828282;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#station-rating-main .dropdown-button {
+    color: #828282;
+}
+/* ================================== */
+#station-rating-main .review-card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+#station-rating-main .reporter-section {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F2F2F2;
+    margin-bottom: 20px;
+}
+
+#station-rating-main .reporter-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#station-rating-main .reporter-info {
+    display: flex;
+}
+
+#station-rating-main .reporter-img {
+    width: 52px;
+    height: 52px;
+    margin-inline-end: 10px;
+}
+
+#station-rating-main .reporter-details {
+    padding-inline-start: 10px;
+}
+
+#station-rating-main .verified-rating {
+    color: #89C400;
+}
+
+#station-rating-main .review-block {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding-block: 15px;
+}
+
+#station-rating-main .review-title {
+    color: #828282;
+}
+
+#station-rating-main .current-label {
+    padding-block: 2px;
+    background-color: #89C400;
+    border-radius: 6px;
+    color: #fff;
+    padding-inline: 10px;
+    font-size: 10px;
+}
+
+#station-rating-main .additional-comments {
+    padding-block: 7px;
+}
+
+#station-rating-main .rating-section {
+    padding-block: 10px;
+}
+
+#station-rating-main .tag-section {
+    color: #828282;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+#station-rating-main .tag {
+    display: inline-block;
+    padding-inline: 10px;
+    padding-block: 1px;
+    background-color: #F2F2F2;
+    border-radius: 6px;
+}
+
+#station-rating-main .button-section {
+    padding-top: 4px;
+}
+
+#station-rating-main .submit-review {
+    background-color: #F2F2F2;border: none;padding-block: 6px;padding-inline: 10px;border-radius: 8px;color: #89C400;margin-inline-end: 5px;
+}
+
+#station-rating-main .report-button {
+    background-color: #F2F2F2;border: none;padding-block: 6px;padding-inline: 10px;border-radius: 8px;color: #828282;
+}
+
+#station-rating-main .input-section {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding-block: 12px;
+}
